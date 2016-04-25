@@ -1,0 +1,1 @@
+cmd_/home/wgs/dev/dev_fifo_v2/dev_fifo.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/wgs/dev/dev_fifo_v2/dev_fifo.ko /home/wgs/dev/dev_fifo_v2/dev_fifo.o /home/wgs/dev/dev_fifo_v2/dev_fifo.mod.o
