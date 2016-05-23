@@ -1,0 +1,24 @@
+#include "apue.h"
+#include <stdio.h>
+int main(void)
+{
+	char name[L_tmpnam], line[MAXLINE];
+	FILE *fp;
+
+	printf("%s\n", tmpnam(NULL));
+	tmpnam(name);
+	printf("%s\n",name);
+
+	if((fp = tmpfile()) == NULL)
+		err_sys("tmpfile error");
+	fputs("one line of output\n", fp);
+	rewind(fp);
+	if(fgets(line, sizeof(line),fp) == NULL)
+		err_sys("fgets error");
+	fputs(line, stdout);
+
+	printf("sizeofline = %d\t",sizeof(line));
+	printf("L_tmpnam = %d\t MAXLINE = %d\n", L_tmpnam,MAXLINE);
+	
+	exit(0);
+}
