@@ -1,12 +1,30 @@
+/*
+
+Base64编码原理
+
+步骤1：将所有字符转化为ASCII码；
+步骤2：将ASCII码转化为8位二进制；
+步骤3：将二进制3个归成一组(不足3个在后边补0)共24位，再拆分成4组，每组6位；
+步骤4：统一在6位二进制前补两个0凑足8位；
+步骤5：将补0后的二进制转为十进制；
+步骤6：从Base64编码表获取十进制对应的Base64编码；
+*
+*/
+
 #include <stdio.h>
 
 const char base[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="; 
 char* base64_encode(const char* data, int data_len); 
 char* base64_decode(const char* data, int data_len); 
-static char find_pos(char ch); 
+static char find_pos(char ch);
+
 int main(int argc, char* argv[]) 
 { 
-    char *t = "�Ǹ�abcd����𣬹�����ANMOL"; 
+    char *t; 
+    char a[100];
+    printf("input your string: ");
+    scanf("%s", a);
+    t = a;
     int i = 0; 
     int j = strlen(t); 
     char *enc = base64_encode(t, j); 
@@ -103,8 +121,7 @@ char *base64_decode(const char *data, int data_len)
     char need[3]; 
     int prepare = 0; 
     int i = 0; 
-    if (*(data + data_len - 1) == '=') 
-    { 
+    if (*(data + data_len - 1) == '=') { 
         equal_count += 1; 
     } 
     if (*(data + data_len - 2) == '=') 
