@@ -1,0 +1,108 @@
+=========
+LFS HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+=========
+
+Dernière révision : 23 novembre 2014
+
+Ce HOWTO décrit l'installation scriptée d'un système Linux From Scratch 7.6.
+
+
+Scripts LFS
+-----------
+
+Récupérer les scripts LFS :
+
+  # cd
+  # git clone https://github.com/kikinovak/lfs
+
+
+Partitionnement
+---------------
+
+  # /sbin/fdisk -l
+
+  Disk /dev/sda: 21.5 GB, 21474836480 bytes
+  255 heads, 63 sectors/track, 2610 cylinders, total 41943040 sectors
+  Units = sectors of 1 * 512 = 512 bytes
+  Sector size (logical/physical): 512 bytes / 512 bytes
+  I/O size (minimum/optimal): 512 bytes / 512 bytes
+  Disk identifier: 0x00000000
+
+     Device Boot      Start         End      Blocks   Id  System
+  /dev/sda1   *          63      192779       96358+  83  Linux
+  /dev/sda2          192780     4192964     2000092+  82  Linux swap
+  /dev/sda3         4192965    41943039    18875037+  83  Linux
+
+
+Formatage
+---------
+
+  # mkfs -v -t ext2 /dev/sda1
+  # mkswap /dev/sda2
+  # mkfs -v -t ext4 /dev/sda3
+  
+
+Montage des systèmes de fichiers
+--------------------------------
+
+Les systèmes de fichiers seront montés sur '/mnt/lfs', qu'il faudra créer au
+besoin.
+
+  # mount -v -t ext4 /dev/sda3 /mnt/lfs
+  # mkdir -v /mnt/lfs/boot
+  # mount -v -t ext2 /dev/sda1 /mnt/lfs/boot
+
+Activer la swap :
+
+  # swapon -v /dev/sda2
+
+
+Préparer l'environnement
+------------------------
+
+La documentation de LFS préconise la création d'un utilisateur 'lfs' dédié pour
+la construction des outils temporaires. On ne va pas s'encombrer avec ça et
+effectuer la compilation en tant que root. C'est donc le compte root qui va
+hériter des modifications nécessaires.
+
+  # cd lfs/buildhost
+  # ./setenv.sh
+
+Se déconnecter et se reconnecter.
+
+Vérifier si la variable $LFS est bien définie :
+
+  # echo $LFS
+  /mnt/lfs
+
+Créer le répertoire qui recevra les archives de code source et les patchs :
+
+  # mkdir -v $LFS/sources
+
+Les outils temporaires seront installés ici :
+
+  # mkdir -v $LFS/tools
+
+Créer un lien symbolique sur l'hôte :
+
+  # ln -sv $LFS/tools /
+
+
+Compilation des outils temporaires
+----------------------------------
+
+présent, on peut lancer la compilation des outils temporaires :
+
+  # cd lfs/toolchain
+  # ./build-toolchain.sh
+
+Ce script se charge de télécharger, compiler et installer une bonne trentaine
+de paquets. Durée de la compilation sur un Quad Core avec 3 Go de RAM :
+
+  real    138m27.965s
+  user    132m15.069s
+  sys     83m41.235s
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
