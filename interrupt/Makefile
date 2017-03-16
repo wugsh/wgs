@@ -1,5 +1,5 @@
 obj-m := myirq.o
-KERNELDIR := /home/wgs/linux-4.4.50
+KERNELDIR := /usr/src/linux-headers-3.16.0-4-amd64 
 all:
 	make -C $(KERNELDIR) M=$(PWD) modules
 clean:
