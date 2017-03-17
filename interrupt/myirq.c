@@ -11,26 +11,20 @@ module_param(interface, charp, 0644);
 module_param(irq, int, 0644);
 
     //static irq_handler_t myinterrupt(int irq, void *dev_id, struct pt_regs *regs)  
+int mycount = 0;
+long mytime = 0;
 
 static irqreturn_t myinterrupt(int irq, void *dev_id)
 {
-    static int mycount = 0;
-    static long mytime = 0;
+    static long space;
     struct net_device *dev = (struct net_device*) dev_id;
-    
-    if (mycount == 0) {
-		mytime = jiffies;
-    }
-    //count the interval between two irqs  
-    if (mycount < 10) {
-		mytime = jiffies - mytime;
-		printk("Interrupt number %d — intterval(jiffies) %ld  — jiffies:%ld \n",irq, mytime, jiffies);
-		mytime = jiffies;
-	    printk("Interrupt on %s —–%d \n",dev->name, dev->irq);  
-
-    }
-    printk("jiffies = %ld mytime = %ld  mycount = %d\n", jiffies, mytime, mycount);
+	
     mycount++;
+	space  = jiffies - mytime;
+	printk("Interrupt number %d — intterval(jiffies) %ld  — jiffies:%ld \n",irq, mytime, jiffies);
+	mytime = jiffies;
+    printk("Interrupt on %s —–%d \n",dev->name, dev->irq);  
+    //printk("jiffies = %ld mytime = %ld  mycount = %d\n", jiffies, mytime, mycount);
     return IRQ_NONE;
 }
 
