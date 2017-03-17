@@ -1,3 +1,6 @@
+/*编写一个Linux的内核模块，其功能是遍历操作系统所有进程。该内核模块输出系统中：每个进程的名字、进程pid、进程的状态、父进程的名字；以及统计系统中进程个数，包括统计系统中TASK_RUNNING、TASK_INTERRUPTIBLE、TASK_UNINTERRUPTIBLE、TASK_ZOMBIE、TASK_STOPPED等（还有其他状态）状态进程的个数。同时还需要编写一个用户态下执行的程序，显示内核模块输出的内容。
+*/
+
 #include <linux/module.h> //needed by all modules
 #include <linux/kernel.h> //needed for KERN_INFO
 #include <linux/sched.h> //defined struct task_struct
