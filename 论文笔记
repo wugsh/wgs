@@ -1,0 +1,16 @@
+《How Linux RT_PREEMPT Works》
+      The cost of the increased determinism of real time
+        - Increased average latency
+        - Decreased throughput
+        
+      Enabling real-time Linux
+        - preemptible kernel
+        - locking
+        - threaded interrupt handlers
+        - threaded softirq
+        
+      CONFIG_PREEMPT “fully preemptible”
+        - except when preemption is explicitly disabled
+        - except when interrupts are explicitly disabled
+        - except when a lock is held
+        (“in a critical section”)
