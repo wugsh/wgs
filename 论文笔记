@@ -14,3 +14,9 @@
         - except when interrupts are explicitly disabled
         - except when a lock is held
         (“in a critical section”)
+        
+       Impact of Real-Time Features
+            + Variance of real-time task latency decreased
+            + Maximum real-time task latency decreased
+            - Average real-time task latency may be increased
+            - Throughput decreased
