@@ -1,6 +1,4 @@
-/* <a href="http://lib.csdn.net/base/linux" class='replace_word' title="LinuxÖªÊ¶¿â" target='_blank' style='color:#df3434; font-weight:bold;'>Linux</a>/drivers/ker-driver.c 
- * Author: Woodpecker <Pecker.hu@gmail.com> 
- * 
+/* 
  * kernel-driver 
  * 
  * This file is subject to the terms and conditions of the GNU General Public 
