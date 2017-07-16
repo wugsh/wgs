@@ -97,6 +97,27 @@ void QuickSort(int s[], int start, int end)
         QuickSort(s, j + 1, end);
 }
 
+/*Ï£¶ûÅÅÐò*/
+void Shsort(int s[], int n)
+{
+	int i, j, d;
+	d = n / 2;
+	while(d >= 1){
+		for (i = d + 1; i <=n; i++){
+			s[0] = s[i];
+			j = i - d;
+			while((j > 0) && (s[0] < s[j])){
+				s[j+d] = s[j];
+				j = j - d;
+			} 
+			s[j+d] = s[0];
+		}
+		d = d / 2;
+	}
+}
+
+
+
 /*¶ÑÅÅÐò*/
 void Sift(int R[],int low,int high)
 {
@@ -194,8 +215,9 @@ int main()
 //		SelectSort(R,len);
 //		BubbleSort(R,len);
 //		QuickSort(R,1,len);
+		Shsort(R, len);
 //		heapSort(R,len);
-		MergeSort(1,len);
+//		MergeSort(1,len);
 		for(i=1;i<=len;i++)
 		{
 			printf("%d ",R[i]);
