@@ -1,3 +1,4 @@
+//≈≈–ÚÀ„∑®Ω≤Ω‚£∫http://www.runoob.com/w3cnote/sort-algorithm-summary.html
 #include <stdio.h>
 #include<math.h>
 #include<string.h>
