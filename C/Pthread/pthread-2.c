@@ -16,15 +16,15 @@ int main(int argc, char **argv)
 	if (res != 0) {
 	exit(EXIT_FAILURE);
     }
-//sleep(1);//注释1
+	//sleep(1);//注释1
     printf("thread_two starting\n");
     res = pthread_create(&th_two, NULL, (void *) &thread_two, msg);
 	if (res != 0) {
 	exit(EXIT_FAILURE);
     }
-//sleep(5);//注释2
-    printf("Main thread will sleep 1 S\n");
-    sleep(1);			//注释3
+//    sleep(5);//注释2
+  //  printf("Main thread will sleep 1 S\n");
+ //   sleep(1);			//注释3
     return 0;
 
 }
