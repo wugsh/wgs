@@ -29,7 +29,7 @@ void *thread1(void *junk)
 		if(i%3 == 0)
 			pthread_cond_signal(&cond);	/*条件改变，发送信号，通知t_b进程 */
 		else
-			printf("thead1:%d\n", i);  
+			printf("thread1:%d\n", i);  
 		pthread_mutex_unlock(&mutex);	/*解锁互斥量 */
 
 		sleep(1);
