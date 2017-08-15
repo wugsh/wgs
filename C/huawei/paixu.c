@@ -1,78 +1,29 @@
-//ÅÅÐòËã·¨½²½â£ºhttp://www.runoob.com/w3cnote/sort-algorithm-summary.html
+//æŽ’åºç®—æ³•è®²è§£ï¼šhttp://www.runoob.com/w3cnote/sort-algorithm-summary.html
 /*
-1¡¢¼¸ÖÖ³£¼ûÅÅÐòËã·¨µÄÊ±¼ä¸´ÔÓ¶È
-ÅÅÐò·½·¨
+1ã€å‡ ç§å¸¸è§æŽ’åºç®—æ³•çš„æ—¶é—´å¤æ‚åº¦
+æŽ’åºæ–¹æ³•		å¹³å‡æƒ…å†µ	æœ€å¥½æƒ…å†µ	æœ€åæƒ…å†µ	
+ç›´æŽ¥æ’å…¥æŽ’åº         O(n2)       O(n2)       O(n2)
+å†’æ³¡æŽ’åº		 O(n2)       O(n)        O(n2)
+å¿«é€ŸæŽ’åº		O(nlog2n)   O(nlog2n)   O(n2)
+ç®€å•é€‰æ‹©æŽ’åº	       O(n2)	    O(n2)       O(n2)
+å †æŽ’åº		 O(nlog2n)   O(nlog2n)   O(nlog2nï¼‰
+å½’å¹¶æŽ’åº		O(nlog2n)   O(nlog2n)   O(nlog2n)
 
-Æ½¾ùÇé¿ö
+ç”±æ­¤å¯è§ï¼Œåœ¨æœ€å¥½æƒ…å†µä¸‹ï¼Œç›´æŽ¥æ’å…¥æŽ’åºå’Œå†’æ³¡æŽ’åºæœ€å¿«ï¼›å¹³å‡æƒ…å†µä¸‹ï¼Œå¿«é€ŸæŽ’åºæœ€å¿«ï¼›åœ¨æœ€åæƒ…å†µä¸‹ï¼Œå †æŽ’åºå’Œå½’å¹¶æŽ’åºæœ€å¿«ã€‚
 
-×îºÃÇé¿ö
+2ã€ç¨³å®šæ€§æ¯”è¾ƒ
 
-×î»µÇé¿ö
+ç¨³å®šæ€§ç®—æ³•åŒ…æ‹¬ï¼šç›´æŽ¥æ’å…¥æŽ’åºï¼Œå†’æ³¡æŽ’åºï¼Œå½’å¹¶æŽ’åºï¼›
 
-Ö±½Ó²åÈëÅÅÐò
+éžç¨³å®šæ€§ç®—æ³•åŒ…æ‹¬ï¼šå †æŽ’åºï¼Œå¿«é€ŸæŽ’åºï¼Œç®€å•é€‰æ‹©æŽ’åºï¼›
 
-O(n2)
-
-O(n)
-
-O(n2)
-
-ÆðÅÝÅÅÐò
-
-O(n2)
-
-O(n)
-
-O(n2)
-
-¿ìËÙÅÅÐò
-
-O(nlog2n)
-
-O(nlog2n)
-
-O(n2)
-
-¼òµ¥Ñ¡ÔñÅÅÐò
-
-O(n2)
-
-O(n2)
-
-O(n2)
-
-¶ÑÅÅÐò
-
-O(nlog2n)
-
-O(nlog2n)
-
-O(nlog2n)
-
-¹é²¢ÅÅÐò
-
-O(nlog2n)
-
-O(nlog2n)
-
-O(nlog2n)
-
-
-ÓÉ´Ë¿É¼û£¬ÔÚ×îºÃÇé¿öÏÂ£¬Ö±½Ó²åÈëÅÅÐòºÍÆðÅÝÅÅÐò×î¿ì£»Æ½¾ùÇé¿öÏÂ£¬¿ìËÙÅÅÐò×î¿ì£»ÔÚ×î»µÇé¿öÏÂ£¬¶ÑÅÅÐòºÍ¹é²¢ÅÅÐò×î¿ì¡£
-
-2¡¢ÎÈ¶¨ÐÔ±È½Ï
-
-ÎÈ¶¨ÐÔËã·¨°üÀ¨£ºÖ±½Ó²åÈëÅÅÐò£¬ÆðÅÝÅÅÐò£¬¹é²¢ÅÅÐò£»
-
-·ÇÎÈ¶¨ÐÔËã·¨°üÀ¨£º¶ÑÅÅÐò£¬¿ìËÙÅÅÐò£¬¼òµ¥Ñ¡ÔñÅÅÐò£»
-
-3¡¢Ê¹ÓÃÇéÐÎ·ÖÎö
-µ±´ýÅÅÐò¼ÇÂ¼¸öÊýn½Ï´ó£¬¹Ø¼üÂë·Ö²¼½ÏËæ»ú£¬ÇÒ¶ÔÎÈ¶¨ÐÔ²»×÷ÒªÇóÊ±£¬ÒË²ÉÓÃ¿ìËÙÅÅÐò
-µ±´ýÅÅÐò¼ÇÂ¼¸öÊýn½Ï´ó£¬ÄÚ´æ¿Õ¼äÔÊÐí£¬ÇÒÒªÇóÅÅÐòÎÈ¶¨Ê±£¬ÒË²ÉÓÃ¹é²¢ÅÅÐò
-µ±´ýÅÅÐò¼ÇÂ¼¸öÊýn½Ï´ó£¬¹Ø¼üÂë·Ö²¼¿ÉÄÜ³öÏÖÕýÐò»òÄæÐòµÄÇé¿ö£¬ÇÒ¶ÔÎÈ¶¨ÐÔ²»×÷ÒªÇóÊ±£¬ÒË²ÉÓÃ¶ÑÅÅÐò»ò¹é²¢ÅÅÐò¡£
-µ±´ýÅÅÐò¼ÇÂ¼¸öÊýn½Ï´ó£¬¶øÖ»ÒªÕÒ³ö×îÐ¡µÄÇ°¼¸¸ö¼ÇÂ¼£¬²ÉÓÃ¶ÑÅÅÐò»òÕß¼òµ¥Ñ¡ÔñÅÅÐò
-µ±´ýÅÅÐò¼ÇÂ¼¸öÊýn½ÏÐ¡£¬¼ÇÂ¼ÒÑ»ù±¾ÓÐÐò£¬ÇÒÒªÇóÎÈ¶¨£¬ÒË²ÉÓÃÖ±½Ó²åÈëÅÅÐò
-¿ìËÙÅÅÐòºÍ¹é²¢ÅÅÐòÔÚ´ýÅÅÐò¼ÇÂ¼¸öÊýnÖµ½ÏÐ¡Ê±µÄÐÔÄÜ²»ÈçÖ±½Ó²åÈëÅÅÐò£¬Òò´ËÔÚÊµ¼ÊÓ¦ÓÃÊ±£¬¿É½«ËüÃÇºÍÖ±½Ó²åÈëÅÅÐò¡°»ìºÏ¡±Ê¹ÓÃ¡£
+3ã€ä½¿ç”¨æƒ…å½¢åˆ†æž
+å½“å¾…æŽ’åºè®°å½•ä¸ªæ•°nè¾ƒå¤§ï¼Œå…³é”®ç åˆ†å¸ƒè¾ƒéšæœºï¼Œä¸”å¯¹ç¨³å®šæ€§ä¸ä½œè¦æ±‚æ—¶ï¼Œå®œé‡‡ç”¨å¿«é€ŸæŽ’åº
+å½“å¾…æŽ’åºè®°å½•ä¸ªæ•°nè¾ƒå¤§ï¼Œå†…å­˜ç©ºé—´å…è®¸ï¼Œä¸”è¦æ±‚æŽ’åºç¨³å®šæ—¶ï¼Œå®œé‡‡ç”¨å½’å¹¶æŽ’åº
+å½“å¾…æŽ’åºè®°å½•ä¸ªæ•°nè¾ƒå¤§ï¼Œå…³é”®ç åˆ†å¸ƒå¯èƒ½å‡ºçŽ°æ­£åºæˆ–é€†åºçš„æƒ…å†µï¼Œä¸”å¯¹ç¨³å®šæ€§ä¸ä½œè¦æ±‚æ—¶ï¼Œå®œé‡‡ç”¨å †æŽ’åºæˆ–å½’å¹¶æŽ’åºã€‚
+å½“å¾…æŽ’åºè®°å½•ä¸ªæ•°nè¾ƒå¤§ï¼Œè€Œåªè¦æ‰¾å‡ºæœ€å°çš„å‰å‡ ä¸ªè®°å½•ï¼Œé‡‡ç”¨å †æŽ’åºæˆ–è€…ç®€å•é€‰æ‹©æŽ’åº
+å½“å¾…æŽ’åºè®°å½•ä¸ªæ•°nè¾ƒå°ï¼Œè®°å½•å·²åŸºæœ¬æœ‰åºï¼Œä¸”è¦æ±‚ç¨³å®šï¼Œå®œé‡‡ç”¨ç›´æŽ¥æ’å…¥æŽ’åº
+å¿«é€ŸæŽ’åºå’Œå½’å¹¶æŽ’åºåœ¨å¾…æŽ’åºè®°å½•ä¸ªæ•°nå€¼è¾ƒå°æ—¶çš„æ€§èƒ½ä¸å¦‚ç›´æŽ¥æ’å…¥æŽ’åºï¼Œå› æ­¤åœ¨å®žé™…åº”ç”¨æ—¶ï¼Œå¯å°†å®ƒä»¬å’Œç›´æŽ¥æ’å…¥æŽ’åºâ€œæ··åˆâ€ä½¿ç”¨ã€‚
 */
 
 #include <stdio.h>
@@ -84,7 +35,7 @@ O(nlog2n)
 
 //using namespace std;
 
-/*²åÈëÅÅÐò*/
+/*æ’å…¥æŽ’åº*/
 void InsertSort(int R[],int n)
 {
 	int i,j,tmp;
@@ -101,7 +52,7 @@ void InsertSort(int R[],int n)
 	}
 } 
 
-/*Ñ¡ÔñÅÅÐò*/
+/*é€‰æ‹©æŽ’åº*/
 void SelectSort(int R[],int n)
 {
 	int i,j,k,tmp;
@@ -121,7 +72,7 @@ void SelectSort(int R[],int n)
 	}
 }
 
-/*Ã°ÅÝÅÅÐò*/
+/*å†’æ³¡æŽ’åº*/
 void BubbleSort(int R[],int n)
 {
 	int i,j,tmp,flag;
@@ -143,7 +94,7 @@ void BubbleSort(int R[],int n)
 	}
 }
 
-/*¿ìËÙÅÅÐò*/
+/*å¿«é€ŸæŽ’åº*/
 void QuickSort(int s[], int start, int end)
 {
     int i, j;
@@ -174,7 +125,7 @@ void QuickSort(int s[], int start, int end)
         QuickSort(s, j + 1, end);
 }
 
-/*Ï£¶ûÅÅÐò*/
+/*å¸Œå°”æŽ’åº*/
 void Shsort(int s[], int n)
 {
 	int i, j, d;
@@ -195,7 +146,7 @@ void Shsort(int s[], int n)
 
 
 
-/*¶ÑÅÅÐò*/
+/*å †æŽ’åº*/
 void Sift(int R[],int low,int high)
 {
 	int i=low,j=2*i;
@@ -235,10 +186,10 @@ void heapSort(int R[],int n)
 	}	
 } 
 
-/*¹é²¢ÅÅÐò*/
+/*å½’å¹¶æŽ’åº*/
 #define N 100010
 int tmp[N],R[N];
-int ans=0;//Ë³´øÇóÄæÐòÊý 
+int ans=0;//é¡ºå¸¦æ±‚é€†åºæ•° 
 void Merge(int l,int m,int r)
 {
 	int i=l;
