@@ -17,52 +17,53 @@ Status CreateList(linklist *L)
     linklist *p;
     L->next = NULL;
     p = (linklist *)malloc(sizeof(linklist));   
-   if(!p)
+    if(!p)
       return ERROR;
-     scanf("%d",&p->data);
-     while (p->data != 0)
-        {
-           p->next = L->next;
-           L->next = p;
-           p=(linklist *)malloc(sizeof(linklist));
-             scanf("%d",&p->data);   
+    scanf("%d",&p->data);
+    while (p->data != 0){
+          p->next = L->next;
+          L->next = p;
+          p=(linklist *)malloc(sizeof(linklist));
+          scanf("%d",&p->data);   
          }
          
     return OK;
 }
+
 Status reverse(linklist *L)
 { 
    //单链表逆置
     linklist *p,*q;
     p=L->next;
-     L->next=NULL;
-      while(p)
-        {
-             q=p;
-              p=p->next;
-             q->next=L->next;
-             L->next=q;
-           }
+    L->next=NULL;
+    while(p){
+       q=p;
+       p=p->next;
+       q->next=L->next;
+       L->next=q;
+    }
    return OK;
 }
+
 Status listinsert(linklist *L,int i,ElemType e)
 { 
     //单链表的简单插入
     int j;
-      linklist *p,*q;
-      q=L;
-      p=(linklist *)malloc(sizeof(linklist));
-        if(!p)
-          return ERROR;
-         p->data=e;
+    linklist *p,*q;
+    q = L;
+    p = (linklist *)malloc(sizeof(linklist));
+    if(!p)
+      return ERROR;
+    p->data=e;
     for(j=0;j<i-1;++j)
-        {
-         q=q->next;  
-        }
-         p->next=q->next;
-         q->next=p;
+    {
+      q=q->next;  
+    }
+    p->next=q->next;
+    q->next=p;
     return OK;
 }
+
 Status listdel(linklist *L,int i,ElemType *e)
 { 
    //单链表的删除操作
