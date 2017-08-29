@@ -1,0 +1,25 @@
+       git pull  
+  754  git checkout 
+  755  git checkout -b
+  758  git branch
+  759  git status
+  762  git add .
+  763  git status
+  765  //git config --global core.editor vim
+  766  git commit -s
+  767  git status
+  768  git checkout master
+  769  git pull
+  770  git branch
+  771  cd ..
+  772  git branch
+  773  git pull
+  774  git merge master Gttydesign 
+  775  git status
+  776  git log
+  778  git rebase
+  779  git log
+  781  cd team
+  782  cd team1
+  784  git push
+

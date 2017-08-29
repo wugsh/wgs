@@ -1,0 +1,673 @@
+cscope 15 $HOME/interrput               0000003490
+	@Makefile
+
+1 
+	gobj
+-
+	gm
+ :ð
+myœq
+.
+o
+
+
+2 
+KERNELDIR
+ :ð/
+u¤
+/
+¤c
+/
+lšux
+-
+h—d”s
+-3.16.0-4-
+amd64
+
+
+3 
+®l
+:
+
+4 
+make
+ -
+C
+ 
+	$$
+(
+KERNELDIR
+è
+M
+=
+	$$
+(
+PWD
+è
+moduËs
+
+
+5 
+þ—n
+:
+
+6 
+rm
+ -
+rf
+ *.
+o
+ *~ 
+cÜe
+ .
+d•’d
+ .*.
+cmd
+ *.
+ko
+ *.
+mod
+.
+c
+ .
+tmp_v”siÚs
+
+
+	@myirq.c
+
+2 
+	~<lšux/moduË.h
+>
+
+3 
+	~<lšux/š™.h
+>
+
+4 
+	~<lšux/š‹¼u±.h
+>
+
+6 
+	gœq
+;
+
+7 *
+	gš‹rçû
+;
+
+9 
+moduË_·¿m
+(
+š‹rçû
+, 
+ch¬p
+, 0644);
+
+10 
+moduË_·¿m
+(
+œq
+, , 0644);
+
+14 
+œq»tuº_t
+ 
+	$myš‹¼u±
+(
+œq
+, *
+dev_id
+)
+
+16 
+mycouÁ
+ = 0;
+
+17 
+mytime
+ = 0;
+
+18 
+Ãt_deviû
+ *
+dev
+ = (Ãt_deviû *è
+dev_id
+;
+
+20 ià(
+mycouÁ
+ == 0) {
+
+21 
+mytime
+ = 
+jiff›s
+;
+
+24 ià(
+mycouÁ
+ < 10) {
+
+25 
+mytime
+ = 
+jiff›s
+ - mytime;
+
+26 
+´štk
+
+
+28 
+œq
+, 
+mytime
+, 
+jiff›s
+);
+
+29 
+mytime
+ = 
+jiff›s
+;
+
+34 
+mycouÁ
+++;
+
+35  
+IRQ_NONE
+;
+
+36 
+	}
+}
+
+38 
+__š™
+ 
+	$myœq‹¡_š™
+()
+
+40 
+	`´štk
+("My module worked!\n");
+
+42 ià(
+	`»que¡_œq
+(
+œq
+, &
+myš‹¼u±
+, 
+SA_SHIRQ
+, 
+š‹rçû
+, &irq)) {
+
+44 
+	`´štk
+(
+KERN_ERR
+ "myœq‹¡: cªnÙ„egi¡” IRQ %d\n", 
+œq
+);
+
+45  -
+EIO
+;
+
+47 
+	`´štk
+("% Reque¡ oÀIRQ %d sucûeded\n", 
+š‹rçû
+, 
+œq
+);
+
+50 
+	}
+}
+
+52 
+__ex™
+ 
+	$myœq‹¡_ex™
+()
+
+54 
+	`´štk
+("Unloading my module.\n");
+
+55 
+	`ä“_œq
+(
+œq
+, &irq);
+
+56 
+	`´štk
+("F»ešg IRQ %d\n", 
+œq
+);
+
+59 
+	}
+}
+
+61 
+moduË_š™
+(
+myœq‹¡_š™
+);
+
+62 
+moduË_ex™
+(
+myœq‹¡_ex™
+);
+
+64 
+MODULE_AUTHOR
+("Helight.Xu");
+
+65 
+MODULE_LICENSE
+("GPL");
+
+	@myirq.c~
+
+2 
+	~<lšux/moduË.h
+>
+
+3 
+	~<lšux/š™.h
+>
+
+4 
+	~<lšux/š‹¼u±.h
+>
+
+6 
+	gœq
+;
+
+7 *
+	gš‹rçû
+;
+
+9 
+moduË_·¿m
+(
+š‹rçû
+,
+ch¬p
+,0644);
+
+10 
+moduË_·¿m
+(
+œq
+,,0644);
+
+14 
+œq»tuº_t
+ 
+	$myš‹¼u±
+(
+œq
+, *
+dev_id
+)
+
+16 
+mycouÁ
+ = 0;
+
+17 
+mytime
+ = 0;
+
+18 
+Ãt_deviû
+ *
+dev
+=(Ãt_deviû *)
+dev_id
+;
+
+20 if(
+mycouÁ
+==0){
+
+21 
+mytime
+=
+jiff›s
+;
+
+25 ià(
+mycouÁ
+ < 10) {
+
+26 
+mytime
+=
+jiff›s
+-mytime;
+
+27 
+	`´štk
+("IÁ”ru±‚umb” %d â€” iÁ‹rv®(jiff›sè%ld â€” jiff›s:%ld \n", 
+œq
+,
+mytime
+, 
+jiff›s
+);
+
+28 
+mytime
+=
+jiff›s
+;
+
+33 
+mycouÁ
+++;
+
+34  
+IRQ_NONE
+;
+
+35 
+	}
+}
+
+37 
+__š™
+ 
+	$myœq‹¡_š™
+()
+
+39 
+	`´štk
+ ("My module worked!\n");
+
+41 ià(
+	`»que¡_œq
+(
+œq
+,&
+myš‹¼u±
+,
+SA_SHIRQ
+,
+š‹rçû
+,&irq)) {
+
+43 
+	`´štk
+(
+KERN_ERR
+ "myœq‹¡: cªnÙ„egi¡” IRQ %d\n", 
+œq
+);
+
+44  -
+EIO
+;
+
+46 
+	`´štk
+("% Reque¡ oÀIRQ %d sucûeded\n",
+š‹rçû
+,
+œq
+);
+
+49 
+	}
+}
+
+51 
+__ex™
+ 
+	$myœq‹¡_ex™
+()
+
+53 
+	`´štk
+ ("Unloading my module.\n");
+
+54 
+	`ä“_œq
+(
+œq
+, &irq);
+
+55 
+	`´štk
+("F»ešg IRQ %d\n", 
+œq
+);
+
+58 
+	}
+}
+
+60 
+moduË_š™
+(
+myœq‹¡_š™
+);
+
+61 
+moduË_ex™
+(
+myœq‹¡_ex™
+);
+
+63 
+MODULE_AUTHOR
+("Helight.Xu");
+
+64 
+MODULE_LICENSE
+("GPL");
+
+	@tags
+
+1 !
+	g_TAG_FILE_FORMAT
+ 2 /
+ex‹nded
+ 
+	gfÜm©
+; --fÜm©=1 
+wžl
+ 
+nÙ
+ 
+­³nd
+ ;"o†ines/
+
+2 !
+	g_TAG_FILE_SORTED
+ 1 /0=
+unsÜ‹d
+, 1=
+sÜ‹d
+, 2=
+fÞdÿ£
+/
+
+3 !
+_TAG_PROGRAM_AUTHOR
+ 
+D¬»n
+ 
+H›b”t
+ /
+dh›b”t
+@
+u£rs
+.
+sourûfÜge
+.
+Ãt
+/
+
+4 !
+_TAG_PROGRAM_NAME
+ 
+Exub”ªt
+ 
+Cgs
+
+
+5 !
+_TAG_PROGRAM_URL
+ 
+h‰p
+:
+
+6 !
+_TAG_PROGRAM_VERSION
+ 5.9~
+svn20110310
+
+
+7 
+KERNELDIR
+ 
+Makefže
+ /^KERNELDIR :ð\/
+u¤
+\/
+¤c
+\/
+lšux
+-
+h—d”s
+-3.16.0-4-
+amd64
+ 
+$
+/;" m
+
+8 
+š‹rçû
+ 
+	gmyœq
+.
+	gc
+ /^*
+	gš‹rçû
+;
+	g$
+/;" v file:
+
+9 
+œq
+ 
+	gmyœq
+.
+	gc
+ /^
+	gœq
+;
+	g$
+/;" v file:
+
+10 
+myš‹¼u±
+ 
+	gmyœq
+.
+	gc
+ /^
+œq»tuº_t
+ myš‹¼u±(
+œq
+, *
+dev_id
+)
+	g$
+/;" f file:
+
+11 
+myœq‹¡_ex™
+ 
+	gmyœq
+.
+	gc
+ /^
+moduË_ex™
+(myœq‹¡_ex™);
+	g$
+/;" v
+
+12 
+myœq‹¡_ex™
+ 
+	gmyœq
+.
+	gc
+ /^
+__ex™
+ myœq‹¡_ex™()
+	g$
+/;" f file:
+
+13 
+myœq‹¡_š™
+ 
+	gmyœq
+.
+	gc
+ /^
+moduË_š™
+(myœq‹¡_š™);
+	g$
+/;" v
+
+14 
+myœq‹¡_š™
+ 
+	gmyœq
+.
+	gc
+ /^
+__š™
+ myœq‹¡_š™()
+	g$
+/;" f file:
+
+15 
+	gobj
+-
+m
+ 
+	gMakefže
+ /^obj-
+	gm
+ :ð
+myœq
+.
+o$
+/;" m
+
+	@
+1
+.
+0
+4
+31
+Makefile
+myirq.c
+myirq.c~
+tags
