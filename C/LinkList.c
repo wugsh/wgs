@@ -91,8 +91,8 @@ linklist *MergeList(linklist * La, linklist * Lb)
     Lc = pc = La;
     while (pa && pb) {
 	if (pa->data <= pb->data) {
-	    pc->next = pa;
-	    pc = pa;
+	    pc->next = pa; //尾插法
+	    pc = pa;       //将pc指针一直指向链表尾
 	    pa = pa->next;
 	} else {
 	    pc->next = pb;
@@ -100,7 +100,7 @@ linklist *MergeList(linklist * La, linklist * Lb)
 	    pb = pb->next;
 	}
     }
-    pc->next = pa ? pa : pb;
+    pc->next = pa ? pa : pb; //将剩余链表直接链接到表尾
     return Lc;			//返回合并后链表的头指针
 }
 
