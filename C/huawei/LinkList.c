@@ -82,25 +82,28 @@ Status listdel(linklist *L,int i,ElemType *e)
          
    return OK;
 }
+
 linklist *MergeList(linklist *La,linklist *Lb )
 {
-      //合并单链表
+    //合并单链表
     linklist *Lc;
     linklist *pa,*pb,*pc;
-     pa=La->next;pb=Lb->next;
-     Lc=pc=La;
-     while(pa&&pb)
-        {
-            if(pa->data<=pb->data)
-               {
-                 pc->next=pa;pc=pa;pa=pa->next;   
-               }
-            else
-               {
-                pc->next=pb;pc=pb;pb=pb->next; 
-               }
-        }
-        pc->next=pa?pa:pb;
+    pa = La->next;
+	pb = Lb->next;
+    Lc = pc = La;
+    while(pa && pb){
+		if(pa->data <= pb->data){
+			pc->next = pa; //尾插法
+			pc = pa; //pc指针一直指向链表尾
+			pa = pa->next;   
+		}
+        else{
+		    pc->next = pb;
+			pc = pb;
+			pb = pb->next; 
+		}
+     }
+    pc->next = pa ? pa : pb; //如果pa或pb为NULL时，将剩余链表直接接到pc的链尾
     return Lc;//返回合并后链表的头指针
 }
 Status display(linklist *L)
@@ -130,7 +133,7 @@ int main(void)
 
     if(!L)
        return ERROR;
-    printf("Please create a linklist:\n");
+    printf("Please create a linklist La:\n");
     CreateList(L);
     printf("the list after create is ;\n");
     display(L);
@@ -148,13 +151,15 @@ int main(void)
          printf("The del num is %d\n",de);
           printf("The list after del is :\n");
           display(L);
-          printf("create the list la:\n");
+         
+		  printf("create the list la:\n");
             CreateList(La);
             reverse(La);
             printf("create the list lb:\n");
             CreateList(Lb);
            reverse(Lb);
           printf("the list after merge is :\n");
+
            Lc=MergeList(La,Lb);
            display(Lc);
           free(L);free(La);free(Lb);//手动释放堆中分配的内存
