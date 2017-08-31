@@ -7,7 +7,7 @@ typedef struct doublelinklist{
 	struct doublelinklist *prior;
 
 }Doublelink;
-
+//创建双向链表
 Doublelink *creatlink(Doublelink *L)
 {	
 	int num;
@@ -32,7 +32,7 @@ Doublelink *creatlink(Doublelink *L)
 	printf("createlink over\n");
 	return L;
 }
-
+//打印双向链表
 void displaylink(Doublelink *L)
 {
 	Doublelink *p;
