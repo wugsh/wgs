@@ -1,1 +1,0 @@
-cmd_/home/wugsh15/wgs/dev/memdev.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/wugsh15/wgs/dev/memdev.ko /home/wugsh15/wgs/dev/memdev.o /home/wugsh15/wgs/dev/memdev.mod.o
