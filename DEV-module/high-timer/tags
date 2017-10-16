@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+COUNT_INTERVAL	high-timer.c	25;"	d	file:
+KDIR	Makefile	/^KDIR = \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+PWD	Makefile	/^PWD = $(shell pwd)$/;"	m
+TARGET	Makefile	/^TARGET = high-timer$/;"	m
+count	high-timer.c	/^static unsigned int count=0;  $/;"	v	file:
+diff_tv	high-timer.c	/^unsigned long long diff_tv(struct timespec start, struct timespec end) {  $/;"	f
+hr_timer	high-timer.c	/^static struct hrtimer hr_timer;  $/;"	v	typeref:struct:hrtimer	file:
+interval	high-timer.c	/^static unsigned int interval=5000; \/* unit: us *\/  $/;"	v	file:
+ktime	high-timer.c	/^static ktime_t ktime;  $/;"	v	file:
+module_hrtimer_exit	high-timer.c	/^module_exit(module_hrtimer_exit);  $/;"	v
+module_hrtimer_exit	high-timer.c	/^static void __exit module_hrtimer_exit( void )  $/;"	f	file:
+module_hrtimer_init	high-timer.c	/^module_init(module_hrtimer_init);  $/;"	v
+module_hrtimer_init	high-timer.c	/^static int __init module_hrtimer_init( void )  $/;"	f	file:
+my_hrtimer_callback	high-timer.c	/^enum hrtimer_restart my_hrtimer_callback( struct hrtimer *timer )  $/;"	f
+uptimeLast	high-timer.c	/^struct timespec uptimeLast;  $/;"	v	typeref:struct:timespec
+wq_func_hrtimer	high-timer.c	/^static void wq_func_hrtimer(struct work_struct *work)  $/;"	f	file:
+wq_hrtimer	high-timer.c	/^static struct work_struct wq_hrtimer;    $/;"	v	typeref:struct:work_struct	file:

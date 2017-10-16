@@ -1,0 +1,90 @@
+(1) C 語言中，`x & (x - 1) == 0` 的數學意義
+power of two
+signed V.S unsigned
+
+(2) C 語言中，`x | (x + 1)` 又表示什麼？
+x with lowest cleared bit set
+
+(3) void swap(int *a, int *b) { int t; t = *a; *a = *b; *b = t; } 的實做中，如何避免使用區域變數 t？又，可否改用 bit-wise operator 來改寫？
+-->
+算術:
+ a = 5, b = 3
+*a = *a - *b;
+*b = *a + *b;
+*a = *b - *a;
+
+邏輯運算:
+    *a = *a XOR *b
+    *b = *a XOR *b
+    *a = *a XOR *b
+
+(4)  C-style string reverse (遞迴 + in-place)
+先想想這個版本可用嗎? (以及對應的問題)
+void reverse (char *s) {
+  if (*s == '\0') return;
+  reverse (s+1);
+  printf ("%c", *s);
+}
+如果有換行字元?
+或者是需要另外一份記憶體空間存起來的時候
+不過這真的是很實用的方法!!
+Recursion too deep; the stack overflowed
+應該說這裡的寫法只是display時候而已
+然而memory內部的值並沒有任何改變
+s[] = "abcde" 經過reverse後還是沒變。
+若需要後續處理, 就要extra space.
+
+the version contributed by Jeremy <96701051@mail2.nccu.tw> 
+#include <stdio.h>
+void reverse(char *s) {
+    char *t = s;
+    int c = 0;
+    while (*t++) c++;
+    char *_rev(char *s, int n) {
+        char x;
+        if (n < 2) return NULL;
+        x = *s;
+        *s = s[n - 1];
+        s[n - 1] = x;
+        return _rev(++s, n - 2);
+    }    
+    _rev(s, c);
+}
+
+int main() {
+    char s[]= "abcde";
+    reverse(s);
+    puts(s);
+    return 0;
+}
+
+原始碼優化的一點想法，不曉得對不對
+1. line 3的`char *t = s;`拿掉，下面改為`while(*s++)`，然後補上`s-=(c+1)`。因為t變數拿來找字串的長度只使用了一次，所以改成用s去找長度，找完再移回來原本的位置。
+那你的c 哪來? 
+`int c`還是有保留著做c++的操作，抱歉那段沒寫完整，目前想不到方法可以不用迴圈找長度
+2.line 7的`char x`拿掉，下面9~11改為考試的xor運算``*s ^= s[n-1] ^= *s ^= s[n-1];`(自己改完覺得有點驚悚，感覺很像DeepC裡面的a=a++的寫法。)
+3.第六行的`char* _rev(char*s, int c)`應該可以把char*改為void，後面的`return NUll`可以把NULL拿掉。
+(這個修改只有把內部函式_rev拉出去外面才能這樣做)
+不要問 "對不對"，可以先把測試程式寫好，比方說亂數產生一個更長的字串，然後去比對輸出，順便計算執行時間
+收到！下次改進。目前是用Time指令做時間上的比對，遇到的問題是字串太小時有改跟沒改差不多，字串太長會遇到segmentation fault的問題，還在想辦法解決。
+Use `clock_gettime` instead: http://linux.die.net/man/3/clock_gettim
+如果main()裡的s是宣告為 char *s = "abcde"的話 ...
+修改完後的結果是優化可以讓執行時間少掉約40%左右。
+我是用`perl -e 'print[0..9,A..F]->[rand 16]for 1..N' >> N.txt`生成多個字典檔做測試。
+`long int`儲存兩個從`clock_gettime`算回來的`tv_nsec`後比較執行時間。
+
+0.1 - 0.3 + 0.2` 的結果竟然不等於 0 ?! 
+1985 年，IEEE 發佈 IEEE 754
+
+(5)
+設計一個演算法，找出兩個數裡面較大的數，不得使用 if-else 或 < > 一類比較的運算子 (32-bit)
+Hint: (a - b) 的正負號，搭配乘法
+
+Hint: 考慮以下程式碼，
+// a 為正數則返回 1，a 為負數則返回 0
+int sign(int32_t a) { return 1 ^ ((a >> 31) & 0x1); }
+int max(int32_t a, int32_t b) { return a * sign(a - b) + b * (1 ^ sign(a - b)); }
+若 a = INT_MAX(整數的上界) - 2, b = -15 則會遇到 integer overflow
+請改出避免 integer overflow 的實做
+
+

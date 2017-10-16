@@ -1,0 +1,8 @@
+测试步骤：
+
+1)cat /proc/devices看看有哪些编号已经被使用，我们选一个没有使用的XXX。
+2)insmod memdev.ko
+3)通过"mknod /dev/memdev0 c XXX 0"命令创建"/dev/memdev0"设备节点。
+4)交叉编译app-mem.c文件，下载并执行：
+#./app-mem,显示：
+Mem is char dev!
