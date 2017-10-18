@@ -10,7 +10,7 @@
 *
 * File    : OS_TICK.C
 * By      : JJL
-* Version : V3.03.00
+* Version : V3.03.01
 *
 * LICENSING TERMS:
 * ---------------
@@ -72,14 +72,14 @@ void  OS_TickTask (void  *p_arg)
                             (CPU_TS  *)&ts,
                             (OS_ERR  *)&err);               /* Wait for signal from tick interrupt                    */
         if (err == OS_ERR_NONE) {
-            if (OSRunning == OS_STATE_OS_RUNNING) {         /*检查系统是否在运行*/
+            if (OSRunning == OS_STATE_OS_RUNNING) {         /*检查系统是否正在运行*/
                 OS_TickListUpdate();                        /* Update all tasks waiting for time                      */
             }
         }
     }
 }
 
-/*$PAGE*/
+/*$PAGE*/
 /*
 ************************************************************************************************************************
 *                                                 INITIALIZE TICK TASK
@@ -396,7 +396,7 @@ void  OS_TickListResetPeak (void)
     }
 }
 
-/*$PAGE*/
+/*$PAGE*/
 /*
 ************************************************************************************************************************
 *                                                UPDATE THE TICK LIST
@@ -423,47 +423,49 @@ void  OS_TickListUpdate (void)
     CPU_TS             ts_end;
     CPU_SR_ALLOC();
 
-
-    OS_CRITICAL_ENTER();
-    ts_start = OS_TS_GET();
+        
+    OS_CRITICAL_ENTER();                                    /*进入临界段*/
+    ts_start = OS_TS_GET();                                 /*获取程序运行前的时间戳，后面计算程序时间*/
     OSTickCtr++;                                                       /* Keep track of the number of ticks           */
-    spoke    = (OS_TICK_SPOKE_IX)(OSTickCtr % OSCfg_TickWheelSize);
+    spoke    = (OS_TICK_SPOKE_IX)(OSTickCtr % OSCfg_TickWheelSize);     /*对于常数OSCfg_TickWheelSize区域，根据结果取出对应的数组元素*/
     p_spoke  = &OSCfg_TickWheel[spoke];
-    p_tcb    = p_spoke->FirstPtr;
+    p_tcb    = p_spoke->FirstPtr;                           /*取出数组元素双向链表的第一个任务控制块*/
     done     = DEF_FALSE;
     while (done == DEF_FALSE) {
         if (p_tcb != (OS_TCB *)0) {
             p_tcb_next = p_tcb->TickNextPtr;                           /* Point to next TCB to update                 */
-            switch (p_tcb->TaskState) {
+            switch (p_tcb->TaskState) {                     /*首先判断任务的状态*/
+                //这些都是不可能状态
                 case OS_TASK_STATE_RDY:
                 case OS_TASK_STATE_PEND:
                 case OS_TASK_STATE_SUSPENDED:
                 case OS_TASK_STATE_PEND_SUSPENDED:
                      break;
 
-                case OS_TASK_STATE_DLY:
+                case OS_TASK_STATE_DLY:                     /*如果任务是因为延时而被插入节拍列表的*/
                      p_tcb->TickRemain = p_tcb->TickCtrMatch           /* Compute time remaining of current TCB       */
                                        - OSTickCtr;
                      if (OSTickCtr == p_tcb->TickCtrMatch) {           /* Process each TCB that expires               */
-                         p_tcb->TaskState = OS_TASK_STATE_RDY;
+                         p_tcb->TaskState = OS_TASK_STATE_RDY;         /*设置任务状态为就绪*/
                          OS_TaskRdy(p_tcb);                            /* Make task ready to run                      */
                      } else {
+                         /*一旦检查到时间还没到，就退出循环*/
                          done             = DEF_TRUE;                  /* Don't find a match, we're done!             */
                      }
                      break;
 
-                case OS_TASK_STATE_PEND_TIMEOUT:
+                case OS_TASK_STATE_PEND_TIMEOUT:                       /*如果任务是因为等待有超时限制而插入节拍列表的*/
                      p_tcb->TickRemain = p_tcb->TickCtrMatch           /* Compute time remaining of current TCB       */
                                        - OSTickCtr;
                      if (OSTickCtr == p_tcb->TickCtrMatch) {           /* Process each TCB that expires               */
 #if (OS_MSG_EN > 0u)
-                         p_tcb->MsgPtr     = (void      *)0;
+                         p_tcb->MsgPtr     = (void      *)0;           /*将任务控制块暂时保存消息存放数据的指针和所占的字节大小都置0*/
                          p_tcb->MsgSize    = (OS_MSG_SIZE)0u;
 #endif
                          p_tcb->TS         = OS_TS_GET();
                          OS_PendListRemove(p_tcb);                     /* Remove from wait list                       */
-                         OS_TaskRdy(p_tcb);
-                         p_tcb->TaskState  = OS_TASK_STATE_RDY;
+                         OS_TaskRdy(p_tcb);                            /*将任务脱离节拍列表，插入就绪队列*/
+                         p_tcb->TaskState  = OS_TASK_STATE_RDY;        /*等待已经超过限定时间，将任务装状态设置为就绪状态*/
                          p_tcb->PendStatus = OS_STATUS_PEND_TIMEOUT;   /* Indicate pend timed out                     */
                          p_tcb->PendOn     = OS_TASK_PEND_ON_NOTHING;  /* Indicate no longer pending                  */
                      } else {
@@ -471,26 +473,26 @@ void  OS_TickListUpdate (void)
                      }
                      break;
 
-                case OS_TASK_STATE_DLY_SUSPENDED:
+                case OS_TASK_STATE_DLY_SUSPENDED:                      /*如果在延时过程被挂起*/
                      p_tcb->TickRemain = p_tcb->TickCtrMatch           /* Compute time remaining of current TCB       */
                                        - OSTickCtr;
                      if (OSTickCtr == p_tcb->TickCtrMatch) {           /* Process each TCB that expires               */
-                         p_tcb->TaskState  = OS_TASK_STATE_SUSPENDED;
+                         p_tcb->TaskState  = OS_TASK_STATE_SUSPENDED;  /*任务没有延时，剩下挂起状态*/
                          OS_TickListRemove(p_tcb);                     /* Remove from current wheel spoke             */
                      } else {
                          done              = DEF_TRUE;                 /* Don't find a match, we're done!             */
                      }
                      break;
 
-                case OS_TASK_STATE_PEND_TIMEOUT_SUSPENDED:
+                case OS_TASK_STATE_PEND_TIMEOUT_SUSPENDED:             /*有超时限制的等待且被挂起*/
                      p_tcb->TickRemain = p_tcb->TickCtrMatch           /* Compute time remaining of current TCB       */
                                        - OSTickCtr;
-                     if (OSTickCtr == p_tcb->TickCtrMatch) {           /* Process each TCB that expires               */
+                     if (OSTickCtr == p_tcb->TickCtrMatch) {           /* Process each TCB that expires 如果时间到了等待的事情还没发生 */
 #if (OS_MSG_EN > 0u)
                          p_tcb->MsgPtr     = (void      *)0;
                          p_tcb->MsgSize    = (OS_MSG_SIZE)0u;
 #endif
-                         p_tcb->TS         = OS_TS_GET();
+                         p_tcb->TS         = OS_TS_GET();              /*存放超时时的时间戳*/
                          OS_PendListRemove(p_tcb);                     /* Remove from wait list                       */
                          OS_TickListRemove(p_tcb);                     /* Remove from current wheel spoke             */
                          p_tcb->TaskState  = OS_TASK_STATE_SUSPENDED;
