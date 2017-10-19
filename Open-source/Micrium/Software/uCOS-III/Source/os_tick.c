@@ -72,14 +72,14 @@ void  OS_TickTask (void  *p_arg)
                             (CPU_TS  *)&ts,
                             (OS_ERR  *)&err);               /* Wait for signal from tick interrupt                    */
         if (err == OS_ERR_NONE) {
-            if (OSRunning == OS_STATE_OS_RUNNING) {
+            if (OSRunning == OS_STATE_OS_RUNNING) {         /*检查系统是否在运行*/
                 OS_TickListUpdate();                        /* Update all tasks waiting for time                      */
             }
         }
     }
 }
 
-/*$PAGE*/
+/*$PAGE*/
 /*
 ************************************************************************************************************************
 *                                                 INITIALIZE TICK TASK

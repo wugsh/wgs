@@ -1,0 +1,1077 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddrPtr	Source/os.h	/^    void                *AddrPtr;                           \/* Pointer to beginning of memory partition               *\/$/;"	m	struct:os_mem
+App_OS_ClrAllHooks	Cfg/Template/os_app_hooks.c	/^void  App_OS_ClrAllHooks (void)$/;"	f
+App_OS_IdleTaskHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_IdleTaskHook (void)$/;"	f
+App_OS_InitHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_InitHook (void)$/;"	f
+App_OS_SetAllHooks	Cfg/Template/os_app_hooks.c	/^void  App_OS_SetAllHooks (void)$/;"	f
+App_OS_StatTaskHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_StatTaskHook (void)$/;"	f
+App_OS_TaskCreateHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_TaskCreateHook (OS_TCB  *p_tcb)$/;"	f
+App_OS_TaskDelHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_TaskDelHook (OS_TCB  *p_tcb)$/;"	f
+App_OS_TaskReturnHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_TaskReturnHook (OS_TCB  *p_tcb)$/;"	f
+App_OS_TaskSwHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_TaskSwHook (void)$/;"	f
+App_OS_TimeTickHook	Cfg/Template/os_app_hooks.c	/^void  App_OS_TimeTickHook (void)$/;"	f
+BlkSize	Source/os.h	/^    OS_MEM_SIZE          BlkSize;                           \/* Size (in bytes) of each block of memory                *\/$/;"	m	struct:os_mem
+CPUUsage	Source/os.h	/^    OS_CPU_USAGE         CPUUsage;                          \/* CPU Usage of task (0.00-100.00%)                       *\/$/;"	m	struct:os_tcb
+CPUUsageMax	Source/os.h	/^    OS_CPU_USAGE         CPUUsageMax;                       \/* CPU Usage of task (0.00-100.00%) - Peak                *\/$/;"	m	struct:os_tcb
+CallbackPtr	Source/os.h	/^    OS_TMR_CALLBACK_PTR  CallbackPtr;                       \/* Function to call when timer expires                    *\/$/;"	m	struct:os_tmr
+CallbackPtrArg	Source/os.h	/^    void                *CallbackPtrArg;                    \/* Argument to pass to function when timer expires        *\/$/;"	m	struct:os_tmr
+Ctr	Source/os.h	/^    OS_SEM_CTR           Ctr;$/;"	m	struct:os_sem
+CtxSwCtr	Source/os.h	/^    OS_CTX_SW_CTR        CtxSwCtr;                          \/* Number of time the task was switched in                *\/$/;"	m	struct:os_tcb
+CyclesDelta	Source/os.h	/^    CPU_TS               CyclesDelta;                       \/* value of OS_TS_GET() - .CyclesStart                    *\/$/;"	m	struct:os_tcb
+CyclesStart	Source/os.h	/^    CPU_TS               CyclesStart;                       \/* Snapshot of cycle counter at start of task resumption  *\/$/;"	m	struct:os_tcb
+CyclesTotal	Source/os.h	/^    OS_CYCLES            CyclesTotal;                       \/* Total number of # of cycles the task has been running  *\/$/;"	m	struct:os_tcb
+CyclesTotalPrev	Source/os.h	/^    OS_CYCLES            CyclesTotalPrev;                   \/* Snapshot of previous # of cycles                       *\/$/;"	m	struct:os_tcb
+DbgNamePtr	Source/os.h	/^    CPU_CHAR            *DbgNamePtr;$/;"	m	struct:os_flag_grp
+DbgNamePtr	Source/os.h	/^    CPU_CHAR            *DbgNamePtr;$/;"	m	struct:os_mutex
+DbgNamePtr	Source/os.h	/^    CPU_CHAR            *DbgNamePtr;$/;"	m	struct:os_pend_obj
+DbgNamePtr	Source/os.h	/^    CPU_CHAR            *DbgNamePtr;$/;"	m	struct:os_q
+DbgNamePtr	Source/os.h	/^    CPU_CHAR            *DbgNamePtr;$/;"	m	struct:os_sem
+DbgNamePtr	Source/os.h	/^    CPU_CHAR            *DbgNamePtr;$/;"	m	struct:os_tcb
+DbgNextPtr	Source/os.h	/^    OS_FLAG_GRP         *DbgNextPtr;$/;"	m	struct:os_flag_grp
+DbgNextPtr	Source/os.h	/^    OS_MEM              *DbgNextPtr;$/;"	m	struct:os_mem
+DbgNextPtr	Source/os.h	/^    OS_MUTEX            *DbgNextPtr;$/;"	m	struct:os_mutex
+DbgNextPtr	Source/os.h	/^    OS_Q                *DbgNextPtr;$/;"	m	struct:os_q
+DbgNextPtr	Source/os.h	/^    OS_SEM              *DbgNextPtr;$/;"	m	struct:os_sem
+DbgNextPtr	Source/os.h	/^    OS_TCB              *DbgNextPtr;$/;"	m	struct:os_tcb
+DbgNextPtr	Source/os.h	/^    OS_TMR              *DbgNextPtr;$/;"	m	struct:os_tmr
+DbgNextPtr	Source/os.h	/^    void                *DbgNextPtr;$/;"	m	struct:os_pend_obj
+DbgPrevPtr	Source/os.h	/^    OS_FLAG_GRP         *DbgPrevPtr;$/;"	m	struct:os_flag_grp
+DbgPrevPtr	Source/os.h	/^    OS_MEM              *DbgPrevPtr;$/;"	m	struct:os_mem
+DbgPrevPtr	Source/os.h	/^    OS_MUTEX            *DbgPrevPtr;$/;"	m	struct:os_mutex
+DbgPrevPtr	Source/os.h	/^    OS_Q                *DbgPrevPtr;$/;"	m	struct:os_q
+DbgPrevPtr	Source/os.h	/^    OS_SEM              *DbgPrevPtr;$/;"	m	struct:os_sem
+DbgPrevPtr	Source/os.h	/^    OS_TCB              *DbgPrevPtr;$/;"	m	struct:os_tcb
+DbgPrevPtr	Source/os.h	/^    OS_TMR              *DbgPrevPtr;$/;"	m	struct:os_tmr
+DbgPrevPtr	Source/os.h	/^    void                *DbgPrevPtr;$/;"	m	struct:os_pend_obj
+Dly	Source/os.h	/^    OS_TICK              Dly;                               \/* Delay before start of repeat                           *\/$/;"	m	struct:os_tmr
+ExtPtr	Source/os.h	/^    void                *ExtPtr;                            \/* Pointer to user definable data for TCB extension       *\/$/;"	m	struct:os_tcb
+FirstPtr	Source/os.h	/^    OS_TCB              *FirstPtr;                          \/* Pointer to list of tasks in tick spoke                 *\/$/;"	m	struct:os_tick_spoke
+FirstPtr	Source/os.h	/^    OS_TMR              *FirstPtr;                          \/* Pointer to first timer in linked list                  *\/$/;"	m	struct:os_tmr_spoke
+Flags	Source/os.h	/^    OS_FLAGS             Flags;                             \/* 8, 16 or 32 bit flags                                  *\/$/;"	m	struct:os_flag_grp
+Flags	Source/os.h	/^    OS_FLAGS             Flags;                             \/* Value of flags if posting to an event flag group       *\/$/;"	m	struct:os_int_q
+FlagsOpt	Source/os.h	/^    OS_OPT               FlagsOpt;                          \/* Options (See OS_OPT_FLAG_xxx)                          *\/$/;"	m	struct:os_tcb
+FlagsPend	Source/os.h	/^    OS_FLAGS             FlagsPend;                         \/* Event flag(s) to wait on                               *\/$/;"	m	struct:os_tcb
+FlagsRdy	Source/os.h	/^    OS_FLAGS             FlagsRdy;                          \/* Event flags that made task ready to run                *\/$/;"	m	struct:os_tcb
+FreeListPtr	Source/os.h	/^    void                *FreeListPtr;                       \/* Pointer to list of free memory blocks                  *\/$/;"	m	struct:os_mem
+HeadPtr	Source/os.h	/^    OS_PEND_DATA        *HeadPtr;$/;"	m	struct:os_pend_list
+HeadPtr	Source/os.h	/^    OS_TCB              *HeadPtr;                           \/* Pointer to task that will run at selected priority     *\/$/;"	m	struct:os_rdy_list
+InPtr	Source/os.h	/^    OS_MSG              *InPtr;                             \/* Pointer to next OS_MSG to be inserted  in   the queue  *\/$/;"	m	struct:os_msg_q
+IntDisTimeMax	Source/os.h	/^    CPU_TS               IntDisTimeMax;                     \/* Maximum interrupt disable time                         *\/$/;"	m	struct:os_tcb
+MICRIUM_SOURCE	Cfg/Template/os_app_hooks.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_cfg_app.c	35;"	d	file:
+MICRIUM_SOURCE	Source/os_core.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_dbg.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_flag.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_int.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_mem.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_msg.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_mutex.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_pend_multi.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_prio.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_q.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_sem.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_stat.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_task.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_tick.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_time.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_tmr.c	33;"	d	file:
+MICRIUM_SOURCE	Source/os_var.c	35;"	d	file:
+MICRIUM_SOURCE	TLS/CCES/os_tls.c	34;"	d	file:
+MICRIUM_SOURCE	TLS/IAR/os_tls.c	34;"	d	file:
+Match	Source/os.h	/^    OS_TICK              Match;                             \/* Timer expires when OSTmrTickCtr matches this value     *\/$/;"	m	struct:os_tmr
+MsgPtr	Source/os.h	/^    void                *MsgPtr;                            \/* Actual message                                         *\/$/;"	m	struct:os_msg
+MsgPtr	Source/os.h	/^    void                *MsgPtr;                            \/* Message received                                       *\/$/;"	m	struct:os_tcb
+MsgPtr	Source/os.h	/^    void                *MsgPtr;                            \/* Pointer to message if posting to a message queue       *\/$/;"	m	struct:os_int_q
+MsgQ	Source/os.h	/^    OS_MSG_Q             MsgQ;                              \/* List of messages                                       *\/$/;"	m	struct:os_q
+MsgQ	Source/os.h	/^    OS_MSG_Q             MsgQ;                              \/* Message queue associated with task                     *\/$/;"	m	struct:os_tcb
+MsgQPendTime	Source/os.h	/^    CPU_TS               MsgQPendTime;                      \/* Time it took for signal to be received                 *\/$/;"	m	struct:os_tcb
+MsgQPendTimeMax	Source/os.h	/^    CPU_TS               MsgQPendTimeMax;                   \/* Max amount of time it took for signal to be received   *\/$/;"	m	struct:os_tcb
+MsgSize	Source/os.h	/^    OS_MSG_SIZE          MsgSize;                           \/* Message Size       if posting to a message queue       *\/$/;"	m	struct:os_int_q
+MsgSize	Source/os.h	/^    OS_MSG_SIZE          MsgSize;                           \/* Size of the message (in # bytes)                       *\/$/;"	m	struct:os_msg
+MsgSize	Source/os.h	/^    OS_MSG_SIZE          MsgSize;$/;"	m	struct:os_tcb
+MsgTS	Source/os.h	/^    CPU_TS               MsgTS;                             \/* Time stamp of when message was sent                    *\/$/;"	m	struct:os_msg
+Mutex	TLS/IAR/os_tls.c	/^    OS_MUTEX      Mutex;                                                  \/* OS Mutex object.                         *\/$/;"	m	struct:os_tls_lock	file:
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;                           \/* Name to give the timer                                 *\/$/;"	m	struct:os_tmr
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;                           \/* Pointer to Event Flag Name (NUL terminated ASCII)      *\/$/;"	m	struct:os_flag_grp
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;                           \/* Pointer to Message Queue Name (NUL terminated ASCII)   *\/$/;"	m	struct:os_q
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;                           \/* Pointer to Mutex Name (NUL terminated ASCII)           *\/$/;"	m	struct:os_mutex
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;                           \/* Pointer to Semaphore Name (NUL terminated ASCII)       *\/$/;"	m	struct:os_sem
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;                           \/* Pointer to task name                                   *\/$/;"	m	struct:os_tcb
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;$/;"	m	struct:os_mem
+NamePtr	Source/os.h	/^    CPU_CHAR            *NamePtr;$/;"	m	struct:os_pend_obj
+NbrEntries	Source/os.h	/^    OS_MSG_QTY           NbrEntries;                        \/* Current number of entries in the queue                 *\/$/;"	m	struct:os_msg_q
+NbrEntries	Source/os.h	/^    OS_OBJ_QTY           NbrEntries;                        \/* Current number of entries in the tick spoke            *\/$/;"	m	struct:os_tick_spoke
+NbrEntries	Source/os.h	/^    OS_OBJ_QTY           NbrEntries;                        \/* Number of entries             at selected priority     *\/$/;"	m	struct:os_rdy_list
+NbrEntries	Source/os.h	/^    OS_OBJ_QTY           NbrEntries;$/;"	m	struct:os_pend_list
+NbrEntries	Source/os.h	/^    OS_OBJ_QTY           NbrEntries;$/;"	m	struct:os_tmr_spoke
+NbrEntriesMax	Source/os.h	/^    OS_MSG_QTY           NbrEntriesMax;                     \/* Peak number of entries in the queue                    *\/$/;"	m	struct:os_msg_q
+NbrEntriesMax	Source/os.h	/^    OS_OBJ_QTY           NbrEntriesMax;                     \/* Peak number of entries in the tick spoke               *\/$/;"	m	struct:os_tick_spoke
+NbrEntriesMax	Source/os.h	/^    OS_OBJ_QTY           NbrEntriesMax;$/;"	m	struct:os_tmr_spoke
+NbrEntriesSize	Source/os.h	/^    OS_MSG_QTY           NbrEntriesSize;                    \/* Maximum allowable number of entries in the queue       *\/$/;"	m	struct:os_msg_q
+NbrFree	Source/os.h	/^    OS_MEM_QTY           NbrFree;                           \/* Number of memory blocks remaining in this partition    *\/$/;"	m	struct:os_mem
+NbrFree	Source/os.h	/^    OS_MSG_QTY           NbrFree;                           \/* Number of messages available from this pool            *\/$/;"	m	struct:os_msg_pool
+NbrMax	Source/os.h	/^    OS_MEM_QTY           NbrMax;                            \/* Total number of blocks in this partition               *\/$/;"	m	struct:os_mem
+NbrUsed	Source/os.h	/^    OS_MSG_QTY           NbrUsed;                           \/* Current number of messages used                        *\/$/;"	m	struct:os_msg_pool
+NbrUsedMax	Source/os.h	/^    OS_MSG_QTY           NbrUsedMax;                        \/* Peak number of messages used                           *\/$/;"	m	struct:os_msg_pool
+NextPtr	Source/os.h	/^    OS_INT_Q            *NextPtr;                           \/* Pointer to next OS_INT_Q in  circular list             *\/$/;"	m	struct:os_int_q
+NextPtr	Source/os.h	/^    OS_MSG              *NextPtr;                           \/* Pointer to next message                                *\/$/;"	m	struct:os_msg
+NextPtr	Source/os.h	/^    OS_MSG              *NextPtr;                           \/* Pointer to next message                                *\/$/;"	m	struct:os_msg_pool
+NextPtr	Source/os.h	/^    OS_PEND_DATA        *NextPtr;$/;"	m	struct:os_pend_data
+NextPtr	Source/os.h	/^    OS_TCB              *NextPtr;                           \/* Pointer to next     TCB in the TCB list                *\/$/;"	m	struct:os_tcb
+NextPtr	Source/os.h	/^    OS_TMR              *NextPtr;                           \/* Double link list pointers                              *\/$/;"	m	struct:os_tmr
+NextPtr	TLS/IAR/os_tls.c	/^    OS_TLS_LOCK  *NextPtr;                                                \/* Pointer to the next object in the pool.  *\/$/;"	m	struct:os_tls_lock	file:
+OSCfg_DataSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_DataSizeRAM          = sizeof(OSCfg_IdleTaskStk)$/;"	v
+OSCfg_ISRStk	Source/os_cfg_app.c	/^CPU_STK        OSCfg_ISRStk        [OS_CFG_ISR_STK_SIZE];$/;"	v
+OSCfg_ISRStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_ISRStkBasePtr        = (CPU_STK    *)&OSCfg_ISRStk[0];$/;"	v
+OSCfg_ISRStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_ISRStkBasePtr        = (CPU_STK    *)0;$/;"	v
+OSCfg_ISRStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_ISRStkSize           = (CPU_STK_SIZE)0;$/;"	v
+OSCfg_ISRStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_ISRStkSize           = (CPU_STK_SIZE)OS_CFG_ISR_STK_SIZE;$/;"	v
+OSCfg_ISRStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_ISRStkSizeRAM        = (CPU_INT32U  )0;$/;"	v
+OSCfg_ISRStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_ISRStkSizeRAM        = (CPU_INT32U  )sizeof(OSCfg_ISRStk);$/;"	v
+OSCfg_IdleTaskStk	Source/os_cfg_app.c	/^CPU_STK        OSCfg_IdleTaskStk   [OS_CFG_IDLE_TASK_STK_SIZE];$/;"	v
+OSCfg_IdleTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_IdleTaskStkBasePtr   = (CPU_STK    *)&OSCfg_IdleTaskStk[0];$/;"	v
+OSCfg_IdleTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_IdleTaskStkLimit     = (CPU_STK_SIZE)OS_CFG_IDLE_TASK_STK_LIMIT;$/;"	v
+OSCfg_IdleTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_IdleTaskStkSize      = (CPU_STK_SIZE)OS_CFG_IDLE_TASK_STK_SIZE;$/;"	v
+OSCfg_IdleTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_IdleTaskStkSizeRAM   = (CPU_INT32U  )sizeof(OSCfg_IdleTaskStk);$/;"	v
+OSCfg_Init	Source/os_cfg_app.c	/^void  OSCfg_Init (void)$/;"	f
+OSCfg_IntQ	Source/os_cfg_app.c	/^OS_INT_Q       OSCfg_IntQ          [OS_CFG_INT_Q_SIZE];$/;"	v
+OSCfg_IntQBasePtr	Source/os_cfg_app.c	/^OS_INT_Q     * const  OSCfg_IntQBasePtr          = (OS_INT_Q   *)&OSCfg_IntQ[0];$/;"	v
+OSCfg_IntQBasePtr	Source/os_cfg_app.c	/^OS_INT_Q     * const  OSCfg_IntQBasePtr          = (OS_INT_Q   *)0;$/;"	v
+OSCfg_IntQSize	Source/os_cfg_app.c	/^OS_OBJ_QTY     const  OSCfg_IntQSize             = (OS_OBJ_QTY  )0;$/;"	v
+OSCfg_IntQSize	Source/os_cfg_app.c	/^OS_OBJ_QTY     const  OSCfg_IntQSize             = (OS_OBJ_QTY  )OS_CFG_INT_Q_SIZE;$/;"	v
+OSCfg_IntQSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_IntQSizeRAM          = (CPU_INT32U  )0;$/;"	v
+OSCfg_IntQSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_IntQSizeRAM          = (CPU_INT32U  )sizeof(OSCfg_IntQ);$/;"	v
+OSCfg_IntQTaskStk	Source/os_cfg_app.c	/^CPU_STK        OSCfg_IntQTaskStk   [OS_CFG_INT_Q_TASK_STK_SIZE];$/;"	v
+OSCfg_IntQTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_IntQTaskStkBasePtr   = (CPU_STK    *)&OSCfg_IntQTaskStk[0];$/;"	v
+OSCfg_IntQTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_IntQTaskStkBasePtr   = (CPU_STK    *)0;$/;"	v
+OSCfg_IntQTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_IntQTaskStkLimit     = (CPU_STK_SIZE)0;$/;"	v
+OSCfg_IntQTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_IntQTaskStkLimit     = (CPU_STK_SIZE)OS_CFG_INT_Q_TASK_STK_LIMIT;$/;"	v
+OSCfg_IntQTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_IntQTaskStkSize      = (CPU_STK_SIZE)0;$/;"	v
+OSCfg_IntQTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_IntQTaskStkSize      = (CPU_STK_SIZE)OS_CFG_INT_Q_TASK_STK_SIZE;$/;"	v
+OSCfg_IntQTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_IntQTaskStkSizeRAM   = (CPU_INT32U  )0;$/;"	v
+OSCfg_IntQTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_IntQTaskStkSizeRAM   = (CPU_INT32U  )sizeof(OSCfg_IntQTaskStk);$/;"	v
+OSCfg_MsgPool	Source/os_cfg_app.c	/^OS_MSG         OSCfg_MsgPool       [OS_CFG_MSG_POOL_SIZE];$/;"	v
+OSCfg_MsgPoolBasePtr	Source/os_cfg_app.c	/^OS_MSG       * const  OSCfg_MsgPoolBasePtr       = (OS_MSG    *)&OSCfg_MsgPool[0];$/;"	v
+OSCfg_MsgPoolBasePtr	Source/os_cfg_app.c	/^OS_MSG       * const  OSCfg_MsgPoolBasePtr       = (OS_MSG    *)0;$/;"	v
+OSCfg_MsgPoolSize	Source/os_cfg_app.c	/^OS_MSG_SIZE    const  OSCfg_MsgPoolSize          = (OS_MSG_SIZE)0;$/;"	v
+OSCfg_MsgPoolSize	Source/os_cfg_app.c	/^OS_MSG_SIZE    const  OSCfg_MsgPoolSize          = (OS_MSG_SIZE)OS_CFG_MSG_POOL_SIZE;$/;"	v
+OSCfg_MsgPoolSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_MsgPoolSizeRAM       = (CPU_INT32U )0;$/;"	v
+OSCfg_MsgPoolSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_MsgPoolSizeRAM       = (CPU_INT32U )sizeof(OSCfg_MsgPool);$/;"	v
+OSCfg_StatTaskPrio	Source/os_cfg_app.c	/^OS_PRIO        const  OSCfg_StatTaskPrio         = (OS_PRIO     )0;$/;"	v
+OSCfg_StatTaskPrio	Source/os_cfg_app.c	/^OS_PRIO        const  OSCfg_StatTaskPrio         = (OS_PRIO     )OS_CFG_STAT_TASK_PRIO;$/;"	v
+OSCfg_StatTaskRate_Hz	Source/os_cfg_app.c	/^OS_RATE_HZ     const  OSCfg_StatTaskRate_Hz      = (OS_RATE_HZ  )0;$/;"	v
+OSCfg_StatTaskRate_Hz	Source/os_cfg_app.c	/^OS_RATE_HZ     const  OSCfg_StatTaskRate_Hz      = (OS_RATE_HZ  )OS_CFG_STAT_TASK_RATE_HZ;$/;"	v
+OSCfg_StatTaskStk	Source/os_cfg_app.c	/^CPU_STK        OSCfg_StatTaskStk   [OS_CFG_STAT_TASK_STK_SIZE];$/;"	v
+OSCfg_StatTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_StatTaskStkBasePtr   = (CPU_STK    *)&OSCfg_StatTaskStk[0];$/;"	v
+OSCfg_StatTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_StatTaskStkBasePtr   = (CPU_STK    *)0;$/;"	v
+OSCfg_StatTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_StatTaskStkLimit     = (CPU_STK_SIZE)0;$/;"	v
+OSCfg_StatTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_StatTaskStkLimit     = (CPU_STK_SIZE)OS_CFG_STAT_TASK_STK_LIMIT;$/;"	v
+OSCfg_StatTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_StatTaskStkSize      = (CPU_STK_SIZE)0;$/;"	v
+OSCfg_StatTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_StatTaskStkSize      = (CPU_STK_SIZE)OS_CFG_STAT_TASK_STK_SIZE;$/;"	v
+OSCfg_StatTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_StatTaskStkSizeRAM   = (CPU_INT32U  )0;$/;"	v
+OSCfg_StatTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_StatTaskStkSizeRAM   = (CPU_INT32U  )sizeof(OSCfg_StatTaskStk);$/;"	v
+OSCfg_StkSizeMin	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_StkSizeMin           = (CPU_STK_SIZE)OS_CFG_STK_SIZE_MIN;$/;"	v
+OSCfg_TickRate_Hz	Source/os_cfg_app.c	/^OS_RATE_HZ     const  OSCfg_TickRate_Hz          = (OS_RATE_HZ  )OS_CFG_TICK_RATE_HZ;$/;"	v
+OSCfg_TickTaskPrio	Source/os_cfg_app.c	/^OS_PRIO        const  OSCfg_TickTaskPrio         = (OS_PRIO     )OS_CFG_TICK_TASK_PRIO;$/;"	v
+OSCfg_TickTaskStk	Source/os_cfg_app.c	/^CPU_STK        OSCfg_TickTaskStk   [OS_CFG_TICK_TASK_STK_SIZE];$/;"	v
+OSCfg_TickTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_TickTaskStkBasePtr   = (CPU_STK    *)&OSCfg_TickTaskStk[0];$/;"	v
+OSCfg_TickTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_TickTaskStkLimit     = (CPU_STK_SIZE)OS_CFG_TICK_TASK_STK_LIMIT;$/;"	v
+OSCfg_TickTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_TickTaskStkSize      = (CPU_STK_SIZE)OS_CFG_TICK_TASK_STK_SIZE;$/;"	v
+OSCfg_TickTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_TickTaskStkSizeRAM   = (CPU_INT32U  )sizeof(OSCfg_TickTaskStk);$/;"	v
+OSCfg_TickWheel	Source/os_cfg_app.c	/^OS_TICK_SPOKE  OSCfg_TickWheel     [OS_CFG_TICK_WHEEL_SIZE];$/;"	v
+OSCfg_TickWheelSize	Source/os_cfg_app.c	/^OS_OBJ_QTY     const  OSCfg_TickWheelSize        = (OS_OBJ_QTY  )OS_CFG_TICK_WHEEL_SIZE;$/;"	v
+OSCfg_TickWheelSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_TickWheelSizeRAM     = (CPU_INT32U  )sizeof(OSCfg_TickWheel);$/;"	v
+OSCfg_TmrTaskPrio	Source/os_cfg_app.c	/^OS_PRIO        const  OSCfg_TmrTaskPrio          = (OS_PRIO     )0;$/;"	v
+OSCfg_TmrTaskPrio	Source/os_cfg_app.c	/^OS_PRIO        const  OSCfg_TmrTaskPrio          = (OS_PRIO     )OS_CFG_TMR_TASK_PRIO;$/;"	v
+OSCfg_TmrTaskRate_Hz	Source/os_cfg_app.c	/^OS_RATE_HZ     const  OSCfg_TmrTaskRate_Hz       = (OS_RATE_HZ  )0;$/;"	v
+OSCfg_TmrTaskRate_Hz	Source/os_cfg_app.c	/^OS_RATE_HZ     const  OSCfg_TmrTaskRate_Hz       = (OS_RATE_HZ  )OS_CFG_TMR_TASK_RATE_HZ;$/;"	v
+OSCfg_TmrTaskStk	Source/os_cfg_app.c	/^CPU_STK        OSCfg_TmrTaskStk    [OS_CFG_TMR_TASK_STK_SIZE];$/;"	v
+OSCfg_TmrTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_TmrTaskStkBasePtr    = (CPU_STK    *)&OSCfg_TmrTaskStk[0];$/;"	v
+OSCfg_TmrTaskStkBasePtr	Source/os_cfg_app.c	/^CPU_STK      * const  OSCfg_TmrTaskStkBasePtr    = (CPU_STK    *)0;$/;"	v
+OSCfg_TmrTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_TmrTaskStkLimit      = (CPU_STK_SIZE)0;$/;"	v
+OSCfg_TmrTaskStkLimit	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_TmrTaskStkLimit      = (CPU_STK_SIZE)OS_CFG_TMR_TASK_STK_LIMIT;$/;"	v
+OSCfg_TmrTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_TmrTaskStkSize       = (CPU_STK_SIZE)0;$/;"	v
+OSCfg_TmrTaskStkSize	Source/os_cfg_app.c	/^CPU_STK_SIZE   const  OSCfg_TmrTaskStkSize       = (CPU_STK_SIZE)OS_CFG_TMR_TASK_STK_SIZE;$/;"	v
+OSCfg_TmrTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_TmrTaskStkSizeRAM    = (CPU_INT32U  )0;$/;"	v
+OSCfg_TmrTaskStkSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_TmrTaskStkSizeRAM    = (CPU_INT32U  )sizeof(OSCfg_TmrTaskStk);$/;"	v
+OSCfg_TmrWheel	Source/os_cfg_app.c	/^OS_TMR_SPOKE   OSCfg_TmrWheel      [OS_CFG_TMR_WHEEL_SIZE];$/;"	v
+OSCfg_TmrWheelSize	Source/os_cfg_app.c	/^OS_OBJ_QTY     const  OSCfg_TmrWheelSize         = (OS_OBJ_QTY  )0;$/;"	v
+OSCfg_TmrWheelSize	Source/os_cfg_app.c	/^OS_OBJ_QTY     const  OSCfg_TmrWheelSize         = (OS_OBJ_QTY  )OS_CFG_TMR_WHEEL_SIZE;$/;"	v
+OSCfg_TmrWheelSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_TmrWheelSizeRAM      = (CPU_INT32U  )0;$/;"	v
+OSCfg_TmrWheelSizeRAM	Source/os_cfg_app.c	/^CPU_INT32U     const  OSCfg_TmrWheelSizeRAM      = (CPU_INT32U  )sizeof(OSCfg_TmrWheel);$/;"	v
+OSDbg_AppHooksEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_AppHooksEn            = OS_CFG_APP_HOOKS_EN;$/;"	v
+OSDbg_ArgChkEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_ArgChkEn              = OS_CFG_ARG_CHK_EN;$/;"	v
+OSDbg_CalledFromISRChkEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_CalledFromISRChkEn    = OS_CFG_CALLED_FROM_ISR_CHK_EN;$/;"	v
+OSDbg_DataSize	Source/os_dbg.c	/^CPU_INT32U  const  OSDbg_DataSize = sizeof(OSIntNestingCtr)$/;"	v
+OSDbg_DbgEn	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_DbgEn                 = OS_CFG_DBG_EN;                \/* Debug constants are defined below   *\/$/;"	v
+OSDbg_EndiannessTest	Source/os_dbg.c	/^CPU_INT32U  const  OSDbg_EndiannessTest        = 0x12345678LU;                 \/* Variable to test CPU endianness     *\/$/;"	v
+OSDbg_FlagDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_FlagDelEn             = 0u;$/;"	v
+OSDbg_FlagDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_FlagDelEn             = OS_CFG_FLAG_DEL_EN;$/;"	v
+OSDbg_FlagEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_FlagEn                = OS_CFG_FLAG_EN;$/;"	v
+OSDbg_FlagGrp	Source/os_dbg.c	/^OS_FLAG_GRP const  OSDbg_FlagGrp               = { 0u };$/;"	v
+OSDbg_FlagGrpSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_FlagGrpSize           = 0u;$/;"	v
+OSDbg_FlagGrpSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_FlagGrpSize           = sizeof(OS_FLAG_GRP);          \/* Size in Bytes of OS_FLAG_GRP        *\/$/;"	v
+OSDbg_FlagModeClrEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_FlagModeClrEn         = 0u;$/;"	v
+OSDbg_FlagModeClrEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_FlagModeClrEn         = OS_CFG_FLAG_MODE_CLR_EN;$/;"	v
+OSDbg_FlagPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_FlagPendAbortEn       = 0u;$/;"	v
+OSDbg_FlagPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_FlagPendAbortEn       = OS_CFG_FLAG_PEND_ABORT_EN;$/;"	v
+OSDbg_FlagWidth	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_FlagWidth             = 0u;$/;"	v
+OSDbg_FlagWidth	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_FlagWidth             = sizeof(OS_FLAGS);             \/* Width (in bytes) of OS_FLAGS        *\/$/;"	v
+OSDbg_ISRPostDeferredEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_ISRPostDeferredEn     = OS_CFG_ISR_POST_DEFERRED_EN;$/;"	v
+OSDbg_IntQ	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_IntQ                  = 0u;$/;"	v
+OSDbg_IntQ	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_IntQ                  = sizeof(OS_INT_Q);$/;"	v
+OSDbg_Mem	Source/os_dbg.c	/^OS_MEM      const  OSDbg_Mem                   = { 0u };$/;"	v
+OSDbg_MemEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_MemEn                 = OS_CFG_MEM_EN;$/;"	v
+OSDbg_MemSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MemSize               = 0u;$/;"	v
+OSDbg_MemSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MemSize               = sizeof(OS_MEM);               \/* Mem. Partition header size (bytes)  *\/$/;"	v
+OSDbg_MsgEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_MsgEn                 = OS_MSG_EN;$/;"	v
+OSDbg_MsgPoolSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MsgPoolSize           = 0u;$/;"	v
+OSDbg_MsgPoolSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MsgPoolSize           = sizeof(OS_MSG_POOL);$/;"	v
+OSDbg_MsgQSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MsgQSize              = 0u;$/;"	v
+OSDbg_MsgQSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MsgQSize              = sizeof(OS_MSG_Q);$/;"	v
+OSDbg_MsgSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MsgSize               = 0u;$/;"	v
+OSDbg_MsgSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MsgSize               = sizeof(OS_MSG);               \/* OS_MSG size                         *\/$/;"	v
+OSDbg_Mutex	Source/os_dbg.c	/^OS_MUTEX    const  OSDbg_Mutex                 = { 0u };$/;"	v
+OSDbg_MutexDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_MutexDelEn            = 0u;$/;"	v
+OSDbg_MutexDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_MutexDelEn            = OS_CFG_MUTEX_DEL_EN;$/;"	v
+OSDbg_MutexEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_MutexEn               = OS_CFG_MUTEX_EN;$/;"	v
+OSDbg_MutexPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_MutexPendAbortEn      = 0u;$/;"	v
+OSDbg_MutexPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_MutexPendAbortEn      = OS_CFG_MUTEX_PEND_ABORT_EN;$/;"	v
+OSDbg_MutexSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MutexSize             = 0u;$/;"	v
+OSDbg_MutexSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_MutexSize             = sizeof(OS_MUTEX);             \/* Size in bytes of OS_MUTEX           *\/$/;"	v
+OSDbg_ObjTypeChkEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_ObjTypeChkEn          = OS_CFG_OBJ_TYPE_CHK_EN;$/;"	v
+OSDbg_PendDataSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_PendDataSize          = sizeof(OS_PEND_DATA);$/;"	v
+OSDbg_PendListSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_PendListSize          = sizeof(OS_PEND_LIST);$/;"	v
+OSDbg_PendMultiEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_PendMultiEn           = OS_CFG_PEND_MULTI_EN;$/;"	v
+OSDbg_PendObjSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_PendObjSize           = sizeof(OS_PEND_OBJ);$/;"	v
+OSDbg_PrioMax	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_PrioMax               = OS_CFG_PRIO_MAX;              \/* Maximum number of priorities        *\/$/;"	v
+OSDbg_PrioTblSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_PrioTblSize           = sizeof(OSPrioTbl);$/;"	v
+OSDbg_PtrSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_PtrSize               = sizeof(void *);               \/* Size in Bytes of a pointer          *\/$/;"	v
+OSDbg_Q	Source/os_dbg.c	/^OS_Q        const  OSDbg_Q                     = { 0u };$/;"	v
+OSDbg_QDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_QDelEn                = 0u;$/;"	v
+OSDbg_QDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_QDelEn                = OS_CFG_Q_DEL_EN;$/;"	v
+OSDbg_QEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_QEn                   = OS_CFG_Q_EN;$/;"	v
+OSDbg_QFlushEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_QFlushEn              = 0u;$/;"	v
+OSDbg_QFlushEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_QFlushEn              = OS_CFG_Q_FLUSH_EN;$/;"	v
+OSDbg_QPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_QPendAbortEn          = 0u;$/;"	v
+OSDbg_QPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_QPendAbortEn          = OS_CFG_Q_PEND_ABORT_EN;$/;"	v
+OSDbg_QSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_QSize                 = 0u;$/;"	v
+OSDbg_QSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_QSize                 = sizeof(OS_Q);                 \/* Size in bytes of OS_Q structure     *\/$/;"	v
+OSDbg_RdyList	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_RdyList               = sizeof(OS_RDY_LIST);$/;"	v
+OSDbg_RdyListSize	Source/os_dbg.c	/^CPU_INT32U  const  OSDbg_RdyListSize           = sizeof(OSRdyList);            \/* Number of bytes in the ready table  *\/$/;"	v
+OSDbg_SchedRoundRobinEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SchedRoundRobinEn     = OS_CFG_SCHED_ROUND_ROBIN_EN;$/;"	v
+OSDbg_Sem	Source/os_dbg.c	/^OS_SEM      const  OSDbg_Sem                   = { 0u };$/;"	v
+OSDbg_SemDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SemDelEn              = 0u;$/;"	v
+OSDbg_SemDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SemDelEn              = OS_CFG_SEM_DEL_EN;$/;"	v
+OSDbg_SemEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SemEn                 = OS_CFG_SEM_EN;$/;"	v
+OSDbg_SemPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SemPendAbortEn        = 0u;$/;"	v
+OSDbg_SemPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SemPendAbortEn        = OS_CFG_SEM_PEND_ABORT_EN;$/;"	v
+OSDbg_SemSetEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SemSetEn              = 0u;$/;"	v
+OSDbg_SemSetEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_SemSetEn              = OS_CFG_SEM_SET_EN;$/;"	v
+OSDbg_SemSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_SemSize               = 0u;$/;"	v
+OSDbg_SemSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_SemSize               = sizeof(OS_SEM);               \/* Size in bytes of OS_SEM             *\/$/;"	v
+OSDbg_StatTaskEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_StatTaskEn            = OS_CFG_STAT_TASK_EN;$/;"	v
+OSDbg_StatTaskStkChkEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_StatTaskStkChkEn      = OS_CFG_STAT_TASK_STK_CHK_EN;$/;"	v
+OSDbg_StkWidth	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_StkWidth              = sizeof(CPU_STK);$/;"	v
+OSDbg_TCBSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TCBSize               = sizeof(OS_TCB);               \/* Size in Bytes of OS_TCB             *\/$/;"	v
+OSDbg_TLS_TblSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TLS_TblSize           = 0u;$/;"	v
+OSDbg_TLS_TblSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TLS_TblSize           = OS_CFG_TLS_TBL_SIZE * sizeof(OS_TLS);$/;"	v
+OSDbg_TaskChangePrioEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TaskChangePrioEn      = OS_CFG_TASK_CHANGE_PRIO_EN;$/;"	v
+OSDbg_TaskDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TaskDelEn             = OS_CFG_TASK_DEL_EN;$/;"	v
+OSDbg_TaskProfileEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TaskProfileEn         = OS_CFG_TASK_PROFILE_EN;$/;"	v
+OSDbg_TaskQEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TaskQEn               = OS_CFG_TASK_Q_EN;$/;"	v
+OSDbg_TaskQPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TaskQPendAbortEn      = OS_CFG_TASK_Q_PEND_ABORT_EN;$/;"	v
+OSDbg_TaskRegTblSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TaskRegTblSize        = OS_CFG_TASK_REG_TBL_SIZE;$/;"	v
+OSDbg_TaskSemPendAbortEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TaskSemPendAbortEn    = OS_CFG_TASK_SEM_PEND_ABORT_EN;$/;"	v
+OSDbg_TaskSuspendEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TaskSuspendEn         = OS_CFG_TASK_SUSPEND_EN;$/;"	v
+OSDbg_TickSpokeSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TickSpokeSize         = sizeof(OS_TICK_SPOKE);$/;"	v
+OSDbg_TimeDlyHMSMEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TimeDlyHMSMEn         = OS_CFG_TIME_DLY_HMSM_EN;$/;"	v
+OSDbg_TimeDlyResumeEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TimeDlyResumeEn       = OS_CFG_TIME_DLY_RESUME_EN;$/;"	v
+OSDbg_Tmr	Source/os_dbg.c	/^OS_TMR      const  OSDbg_Tmr                   = { 0u };$/;"	v
+OSDbg_TmrDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TmrDelEn              = 0u;$/;"	v
+OSDbg_TmrDelEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TmrDelEn              = OS_CFG_TMR_DEL_EN;$/;"	v
+OSDbg_TmrEn	Source/os_dbg.c	/^CPU_INT08U  const  OSDbg_TmrEn                 = OS_CFG_TMR_EN;$/;"	v
+OSDbg_TmrSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TmrSize               = 0u;$/;"	v
+OSDbg_TmrSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TmrSize               = sizeof(OS_TMR);$/;"	v
+OSDbg_TmrSpokeSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TmrSpokeSize          = 0u;$/;"	v
+OSDbg_TmrSpokeSize	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_TmrSpokeSize          = sizeof(OS_TMR_SPOKE);$/;"	v
+OSDbg_VersionNbr	Source/os_dbg.c	/^CPU_INT16U  const  OSDbg_VersionNbr            = OS_VERSION;$/;"	v
+OSFlagCreate	Source/os_flag.c	/^void  OSFlagCreate (OS_FLAG_GRP  *p_grp,$/;"	f
+OSFlagDbgListPtr	Source/os.h	/^OS_EXT            OS_FLAG_GRP              *OSFlagDbgListPtr;$/;"	v
+OSFlagDel	Source/os_flag.c	/^OS_OBJ_QTY  OSFlagDel (OS_FLAG_GRP  *p_grp,$/;"	f
+OSFlagPend	Source/os_flag.c	/^OS_FLAGS  OSFlagPend (OS_FLAG_GRP  *p_grp,$/;"	f
+OSFlagPendAbort	Source/os_flag.c	/^OS_OBJ_QTY  OSFlagPendAbort (OS_FLAG_GRP  *p_grp,$/;"	f
+OSFlagPendGetFlagsRdy	Source/os_flag.c	/^OS_FLAGS  OSFlagPendGetFlagsRdy (OS_ERR  *p_err)$/;"	f
+OSFlagPost	Source/os_flag.c	/^OS_FLAGS  OSFlagPost (OS_FLAG_GRP  *p_grp,$/;"	f
+OSFlagQty	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSFlagQty;$/;"	v
+OSIdleTaskCtr	Source/os.h	/^OS_EXT            OS_IDLE_CTR               OSIdleTaskCtr;$/;"	v
+OSIdleTaskTCB	Source/os.h	/^OS_EXT            OS_TCB                    OSIdleTaskTCB;$/;"	v
+OSInit	Source/os_core.c	/^void  OSInit (OS_ERR  *p_err)$/;"	f
+OSIntDisTimeMax	Source/os.h	/^OS_EXT            CPU_TS                    OSIntDisTimeMax;            \/* Overall interrupt disable time             *\/$/;"	v
+OSIntEnter	Source/os_core.c	/^void  OSIntEnter (void)$/;"	f
+OSIntExit	Source/os_core.c	/^void  OSIntExit (void)$/;"	f
+OSIntNestingCtr	Source/os.h	/^OS_EXT            OS_NESTING_CTR            OSIntNestingCtr;            \/* Interrupt nesting level                    *\/$/;"	v
+OSIntQInPtr	Source/os.h	/^OS_EXT            OS_INT_Q                 *OSIntQInPtr;$/;"	v
+OSIntQNbrEntries	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSIntQNbrEntries;$/;"	v
+OSIntQNbrEntriesMax	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSIntQNbrEntriesMax;$/;"	v
+OSIntQOutPtr	Source/os.h	/^OS_EXT            OS_INT_Q                 *OSIntQOutPtr;$/;"	v
+OSIntQOvfCtr	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSIntQOvfCtr;$/;"	v
+OSIntQTaskTCB	Source/os.h	/^OS_EXT            OS_TCB                    OSIntQTaskTCB;$/;"	v
+OSIntQTaskTimeMax	Source/os.h	/^OS_EXT            CPU_TS                    OSIntQTaskTimeMax;$/;"	v
+OSMemCreate	Source/os_mem.c	/^void  OSMemCreate (OS_MEM       *p_mem,$/;"	f
+OSMemDbgListPtr	Source/os.h	/^OS_EXT            OS_MEM                   *OSMemDbgListPtr;$/;"	v
+OSMemGet	Source/os_mem.c	/^void  *OSMemGet (OS_MEM  *p_mem,$/;"	f
+OSMemPut	Source/os_mem.c	/^void  OSMemPut (OS_MEM  *p_mem,$/;"	f
+OSMemQty	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSMemQty;                   \/* Number of memory partitions created        *\/$/;"	v
+OSMsgPool	Source/os.h	/^OS_EXT            OS_MSG_POOL               OSMsgPool;                  \/* Pool of OS_MSG                             *\/$/;"	v
+OSMutexCreate	Source/os_mutex.c	/^void  OSMutexCreate (OS_MUTEX  *p_mutex,$/;"	f
+OSMutexDbgListPtr	Source/os.h	/^OS_EXT            OS_MUTEX                 *OSMutexDbgListPtr;$/;"	v
+OSMutexDel	Source/os_mutex.c	/^OS_OBJ_QTY  OSMutexDel (OS_MUTEX  *p_mutex,$/;"	f
+OSMutexPend	Source/os_mutex.c	/^void  OSMutexPend (OS_MUTEX  *p_mutex,$/;"	f
+OSMutexPendAbort	Source/os_mutex.c	/^OS_OBJ_QTY  OSMutexPendAbort (OS_MUTEX  *p_mutex,$/;"	f
+OSMutexPost	Source/os_mutex.c	/^void  OSMutexPost (OS_MUTEX  *p_mutex,$/;"	f
+OSMutexQty	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSMutexQty;                 \/* Number of mutexes created                  *\/$/;"	v
+OSPendMulti	Source/os_pend_multi.c	/^OS_OBJ_QTY  OSPendMulti (OS_PEND_DATA  *p_pend_data_tbl,$/;"	f
+OSPrioCur	Source/os.h	/^OS_EXT            OS_PRIO                   OSPrioCur;                  \/* Priority of current task                   *\/$/;"	v
+OSPrioHighRdy	Source/os.h	/^OS_EXT            OS_PRIO                   OSPrioHighRdy;              \/* Priority of highest priority task          *\/$/;"	v
+OSPrioSaved	Source/os.h	/^OS_EXT            OS_PRIO                   OSPrioSaved;                \/* Saved priority level when Post Deferred    *\/$/;"	v
+OSPrioTbl	Source/os_prio.c	/^CPU_DATA   OSPrioTbl[OS_PRIO_TBL_SIZE];                     \/* Declare the array local to this file to allow for  ... *\/$/;"	v
+OSQCreate	Source/os_q.c	/^void  OSQCreate (OS_Q        *p_q,$/;"	f
+OSQDbgListPtr	Source/os.h	/^OS_EXT            OS_Q                     *OSQDbgListPtr;$/;"	v
+OSQDel	Source/os_q.c	/^OS_OBJ_QTY  OSQDel (OS_Q    *p_q,$/;"	f
+OSQFlush	Source/os_q.c	/^OS_MSG_QTY  OSQFlush (OS_Q    *p_q,$/;"	f
+OSQPend	Source/os_q.c	/^void  *OSQPend (OS_Q         *p_q,$/;"	f
+OSQPendAbort	Source/os_q.c	/^OS_OBJ_QTY  OSQPendAbort (OS_Q    *p_q,$/;"	f
+OSQPost	Source/os_q.c	/^void  OSQPost (OS_Q         *p_q,$/;"	f
+OSQQty	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSQQty;                     \/* Number of message queues created           *\/$/;"	v
+OSRdyList	Source/os.h	/^OS_EXT            OS_RDY_LIST               OSRdyList[OS_CFG_PRIO_MAX]; \/* Table of tasks ready to run                *\/$/;"	v
+OSRunning	Source/os.h	/^OS_EXT            OS_STATE                  OSRunning;                  \/* Flag indicating that kernel is running     *\/$/;"	v
+OSSafetyCriticalStart	Source/os_core.c	/^void  OSSafetyCriticalStart (void)$/;"	f
+OSSafetyCriticalStartFlag	Source/os.h	/^OS_EXT            CPU_BOOLEAN               OSSafetyCriticalStartFlag;  \/* Flag indicating that all init. done        *\/$/;"	v
+OSSched	Source/os_core.c	/^void  OSSched (void)$/;"	f
+OSSchedLock	Source/os_core.c	/^void  OSSchedLock (OS_ERR  *p_err)$/;"	f
+OSSchedLockNestingCtr	Source/os.h	/^OS_EXT            OS_NESTING_CTR            OSSchedLockNestingCtr;      \/* Lock nesting level                         *\/$/;"	v
+OSSchedLockTimeBegin	Source/os.h	/^OS_EXT            CPU_TS_TMR                OSSchedLockTimeBegin;       \/* Scheduler lock time measurement            *\/$/;"	v
+OSSchedLockTimeMax	Source/os.h	/^OS_EXT            CPU_TS_TMR                OSSchedLockTimeMax;$/;"	v
+OSSchedLockTimeMaxCur	Source/os.h	/^OS_EXT            CPU_TS_TMR                OSSchedLockTimeMaxCur;$/;"	v
+OSSchedRoundRobinCfg	Source/os_core.c	/^void  OSSchedRoundRobinCfg (CPU_BOOLEAN   en,$/;"	f
+OSSchedRoundRobinDfltTimeQuanta	Source/os.h	/^OS_EXT            OS_TICK                   OSSchedRoundRobinDfltTimeQuanta;$/;"	v
+OSSchedRoundRobinEn	Source/os.h	/^OS_EXT            CPU_BOOLEAN               OSSchedRoundRobinEn;        \/* Enable\/Disable round-robin scheduling      *\/$/;"	v
+OSSchedRoundRobinYield	Source/os_core.c	/^void  OSSchedRoundRobinYield (OS_ERR  *p_err)$/;"	f
+OSSchedUnlock	Source/os_core.c	/^void  OSSchedUnlock (OS_ERR  *p_err)$/;"	f
+OSSemCreate	Source/os_sem.c	/^void  OSSemCreate (OS_SEM      *p_sem,$/;"	f
+OSSemDbgListPtr	Source/os.h	/^OS_EXT            OS_SEM                   *OSSemDbgListPtr;$/;"	v
+OSSemDel	Source/os_sem.c	/^OS_OBJ_QTY  OSSemDel (OS_SEM  *p_sem,$/;"	f
+OSSemPend	Source/os_sem.c	/^OS_SEM_CTR  OSSemPend (OS_SEM   *p_sem,$/;"	f
+OSSemPendAbort	Source/os_sem.c	/^OS_OBJ_QTY  OSSemPendAbort (OS_SEM  *p_sem,$/;"	f
+OSSemPost	Source/os_sem.c	/^OS_SEM_CTR  OSSemPost (OS_SEM  *p_sem,$/;"	f
+OSSemQty	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSSemQty;                   \/* Number of semaphores created               *\/$/;"	v
+OSSemSet	Source/os_sem.c	/^void  OSSemSet (OS_SEM      *p_sem,$/;"	f
+OSStart	Source/os_core.c	/^void  OSStart (OS_ERR  *p_err)$/;"	f
+OSStatReset	Source/os_stat.c	/^void  OSStatReset (OS_ERR  *p_err)$/;"	f
+OSStatResetFlag	Source/os.h	/^OS_EXT            CPU_BOOLEAN               OSStatResetFlag;            \/* Force the reset of the computed statistics *\/$/;"	v
+OSStatTaskCPUUsage	Source/os.h	/^OS_EXT            OS_CPU_USAGE              OSStatTaskCPUUsage;         \/* CPU Usage in %                             *\/$/;"	v
+OSStatTaskCPUUsageInit	Source/os_stat.c	/^void  OSStatTaskCPUUsageInit (OS_ERR  *p_err)$/;"	f
+OSStatTaskCPUUsageMax	Source/os.h	/^OS_EXT            OS_CPU_USAGE              OSStatTaskCPUUsageMax;      \/* CPU Usage in % (Peak)                      *\/$/;"	v
+OSStatTaskCtr	Source/os.h	/^OS_EXT            OS_TICK                   OSStatTaskCtr;$/;"	v
+OSStatTaskCtrMax	Source/os.h	/^OS_EXT            OS_TICK                   OSStatTaskCtrMax;$/;"	v
+OSStatTaskCtrRun	Source/os.h	/^OS_EXT            OS_TICK                   OSStatTaskCtrRun;$/;"	v
+OSStatTaskRdy	Source/os.h	/^OS_EXT            CPU_BOOLEAN               OSStatTaskRdy;$/;"	v
+OSStatTaskTCB	Source/os.h	/^OS_EXT            OS_TCB                    OSStatTaskTCB;$/;"	v
+OSStatTaskTimeMax	Source/os.h	/^OS_EXT            CPU_TS                    OSStatTaskTimeMax;$/;"	v
+OSTCBCurPtr	Source/os.h	/^OS_EXT            OS_TCB                   *OSTCBCurPtr;                \/* Pointer to currently running TCB           *\/$/;"	v
+OSTCBHighRdyPtr	Source/os.h	/^OS_EXT            OS_TCB                   *OSTCBHighRdyPtr;            \/* Pointer to highest priority  TCB           *\/$/;"	v
+OSTaskChangePrio	Source/os_task.c	/^void  OSTaskChangePrio (OS_TCB   *p_tcb,$/;"	f
+OSTaskCreate	Source/os_task.c	/^void  OSTaskCreate (OS_TCB        *p_tcb,$/;"	f
+OSTaskCtxSwCtr	Source/os.h	/^OS_EXT            OS_CTX_SW_CTR             OSTaskCtxSwCtr;             \/* Number of context switches                 *\/$/;"	v
+OSTaskDbgListPtr	Source/os.h	/^OS_EXT            OS_TCB                   *OSTaskDbgListPtr;$/;"	v
+OSTaskDel	Source/os_task.c	/^void  OSTaskDel (OS_TCB  *p_tcb,$/;"	f
+OSTaskQFlush	Source/os_task.c	/^OS_MSG_QTY  OSTaskQFlush (OS_TCB  *p_tcb,$/;"	f
+OSTaskQPend	Source/os_task.c	/^void  *OSTaskQPend (OS_TICK       timeout,$/;"	f
+OSTaskQPendAbort	Source/os_task.c	/^CPU_BOOLEAN  OSTaskQPendAbort (OS_TCB  *p_tcb,$/;"	f
+OSTaskQPost	Source/os_task.c	/^void  OSTaskQPost (OS_TCB       *p_tcb,$/;"	f
+OSTaskQty	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSTaskQty;                  \/* Number of tasks created                    *\/$/;"	v
+OSTaskRegGet	Source/os_task.c	/^OS_REG  OSTaskRegGet (OS_TCB     *p_tcb,$/;"	f
+OSTaskRegGetID	Source/os_task.c	/^OS_REG_ID  OSTaskRegGetID (OS_ERR  *p_err)$/;"	f
+OSTaskRegNextAvailID	Source/os.h	/^OS_EXT            OS_REG_ID                 OSTaskRegNextAvailID;       \/* Next available Task Register ID            *\/$/;"	v
+OSTaskRegSet	Source/os_task.c	/^void  OSTaskRegSet (OS_TCB     *p_tcb,$/;"	f
+OSTaskResume	Source/os_task.c	/^void  OSTaskResume (OS_TCB  *p_tcb,$/;"	f
+OSTaskSemPend	Source/os_task.c	/^OS_SEM_CTR  OSTaskSemPend (OS_TICK   timeout,$/;"	f
+OSTaskSemPendAbort	Source/os_task.c	/^CPU_BOOLEAN  OSTaskSemPendAbort (OS_TCB  *p_tcb,$/;"	f
+OSTaskSemPost	Source/os_task.c	/^OS_SEM_CTR  OSTaskSemPost (OS_TCB  *p_tcb,$/;"	f
+OSTaskSemSet	Source/os_task.c	/^OS_SEM_CTR  OSTaskSemSet (OS_TCB      *p_tcb,$/;"	f
+OSTaskStkChk	Source/os_task.c	/^void  OSTaskStkChk (OS_TCB        *p_tcb,$/;"	f
+OSTaskSuspend	Source/os_task.c	/^void   OSTaskSuspend (OS_TCB  *p_tcb,$/;"	f
+OSTaskTimeQuantaSet	Source/os_task.c	/^void  OSTaskTimeQuantaSet (OS_TCB   *p_tcb,$/;"	f
+OSTickCtr	Source/os.h	/^OS_EXT            OS_TICK                   OSTickCtr;                  \/* Cnts the #ticks since startup or last set  *\/$/;"	v
+OSTickTaskTCB	Source/os.h	/^OS_EXT            OS_TCB                    OSTickTaskTCB;$/;"	v
+OSTickTaskTimeMax	Source/os.h	/^OS_EXT            CPU_TS                    OSTickTaskTimeMax;$/;"	v
+OSTimeDly	Source/os_time.c	/^void  OSTimeDly (OS_TICK   dly,$/;"	f
+OSTimeDlyHMSM	Source/os_time.c	/^void  OSTimeDlyHMSM (CPU_INT16U   hours,$/;"	f
+OSTimeDlyResume	Source/os_time.c	/^void  OSTimeDlyResume (OS_TCB  *p_tcb,$/;"	f
+OSTimeGet	Source/os_time.c	/^OS_TICK  OSTimeGet (OS_ERR  *p_err)$/;"	f
+OSTimeSet	Source/os_time.c	/^void  OSTimeSet (OS_TICK   ticks,$/;"	f
+OSTimeTick	Source/os_time.c	/^void  OSTimeTick (void)$/;"	f
+OSTmrCreate	Source/os_tmr.c	/^void  OSTmrCreate (OS_TMR               *p_tmr,$/;"	f
+OSTmrDbgListPtr	Source/os.h	/^OS_EXT            OS_TMR                   *OSTmrDbgListPtr;$/;"	v
+OSTmrDel	Source/os_tmr.c	/^CPU_BOOLEAN  OSTmrDel (OS_TMR  *p_tmr,$/;"	f
+OSTmrQty	Source/os.h	/^OS_EXT            OS_OBJ_QTY                OSTmrQty;                   \/* Number of timers created                   *\/$/;"	v
+OSTmrRemainGet	Source/os_tmr.c	/^OS_TICK  OSTmrRemainGet (OS_TMR  *p_tmr,$/;"	f
+OSTmrStart	Source/os_tmr.c	/^CPU_BOOLEAN  OSTmrStart (OS_TMR  *p_tmr,$/;"	f
+OSTmrStateGet	Source/os_tmr.c	/^OS_STATE  OSTmrStateGet (OS_TMR  *p_tmr,$/;"	f
+OSTmrStop	Source/os_tmr.c	/^CPU_BOOLEAN  OSTmrStop (OS_TMR  *p_tmr,$/;"	f
+OSTmrTaskTCB	Source/os.h	/^OS_EXT            OS_TCB                    OSTmrTaskTCB;               \/* TCB of timer task                          *\/$/;"	v
+OSTmrTaskTimeMax	Source/os.h	/^OS_EXT            CPU_TS                    OSTmrTaskTimeMax;$/;"	v
+OSTmrTickCtr	Source/os.h	/^OS_EXT            OS_TICK                   OSTmrTickCtr;               \/* Current time for the timers                *\/$/;"	v
+OSTmrUpdateCnt	Source/os.h	/^OS_EXT            OS_CTR                    OSTmrUpdateCnt;             \/* Counter for updating timers                *\/$/;"	v
+OSTmrUpdateCtr	Source/os.h	/^OS_EXT            OS_CTR                    OSTmrUpdateCtr;$/;"	v
+OSVersion	Source/os_core.c	/^CPU_INT16U  OSVersion (OS_ERR  *p_err)$/;"	f
+OS_APP_HOOKS_H	Cfg/Template/os_app_hooks.h	34;"	d
+OS_APP_HOOKS_H_EXT	Cfg/Template/os_app_hooks.h	38;"	d
+OS_APP_HOOKS_H_EXT	Cfg/Template/os_app_hooks.h	40;"	d
+OS_APP_HOOK_TCB	Source/os.h	/^typedef  void                      (*OS_APP_HOOK_TCB)(OS_TCB *p_tcb);$/;"	t
+OS_APP_HOOK_VOID	Source/os.h	/^typedef  void                      (*OS_APP_HOOK_VOID)(void);$/;"	t
+OS_AppIdleTaskHookPtr	Source/os.h	/^OS_EXT           OS_APP_HOOK_VOID           OS_AppIdleTaskHookPtr;$/;"	v
+OS_AppStatTaskHookPtr	Source/os.h	/^OS_EXT           OS_APP_HOOK_VOID           OS_AppStatTaskHookPtr;$/;"	v
+OS_AppTaskCreateHookPtr	Source/os.h	/^OS_EXT           OS_APP_HOOK_TCB            OS_AppTaskCreateHookPtr;    \/* Application hooks                          *\/$/;"	v
+OS_AppTaskDelHookPtr	Source/os.h	/^OS_EXT           OS_APP_HOOK_TCB            OS_AppTaskDelHookPtr;$/;"	v
+OS_AppTaskReturnHookPtr	Source/os.h	/^OS_EXT           OS_APP_HOOK_TCB            OS_AppTaskReturnHookPtr;$/;"	v
+OS_AppTaskSwHookPtr	Source/os.h	/^OS_EXT           OS_APP_HOOK_VOID           OS_AppTaskSwHookPtr;$/;"	v
+OS_AppTimeTickHookPtr	Source/os.h	/^OS_EXT           OS_APP_HOOK_VOID           OS_AppTimeTickHookPtr;$/;"	v
+OS_CFG_APP_H	Cfg/Template/os_cfg_app.h	34;"	d
+OS_CFG_APP_HOOKS_EN	Cfg/Template/os_cfg.h	38;"	d
+OS_CFG_ARG_CHK_EN	Cfg/Template/os_cfg.h	39;"	d
+OS_CFG_CALLED_FROM_ISR_CHK_EN	Cfg/Template/os_cfg.h	40;"	d
+OS_CFG_DBG_EN	Cfg/Template/os_cfg.h	41;"	d
+OS_CFG_FLAG_DEL_EN	Cfg/Template/os_cfg.h	57;"	d
+OS_CFG_FLAG_EN	Cfg/Template/os_cfg.h	56;"	d
+OS_CFG_FLAG_MODE_CLR_EN	Cfg/Template/os_cfg.h	58;"	d
+OS_CFG_FLAG_PEND_ABORT_EN	Cfg/Template/os_cfg.h	59;"	d
+OS_CFG_H	Cfg/Template/os_cfg.h	34;"	d
+OS_CFG_IDLE_TASK_STK_LIMIT	Source/os_cfg_app.c	43;"	d	file:
+OS_CFG_IDLE_TASK_STK_SIZE	Cfg/Template/os_cfg_app.h	49;"	d
+OS_CFG_INT_Q_SIZE	Cfg/Template/os_cfg_app.h	53;"	d
+OS_CFG_INT_Q_TASK_STK_LIMIT	Source/os_cfg_app.c	44;"	d	file:
+OS_CFG_INT_Q_TASK_STK_SIZE	Cfg/Template/os_cfg_app.h	54;"	d
+OS_CFG_ISR_POST_DEFERRED_EN	Cfg/Template/os_cfg.h	42;"	d
+OS_CFG_ISR_STK_SIZE	Cfg/Template/os_cfg_app.h	44;"	d
+OS_CFG_MEM_EN	Cfg/Template/os_cfg.h	63;"	d
+OS_CFG_MSG_POOL_SIZE	Cfg/Template/os_cfg_app.h	43;"	d
+OS_CFG_MUTEX_DEL_EN	Cfg/Template/os_cfg.h	68;"	d
+OS_CFG_MUTEX_EN	Cfg/Template/os_cfg.h	67;"	d
+OS_CFG_MUTEX_PEND_ABORT_EN	Cfg/Template/os_cfg.h	69;"	d
+OS_CFG_OBJ_TYPE_CHK_EN	Cfg/Template/os_cfg.h	43;"	d
+OS_CFG_PEND_MULTI_EN	Cfg/Template/os_cfg.h	46;"	d
+OS_CFG_PRIO_MAX	Cfg/Template/os_cfg.h	48;"	d
+OS_CFG_Q_DEL_EN	Cfg/Template/os_cfg.h	74;"	d
+OS_CFG_Q_EN	Cfg/Template/os_cfg.h	73;"	d
+OS_CFG_Q_FLUSH_EN	Cfg/Template/os_cfg.h	75;"	d
+OS_CFG_Q_PEND_ABORT_EN	Cfg/Template/os_cfg.h	76;"	d
+OS_CFG_SCHED_LOCK_TIME_MEAS_EN	Cfg/Template/os_cfg.h	50;"	d
+OS_CFG_SCHED_ROUND_ROBIN_EN	Cfg/Template/os_cfg.h	51;"	d
+OS_CFG_SEM_DEL_EN	Cfg/Template/os_cfg.h	81;"	d
+OS_CFG_SEM_EN	Cfg/Template/os_cfg.h	80;"	d
+OS_CFG_SEM_PEND_ABORT_EN	Cfg/Template/os_cfg.h	82;"	d
+OS_CFG_SEM_SET_EN	Cfg/Template/os_cfg.h	83;"	d
+OS_CFG_STAT_TASK_EN	Cfg/Template/os_cfg.h	87;"	d
+OS_CFG_STAT_TASK_PRIO	Cfg/Template/os_cfg_app.h	58;"	d
+OS_CFG_STAT_TASK_RATE_HZ	Cfg/Template/os_cfg_app.h	59;"	d
+OS_CFG_STAT_TASK_STK_CHK_EN	Cfg/Template/os_cfg.h	88;"	d
+OS_CFG_STAT_TASK_STK_LIMIT	Source/os_cfg_app.c	45;"	d	file:
+OS_CFG_STAT_TASK_STK_SIZE	Cfg/Template/os_cfg_app.h	60;"	d
+OS_CFG_STK_SIZE_MIN	Cfg/Template/os_cfg.h	52;"	d
+OS_CFG_TASK_CHANGE_PRIO_EN	Cfg/Template/os_cfg.h	90;"	d
+OS_CFG_TASK_DEL_EN	Cfg/Template/os_cfg.h	91;"	d
+OS_CFG_TASK_PROFILE_EN	Cfg/Template/os_cfg.h	94;"	d
+OS_CFG_TASK_Q_EN	Cfg/Template/os_cfg.h	92;"	d
+OS_CFG_TASK_Q_PEND_ABORT_EN	Cfg/Template/os_cfg.h	93;"	d
+OS_CFG_TASK_REG_TBL_SIZE	Cfg/Template/os_cfg.h	95;"	d
+OS_CFG_TASK_SEM_PEND_ABORT_EN	Cfg/Template/os_cfg.h	96;"	d
+OS_CFG_TASK_STK_LIMIT_PCT_EMPTY	Cfg/Template/os_cfg_app.h	45;"	d
+OS_CFG_TASK_SUSPEND_EN	Cfg/Template/os_cfg.h	97;"	d
+OS_CFG_TICK_RATE_HZ	Cfg/Template/os_cfg_app.h	64;"	d
+OS_CFG_TICK_TASK_PRIO	Cfg/Template/os_cfg_app.h	65;"	d
+OS_CFG_TICK_TASK_STK_LIMIT	Source/os_cfg_app.c	46;"	d	file:
+OS_CFG_TICK_TASK_STK_SIZE	Cfg/Template/os_cfg_app.h	66;"	d
+OS_CFG_TICK_WHEEL_SIZE	Cfg/Template/os_cfg_app.h	67;"	d
+OS_CFG_TIME_DLY_HMSM_EN	Cfg/Template/os_cfg.h	101;"	d
+OS_CFG_TIME_DLY_RESUME_EN	Cfg/Template/os_cfg.h	102;"	d
+OS_CFG_TLS_TBL_SIZE	Cfg/Template/os_cfg.h	106;"	d
+OS_CFG_TMR_DEL_EN	Cfg/Template/os_cfg.h	111;"	d
+OS_CFG_TMR_EN	Cfg/Template/os_cfg.h	110;"	d
+OS_CFG_TMR_TASK_PRIO	Cfg/Template/os_cfg_app.h	71;"	d
+OS_CFG_TMR_TASK_RATE_HZ	Cfg/Template/os_cfg_app.h	72;"	d
+OS_CFG_TMR_TASK_STK_LIMIT	Source/os_cfg_app.c	47;"	d	file:
+OS_CFG_TMR_TASK_STK_SIZE	Cfg/Template/os_cfg_app.h	73;"	d
+OS_CFG_TMR_WHEEL_SIZE	Cfg/Template/os_cfg_app.h	74;"	d
+OS_CFG_TS_EN	Cfg/Template/os_cfg.h	44;"	d
+OS_CPU_USAGE	Source/os_type.h	/^typedef   CPU_INT16U      OS_CPU_USAGE;                \/* CPU Usage 0..10000                                  <16>\/32 *\/$/;"	t
+OS_CRITICAL_ENTER	Source/os.h	141;"	d
+OS_CRITICAL_ENTER	Source/os.h	89;"	d
+OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT	Source/os.h	143;"	d
+OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT	Source/os.h	99;"	d
+OS_CRITICAL_EXIT	Source/os.h	110;"	d
+OS_CRITICAL_EXIT	Source/os.h	145;"	d
+OS_CRITICAL_EXIT_NO_SCHED	Source/os.h	127;"	d
+OS_CRITICAL_EXIT_NO_SCHED	Source/os.h	147;"	d
+OS_CTR	Source/os_type.h	/^typedef   CPU_INT32U      OS_CTR;                      \/* Counter,                                                 32 *\/$/;"	t
+OS_CTX_SW_CTR	Source/os_type.h	/^typedef   CPU_INT32U      OS_CTX_SW_CTR;               \/* Counter of context switches,                             32 *\/$/;"	t
+OS_CYCLES	Source/os_type.h	/^typedef   CPU_INT32U      OS_CYCLES;                   \/* CPU clock cycles,                                   <32>\/64 *\/$/;"	t
+OS_Dbg_Init	Source/os_dbg.c	/^void  OS_Dbg_Init (void)$/;"	f
+OS_ERR	Source/os.h	/^} OS_ERR;$/;"	t	typeref:enum:os_err
+OS_ERR_A	Source/os.h	/^    OS_ERR_A                         = 10000u,$/;"	e	enum:os_err
+OS_ERR_ACCEPT_ISR	Source/os.h	/^    OS_ERR_ACCEPT_ISR                = 10001u,$/;"	e	enum:os_err
+OS_ERR_B	Source/os.h	/^    OS_ERR_B                         = 11000u,$/;"	e	enum:os_err
+OS_ERR_C	Source/os.h	/^    OS_ERR_C                         = 12000u,$/;"	e	enum:os_err
+OS_ERR_CREATE_ISR	Source/os.h	/^    OS_ERR_CREATE_ISR                = 12001u,$/;"	e	enum:os_err
+OS_ERR_D	Source/os.h	/^    OS_ERR_D                         = 13000u,$/;"	e	enum:os_err
+OS_ERR_DEL_ISR	Source/os.h	/^    OS_ERR_DEL_ISR                   = 13001u,$/;"	e	enum:os_err
+OS_ERR_E	Source/os.h	/^    OS_ERR_E                         = 14000u,$/;"	e	enum:os_err
+OS_ERR_F	Source/os.h	/^    OS_ERR_F                         = 15000u,$/;"	e	enum:os_err
+OS_ERR_FATAL_RETURN	Source/os.h	/^    OS_ERR_FATAL_RETURN              = 15001u,$/;"	e	enum:os_err
+OS_ERR_FLAG_GRP_DEPLETED	Source/os.h	/^    OS_ERR_FLAG_GRP_DEPLETED         = 15101u,$/;"	e	enum:os_err
+OS_ERR_FLAG_NOT_RDY	Source/os.h	/^    OS_ERR_FLAG_NOT_RDY              = 15102u,$/;"	e	enum:os_err
+OS_ERR_FLAG_PEND_OPT	Source/os.h	/^    OS_ERR_FLAG_PEND_OPT             = 15103u,$/;"	e	enum:os_err
+OS_ERR_FLUSH_ISR	Source/os.h	/^    OS_ERR_FLUSH_ISR                 = 15104u,$/;"	e	enum:os_err
+OS_ERR_G	Source/os.h	/^    OS_ERR_G                         = 16000u,$/;"	e	enum:os_err
+OS_ERR_H	Source/os.h	/^    OS_ERR_H                         = 17000u,$/;"	e	enum:os_err
+OS_ERR_I	Source/os.h	/^    OS_ERR_I                         = 18000u,$/;"	e	enum:os_err
+OS_ERR_ILLEGAL_CREATE_RUN_TIME	Source/os.h	/^    OS_ERR_ILLEGAL_CREATE_RUN_TIME   = 18001u,$/;"	e	enum:os_err
+OS_ERR_INT_Q	Source/os.h	/^    OS_ERR_INT_Q                     = 18002u,$/;"	e	enum:os_err
+OS_ERR_INT_Q_FULL	Source/os.h	/^    OS_ERR_INT_Q_FULL                = 18003u,$/;"	e	enum:os_err
+OS_ERR_INT_Q_SIZE	Source/os.h	/^    OS_ERR_INT_Q_SIZE                = 18004u,$/;"	e	enum:os_err
+OS_ERR_INT_Q_STK_INVALID	Source/os.h	/^    OS_ERR_INT_Q_STK_INVALID         = 18005u,$/;"	e	enum:os_err
+OS_ERR_INT_Q_STK_SIZE_INVALID	Source/os.h	/^    OS_ERR_INT_Q_STK_SIZE_INVALID    = 18006u,$/;"	e	enum:os_err
+OS_ERR_J	Source/os.h	/^    OS_ERR_J                         = 19000u,$/;"	e	enum:os_err
+OS_ERR_K	Source/os.h	/^    OS_ERR_K                         = 20000u,$/;"	e	enum:os_err
+OS_ERR_L	Source/os.h	/^    OS_ERR_L                         = 21000u,$/;"	e	enum:os_err
+OS_ERR_LOCK_NESTING_OVF	Source/os.h	/^    OS_ERR_LOCK_NESTING_OVF          = 21001u,$/;"	e	enum:os_err
+OS_ERR_M	Source/os.h	/^    OS_ERR_M                         = 22000u,$/;"	e	enum:os_err
+OS_ERR_MEM_CREATE_ISR	Source/os.h	/^    OS_ERR_MEM_CREATE_ISR            = 22201u,$/;"	e	enum:os_err
+OS_ERR_MEM_FULL	Source/os.h	/^    OS_ERR_MEM_FULL                  = 22202u,$/;"	e	enum:os_err
+OS_ERR_MEM_INVALID_BLKS	Source/os.h	/^    OS_ERR_MEM_INVALID_BLKS          = 22204u,$/;"	e	enum:os_err
+OS_ERR_MEM_INVALID_PART	Source/os.h	/^    OS_ERR_MEM_INVALID_PART          = 22205u,$/;"	e	enum:os_err
+OS_ERR_MEM_INVALID_P_ADDR	Source/os.h	/^    OS_ERR_MEM_INVALID_P_ADDR        = 22203u,$/;"	e	enum:os_err
+OS_ERR_MEM_INVALID_P_BLK	Source/os.h	/^    OS_ERR_MEM_INVALID_P_BLK         = 22206u,$/;"	e	enum:os_err
+OS_ERR_MEM_INVALID_P_DATA	Source/os.h	/^    OS_ERR_MEM_INVALID_P_DATA        = 22208u,$/;"	e	enum:os_err
+OS_ERR_MEM_INVALID_P_MEM	Source/os.h	/^    OS_ERR_MEM_INVALID_P_MEM         = 22207u,$/;"	e	enum:os_err
+OS_ERR_MEM_INVALID_SIZE	Source/os.h	/^    OS_ERR_MEM_INVALID_SIZE          = 22209u,$/;"	e	enum:os_err
+OS_ERR_MEM_NO_FREE_BLKS	Source/os.h	/^    OS_ERR_MEM_NO_FREE_BLKS          = 22210u,$/;"	e	enum:os_err
+OS_ERR_MSG_POOL_EMPTY	Source/os.h	/^    OS_ERR_MSG_POOL_EMPTY            = 22301u,$/;"	e	enum:os_err
+OS_ERR_MSG_POOL_NULL_PTR	Source/os.h	/^    OS_ERR_MSG_POOL_NULL_PTR         = 22302u,$/;"	e	enum:os_err
+OS_ERR_MUTEX_NESTING	Source/os.h	/^    OS_ERR_MUTEX_NESTING             = 22403u,$/;"	e	enum:os_err
+OS_ERR_MUTEX_NOT_OWNER	Source/os.h	/^    OS_ERR_MUTEX_NOT_OWNER           = 22401u,$/;"	e	enum:os_err
+OS_ERR_MUTEX_OWNER	Source/os.h	/^    OS_ERR_MUTEX_OWNER               = 22402u,$/;"	e	enum:os_err
+OS_ERR_N	Source/os.h	/^    OS_ERR_N                         = 23000u,$/;"	e	enum:os_err
+OS_ERR_NAME	Source/os.h	/^    OS_ERR_NAME                      = 23001u,$/;"	e	enum:os_err
+OS_ERR_NONE	Source/os.h	/^    OS_ERR_NONE                      =     0u,$/;"	e	enum:os_err
+OS_ERR_NO_MORE_ID_AVAIL	Source/os.h	/^    OS_ERR_NO_MORE_ID_AVAIL          = 23002u,$/;"	e	enum:os_err
+OS_ERR_O	Source/os.h	/^    OS_ERR_O                         = 24000u,$/;"	e	enum:os_err
+OS_ERR_OBJ_CREATED	Source/os.h	/^    OS_ERR_OBJ_CREATED               = 24001u,$/;"	e	enum:os_err
+OS_ERR_OBJ_DEL	Source/os.h	/^    OS_ERR_OBJ_DEL                   = 24002u,$/;"	e	enum:os_err
+OS_ERR_OBJ_PTR_NULL	Source/os.h	/^    OS_ERR_OBJ_PTR_NULL              = 24003u,$/;"	e	enum:os_err
+OS_ERR_OBJ_TYPE	Source/os.h	/^    OS_ERR_OBJ_TYPE                  = 24004u,$/;"	e	enum:os_err
+OS_ERR_OPT_INVALID	Source/os.h	/^    OS_ERR_OPT_INVALID               = 24101u,$/;"	e	enum:os_err
+OS_ERR_OS_NOT_RUNNING	Source/os.h	/^    OS_ERR_OS_NOT_RUNNING            = 24201u,$/;"	e	enum:os_err
+OS_ERR_OS_RUNNING	Source/os.h	/^    OS_ERR_OS_RUNNING                = 24202u,$/;"	e	enum:os_err
+OS_ERR_P	Source/os.h	/^    OS_ERR_P                         = 25000u,$/;"	e	enum:os_err
+OS_ERR_PEND_ABORT	Source/os.h	/^    OS_ERR_PEND_ABORT                = 25001u,$/;"	e	enum:os_err
+OS_ERR_PEND_ABORT_ISR	Source/os.h	/^    OS_ERR_PEND_ABORT_ISR            = 25002u,$/;"	e	enum:os_err
+OS_ERR_PEND_ABORT_NONE	Source/os.h	/^    OS_ERR_PEND_ABORT_NONE           = 25003u,$/;"	e	enum:os_err
+OS_ERR_PEND_ABORT_SELF	Source/os.h	/^    OS_ERR_PEND_ABORT_SELF           = 25004u,$/;"	e	enum:os_err
+OS_ERR_PEND_DEL	Source/os.h	/^    OS_ERR_PEND_DEL                  = 25005u,$/;"	e	enum:os_err
+OS_ERR_PEND_ISR	Source/os.h	/^    OS_ERR_PEND_ISR                  = 25006u,$/;"	e	enum:os_err
+OS_ERR_PEND_LOCKED	Source/os.h	/^    OS_ERR_PEND_LOCKED               = 25007u,$/;"	e	enum:os_err
+OS_ERR_PEND_WOULD_BLOCK	Source/os.h	/^    OS_ERR_PEND_WOULD_BLOCK          = 25008u,$/;"	e	enum:os_err
+OS_ERR_POST_ISR	Source/os.h	/^    OS_ERR_POST_ISR                  = 25102u,$/;"	e	enum:os_err
+OS_ERR_POST_NULL_PTR	Source/os.h	/^    OS_ERR_POST_NULL_PTR             = 25101u,$/;"	e	enum:os_err
+OS_ERR_PRIO	Source/os.h	/^    OS_ERR_PRIO                      = 25202u,$/;"	e	enum:os_err
+OS_ERR_PRIO_EXIST	Source/os.h	/^    OS_ERR_PRIO_EXIST                = 25201u,$/;"	e	enum:os_err
+OS_ERR_PRIO_INVALID	Source/os.h	/^    OS_ERR_PRIO_INVALID              = 25203u,$/;"	e	enum:os_err
+OS_ERR_PTR_INVALID	Source/os.h	/^    OS_ERR_PTR_INVALID               = 25301u,$/;"	e	enum:os_err
+OS_ERR_Q	Source/os.h	/^    OS_ERR_Q                         = 26000u,$/;"	e	enum:os_err
+OS_ERR_Q_EMPTY	Source/os.h	/^    OS_ERR_Q_EMPTY                   = 26002u,$/;"	e	enum:os_err
+OS_ERR_Q_FULL	Source/os.h	/^    OS_ERR_Q_FULL                    = 26001u,$/;"	e	enum:os_err
+OS_ERR_Q_MAX	Source/os.h	/^    OS_ERR_Q_MAX                     = 26003u,$/;"	e	enum:os_err
+OS_ERR_Q_SIZE	Source/os.h	/^    OS_ERR_Q_SIZE                    = 26004u,$/;"	e	enum:os_err
+OS_ERR_R	Source/os.h	/^    OS_ERR_R                         = 27000u,$/;"	e	enum:os_err
+OS_ERR_REG_ID_INVALID	Source/os.h	/^    OS_ERR_REG_ID_INVALID            = 27001u,$/;"	e	enum:os_err
+OS_ERR_ROUND_ROBIN_1	Source/os.h	/^    OS_ERR_ROUND_ROBIN_1             = 27002u,$/;"	e	enum:os_err
+OS_ERR_ROUND_ROBIN_DISABLED	Source/os.h	/^    OS_ERR_ROUND_ROBIN_DISABLED      = 27003u,$/;"	e	enum:os_err
+OS_ERR_S	Source/os.h	/^    OS_ERR_S                         = 28000u,$/;"	e	enum:os_err
+OS_ERR_SCHED_INVALID_TIME_SLICE	Source/os.h	/^    OS_ERR_SCHED_INVALID_TIME_SLICE  = 28001u,$/;"	e	enum:os_err
+OS_ERR_SCHED_LOCKED	Source/os.h	/^    OS_ERR_SCHED_LOCKED              = 28003u,$/;"	e	enum:os_err
+OS_ERR_SCHED_LOCK_ISR	Source/os.h	/^    OS_ERR_SCHED_LOCK_ISR            = 28002u,$/;"	e	enum:os_err
+OS_ERR_SCHED_NOT_LOCKED	Source/os.h	/^    OS_ERR_SCHED_NOT_LOCKED          = 28004u,$/;"	e	enum:os_err
+OS_ERR_SCHED_UNLOCK_ISR	Source/os.h	/^    OS_ERR_SCHED_UNLOCK_ISR          = 28005u,$/;"	e	enum:os_err
+OS_ERR_SEM_OVF	Source/os.h	/^    OS_ERR_SEM_OVF                   = 28101u,$/;"	e	enum:os_err
+OS_ERR_SET_ISR	Source/os.h	/^    OS_ERR_SET_ISR                   = 28102u,$/;"	e	enum:os_err
+OS_ERR_STATE_INVALID	Source/os.h	/^    OS_ERR_STATE_INVALID             = 28205u,$/;"	e	enum:os_err
+OS_ERR_STATUS_INVALID	Source/os.h	/^    OS_ERR_STATUS_INVALID            = 28206u,$/;"	e	enum:os_err
+OS_ERR_STAT_PRIO_INVALID	Source/os.h	/^    OS_ERR_STAT_PRIO_INVALID         = 28202u,$/;"	e	enum:os_err
+OS_ERR_STAT_RESET_ISR	Source/os.h	/^    OS_ERR_STAT_RESET_ISR            = 28201u,$/;"	e	enum:os_err
+OS_ERR_STAT_STK_INVALID	Source/os.h	/^    OS_ERR_STAT_STK_INVALID          = 28203u,$/;"	e	enum:os_err
+OS_ERR_STAT_STK_SIZE_INVALID	Source/os.h	/^    OS_ERR_STAT_STK_SIZE_INVALID     = 28204u,$/;"	e	enum:os_err
+OS_ERR_STK_INVALID	Source/os.h	/^    OS_ERR_STK_INVALID               = 28207u,$/;"	e	enum:os_err
+OS_ERR_STK_LIMIT_INVALID	Source/os.h	/^    OS_ERR_STK_LIMIT_INVALID         = 28209u,$/;"	e	enum:os_err
+OS_ERR_STK_SIZE_INVALID	Source/os.h	/^    OS_ERR_STK_SIZE_INVALID          = 28208u,$/;"	e	enum:os_err
+OS_ERR_T	Source/os.h	/^    OS_ERR_T                         = 29000u,$/;"	e	enum:os_err
+OS_ERR_TASK_CHANGE_PRIO_ISR	Source/os.h	/^    OS_ERR_TASK_CHANGE_PRIO_ISR      = 29001u,$/;"	e	enum:os_err
+OS_ERR_TASK_CREATE_ISR	Source/os.h	/^    OS_ERR_TASK_CREATE_ISR           = 29002u,$/;"	e	enum:os_err
+OS_ERR_TASK_DEL	Source/os.h	/^    OS_ERR_TASK_DEL                  = 29003u,$/;"	e	enum:os_err
+OS_ERR_TASK_DEL_IDLE	Source/os.h	/^    OS_ERR_TASK_DEL_IDLE             = 29004u,$/;"	e	enum:os_err
+OS_ERR_TASK_DEL_INVALID	Source/os.h	/^    OS_ERR_TASK_DEL_INVALID          = 29005u,$/;"	e	enum:os_err
+OS_ERR_TASK_DEL_ISR	Source/os.h	/^    OS_ERR_TASK_DEL_ISR              = 29006u,$/;"	e	enum:os_err
+OS_ERR_TASK_INVALID	Source/os.h	/^    OS_ERR_TASK_INVALID              = 29007u,$/;"	e	enum:os_err
+OS_ERR_TASK_NOT_DLY	Source/os.h	/^    OS_ERR_TASK_NOT_DLY              = 29009u,$/;"	e	enum:os_err
+OS_ERR_TASK_NOT_EXIST	Source/os.h	/^    OS_ERR_TASK_NOT_EXIST            = 29010u,$/;"	e	enum:os_err
+OS_ERR_TASK_NOT_SUSPENDED	Source/os.h	/^    OS_ERR_TASK_NOT_SUSPENDED        = 29011u,$/;"	e	enum:os_err
+OS_ERR_TASK_NO_MORE_TCB	Source/os.h	/^    OS_ERR_TASK_NO_MORE_TCB          = 29008u,$/;"	e	enum:os_err
+OS_ERR_TASK_OPT	Source/os.h	/^    OS_ERR_TASK_OPT                  = 29012u,$/;"	e	enum:os_err
+OS_ERR_TASK_RESUME_ISR	Source/os.h	/^    OS_ERR_TASK_RESUME_ISR           = 29013u,$/;"	e	enum:os_err
+OS_ERR_TASK_RESUME_PRIO	Source/os.h	/^    OS_ERR_TASK_RESUME_PRIO          = 29014u,$/;"	e	enum:os_err
+OS_ERR_TASK_RESUME_SELF	Source/os.h	/^    OS_ERR_TASK_RESUME_SELF          = 29015u,$/;"	e	enum:os_err
+OS_ERR_TASK_RUNNING	Source/os.h	/^    OS_ERR_TASK_RUNNING              = 29016u,$/;"	e	enum:os_err
+OS_ERR_TASK_STK_CHK_ISR	Source/os.h	/^    OS_ERR_TASK_STK_CHK_ISR          = 29017u,$/;"	e	enum:os_err
+OS_ERR_TASK_SUSPENDED	Source/os.h	/^    OS_ERR_TASK_SUSPENDED            = 29018u,$/;"	e	enum:os_err
+OS_ERR_TASK_SUSPEND_IDLE	Source/os.h	/^    OS_ERR_TASK_SUSPEND_IDLE         = 29019u,$/;"	e	enum:os_err
+OS_ERR_TASK_SUSPEND_INT_HANDLER	Source/os.h	/^    OS_ERR_TASK_SUSPEND_INT_HANDLER  = 29020u,$/;"	e	enum:os_err
+OS_ERR_TASK_SUSPEND_ISR	Source/os.h	/^    OS_ERR_TASK_SUSPEND_ISR          = 29021u,$/;"	e	enum:os_err
+OS_ERR_TASK_SUSPEND_PRIO	Source/os.h	/^    OS_ERR_TASK_SUSPEND_PRIO         = 29022u,$/;"	e	enum:os_err
+OS_ERR_TASK_WAITING	Source/os.h	/^    OS_ERR_TASK_WAITING              = 29023u,$/;"	e	enum:os_err
+OS_ERR_TCB_INVALID	Source/os.h	/^    OS_ERR_TCB_INVALID               = 29101u,$/;"	e	enum:os_err
+OS_ERR_TICK_PRIO_INVALID	Source/os.h	/^    OS_ERR_TICK_PRIO_INVALID         = 29201u,$/;"	e	enum:os_err
+OS_ERR_TICK_STK_INVALID	Source/os.h	/^    OS_ERR_TICK_STK_INVALID          = 29202u,$/;"	e	enum:os_err
+OS_ERR_TICK_STK_SIZE_INVALID	Source/os.h	/^    OS_ERR_TICK_STK_SIZE_INVALID     = 29203u,$/;"	e	enum:os_err
+OS_ERR_TICK_WHEEL_SIZE	Source/os.h	/^    OS_ERR_TICK_WHEEL_SIZE           = 29204u,$/;"	e	enum:os_err
+OS_ERR_TIMEOUT	Source/os.h	/^    OS_ERR_TIMEOUT                   = 29401u,$/;"	e	enum:os_err
+OS_ERR_TIME_DLY_ISR	Source/os.h	/^    OS_ERR_TIME_DLY_ISR              = 29301u,$/;"	e	enum:os_err
+OS_ERR_TIME_DLY_RESUME_ISR	Source/os.h	/^    OS_ERR_TIME_DLY_RESUME_ISR       = 29302u,$/;"	e	enum:os_err
+OS_ERR_TIME_GET_ISR	Source/os.h	/^    OS_ERR_TIME_GET_ISR              = 29303u,$/;"	e	enum:os_err
+OS_ERR_TIME_INVALID_HOURS	Source/os.h	/^    OS_ERR_TIME_INVALID_HOURS        = 29304u,$/;"	e	enum:os_err
+OS_ERR_TIME_INVALID_MILLISECONDS	Source/os.h	/^    OS_ERR_TIME_INVALID_MILLISECONDS = 29307u,$/;"	e	enum:os_err
+OS_ERR_TIME_INVALID_MINUTES	Source/os.h	/^    OS_ERR_TIME_INVALID_MINUTES      = 29305u,$/;"	e	enum:os_err
+OS_ERR_TIME_INVALID_SECONDS	Source/os.h	/^    OS_ERR_TIME_INVALID_SECONDS      = 29306u,$/;"	e	enum:os_err
+OS_ERR_TIME_NOT_DLY	Source/os.h	/^    OS_ERR_TIME_NOT_DLY              = 29308u,$/;"	e	enum:os_err
+OS_ERR_TIME_SET_ISR	Source/os.h	/^    OS_ERR_TIME_SET_ISR              = 29309u,$/;"	e	enum:os_err
+OS_ERR_TIME_ZERO_DLY	Source/os.h	/^    OS_ERR_TIME_ZERO_DLY             = 29310u,$/;"	e	enum:os_err
+OS_ERR_TLS_DESTRUCT_ASSIGNED	Source/os.h	/^    OS_ERR_TLS_DESTRUCT_ASSIGNED     = 29124u,$/;"	e	enum:os_err
+OS_ERR_TLS_ID_INVALID	Source/os.h	/^    OS_ERR_TLS_ID_INVALID            = 29120u,$/;"	e	enum:os_err
+OS_ERR_TLS_ISR	Source/os.h	/^    OS_ERR_TLS_ISR                   = 29121u,$/;"	e	enum:os_err
+OS_ERR_TLS_NOT_EN	Source/os.h	/^    OS_ERR_TLS_NOT_EN                = 29123u,$/;"	e	enum:os_err
+OS_ERR_TLS_NO_MORE_AVAIL	Source/os.h	/^    OS_ERR_TLS_NO_MORE_AVAIL         = 29122u,$/;"	e	enum:os_err
+OS_ERR_TMR_INACTIVE	Source/os.h	/^    OS_ERR_TMR_INACTIVE              = 29501u,$/;"	e	enum:os_err
+OS_ERR_TMR_INVALID	Source/os.h	/^    OS_ERR_TMR_INVALID               = 29506u,$/;"	e	enum:os_err
+OS_ERR_TMR_INVALID_DEST	Source/os.h	/^    OS_ERR_TMR_INVALID_DEST          = 29502u,$/;"	e	enum:os_err
+OS_ERR_TMR_INVALID_DLY	Source/os.h	/^    OS_ERR_TMR_INVALID_DLY           = 29503u,$/;"	e	enum:os_err
+OS_ERR_TMR_INVALID_PERIOD	Source/os.h	/^    OS_ERR_TMR_INVALID_PERIOD        = 29504u,$/;"	e	enum:os_err
+OS_ERR_TMR_INVALID_STATE	Source/os.h	/^    OS_ERR_TMR_INVALID_STATE         = 29505u,$/;"	e	enum:os_err
+OS_ERR_TMR_ISR	Source/os.h	/^    OS_ERR_TMR_ISR                   = 29507u,$/;"	e	enum:os_err
+OS_ERR_TMR_NON_AVAIL	Source/os.h	/^    OS_ERR_TMR_NON_AVAIL             = 29509u,$/;"	e	enum:os_err
+OS_ERR_TMR_NO_CALLBACK	Source/os.h	/^    OS_ERR_TMR_NO_CALLBACK           = 29508u,$/;"	e	enum:os_err
+OS_ERR_TMR_PRIO_INVALID	Source/os.h	/^    OS_ERR_TMR_PRIO_INVALID          = 29510u,$/;"	e	enum:os_err
+OS_ERR_TMR_STK_INVALID	Source/os.h	/^    OS_ERR_TMR_STK_INVALID           = 29511u,$/;"	e	enum:os_err
+OS_ERR_TMR_STK_SIZE_INVALID	Source/os.h	/^    OS_ERR_TMR_STK_SIZE_INVALID      = 29512u,$/;"	e	enum:os_err
+OS_ERR_TMR_STOPPED	Source/os.h	/^    OS_ERR_TMR_STOPPED               = 29513u,$/;"	e	enum:os_err
+OS_ERR_U	Source/os.h	/^    OS_ERR_U                         = 30000u,$/;"	e	enum:os_err
+OS_ERR_V	Source/os.h	/^    OS_ERR_V                         = 31000u,$/;"	e	enum:os_err
+OS_ERR_W	Source/os.h	/^    OS_ERR_W                         = 32000u,$/;"	e	enum:os_err
+OS_ERR_X	Source/os.h	/^    OS_ERR_X                         = 33000u,$/;"	e	enum:os_err
+OS_ERR_Y	Source/os.h	/^    OS_ERR_Y                         = 34000u,$/;"	e	enum:os_err
+OS_ERR_YIELD_ISR	Source/os.h	/^    OS_ERR_YIELD_ISR                 = 34001u,$/;"	e	enum:os_err
+OS_ERR_Z	Source/os.h	/^    OS_ERR_Z                         = 35000u$/;"	e	enum:os_err
+OS_EXT	Source/os.h	158;"	d
+OS_EXT	Source/os.h	160;"	d
+OS_FLAGS	Source/os_type.h	/^typedef   CPU_INT32U      OS_FLAGS;                    \/* Event flags,                                      8\/16\/<32> *\/$/;"	t
+OS_FLAG_GRP	Source/os.h	/^typedef  struct  os_flag_grp         OS_FLAG_GRP;$/;"	t	typeref:struct:os_flag_grp
+OS_FlagBlock	Source/os_flag.c	/^void  OS_FlagBlock (OS_PEND_DATA  *p_pend_data,$/;"	f
+OS_FlagClr	Source/os_flag.c	/^void  OS_FlagClr (OS_FLAG_GRP  *p_grp)$/;"	f
+OS_FlagDbgListAdd	Source/os_flag.c	/^void  OS_FlagDbgListAdd (OS_FLAG_GRP  *p_grp)$/;"	f
+OS_FlagDbgListRemove	Source/os_flag.c	/^void  OS_FlagDbgListRemove (OS_FLAG_GRP  *p_grp)$/;"	f
+OS_FlagInit	Source/os_flag.c	/^void  OS_FlagInit (OS_ERR  *p_err)$/;"	f
+OS_FlagPost	Source/os_flag.c	/^OS_FLAGS  OS_FlagPost (OS_FLAG_GRP  *p_grp,$/;"	f
+OS_FlagTaskRdy	Source/os_flag.c	/^void   OS_FlagTaskRdy (OS_TCB    *p_tcb,$/;"	f
+OS_GLOBALS	Source/os_var.c	33;"	d	file:
+OS_H	Source/os.h	37;"	d
+OS_IDLE_CTR	Source/os_type.h	/^typedef   CPU_INT32U      OS_IDLE_CTR;                 \/* Holds the number of times the idle task runs,       <32>\/64 *\/$/;"	t
+OS_INT_Q	Source/os.h	/^typedef  struct  os_int_q            OS_INT_Q;$/;"	t	typeref:struct:os_int_q
+OS_IdleTask	Source/os_core.c	/^void  OS_IdleTask (void  *p_arg)$/;"	f
+OS_IdleTaskInit	Source/os_core.c	/^void  OS_IdleTaskInit (OS_ERR  *p_err)$/;"	f
+OS_IntQPost	Source/os_int.c	/^void  OS_IntQPost (OS_OBJ_TYPE   type,$/;"	f
+OS_IntQRePost	Source/os_int.c	/^void  OS_IntQRePost (void)$/;"	f
+OS_IntQTask	Source/os_int.c	/^void  OS_IntQTask (void  *p_arg)$/;"	f
+OS_IntQTaskInit	Source/os_int.c	/^void  OS_IntQTaskInit (OS_ERR  *p_err)$/;"	f
+OS_MEM	Source/os.h	/^typedef  struct  os_mem              OS_MEM;$/;"	t	typeref:struct:os_mem
+OS_MEM_QTY	Source/os_type.h	/^typedef   CPU_INT16U      OS_MEM_QTY;                  \/* Number of memory blocks,                            <16>\/32 *\/$/;"	t
+OS_MEM_SIZE	Source/os_type.h	/^typedef   CPU_INT16U      OS_MEM_SIZE;                 \/* Size in bytes of a memory block,                    <16>\/32 *\/$/;"	t
+OS_MSG	Source/os.h	/^typedef  struct  os_msg              OS_MSG;$/;"	t	typeref:struct:os_msg
+OS_MSG_EN	Source/os.h	166;"	d
+OS_MSG_POOL	Source/os.h	/^typedef  struct  os_msg_pool         OS_MSG_POOL;$/;"	t	typeref:struct:os_msg_pool
+OS_MSG_Q	Source/os.h	/^typedef  struct  os_msg_q            OS_MSG_Q;$/;"	t	typeref:struct:os_msg_q
+OS_MSG_QTY	Source/os_type.h	/^typedef   CPU_INT16U      OS_MSG_QTY;                  \/* Number of OS_MSGs in the msg pool,                  <16>\/32 *\/$/;"	t
+OS_MSG_SIZE	Source/os_type.h	/^typedef   CPU_INT16U      OS_MSG_SIZE;                 \/* Size of messages in number of bytes,                <16>\/32 *\/$/;"	t
+OS_MUTEX	Source/os.h	/^typedef  struct  os_mutex            OS_MUTEX;$/;"	t	typeref:struct:os_mutex
+OS_MemDbgListAdd	Source/os_mem.c	/^void  OS_MemDbgListAdd (OS_MEM  *p_mem)$/;"	f
+OS_MemInit	Source/os_mem.c	/^void  OS_MemInit (OS_ERR  *p_err)$/;"	f
+OS_MsgPoolCreate	Source/os_msg.c	/^void  OS_MsgPoolCreate (OS_MSG      *p_msg,$/;"	f
+OS_MsgPoolInit	Source/os_msg.c	/^void  OS_MsgPoolInit (OS_ERR  *p_err)$/;"	f
+OS_MsgQFreeAll	Source/os_msg.c	/^OS_MSG_QTY  OS_MsgQFreeAll (OS_MSG_Q  *p_msg_q)$/;"	f
+OS_MsgQGet	Source/os_msg.c	/^void  *OS_MsgQGet (OS_MSG_Q     *p_msg_q,$/;"	f
+OS_MsgQInit	Source/os_msg.c	/^void  OS_MsgQInit (OS_MSG_Q    *p_msg_q,$/;"	f
+OS_MsgQPut	Source/os_msg.c	/^void  OS_MsgQPut (OS_MSG_Q     *p_msg_q,$/;"	f
+OS_MutexClr	Source/os_mutex.c	/^void  OS_MutexClr (OS_MUTEX  *p_mutex)$/;"	f
+OS_MutexDbgListAdd	Source/os_mutex.c	/^void  OS_MutexDbgListAdd (OS_MUTEX  *p_mutex)$/;"	f
+OS_MutexDbgListRemove	Source/os_mutex.c	/^void  OS_MutexDbgListRemove (OS_MUTEX  *p_mutex)$/;"	f
+OS_MutexInit	Source/os_mutex.c	/^void  OS_MutexInit (OS_ERR  *p_err)$/;"	f
+OS_NESTING_CTR	Source/os_type.h	/^typedef   CPU_INT08U      OS_NESTING_CTR;              \/* Interrupt and scheduler nesting,                  <8>\/16\/32 *\/$/;"	t
+OS_OBJ_QTY	Source/os_type.h	/^typedef   CPU_INT16U      OS_OBJ_QTY;                  \/* Number of kernel objects counter,                   <16>\/32 *\/$/;"	t
+OS_OBJ_TYPE	Source/os_type.h	/^typedef   CPU_INT32U      OS_OBJ_TYPE;                 \/* Special flag to determine object type,                   32 *\/$/;"	t
+OS_OBJ_TYPE_FLAG	Source/os.h	242;"	d
+OS_OBJ_TYPE_MEM	Source/os.h	243;"	d
+OS_OBJ_TYPE_MUTEX	Source/os.h	244;"	d
+OS_OBJ_TYPE_NONE	Source/os.h	241;"	d
+OS_OBJ_TYPE_Q	Source/os.h	245;"	d
+OS_OBJ_TYPE_SEM	Source/os.h	246;"	d
+OS_OBJ_TYPE_TASK_MSG	Source/os.h	247;"	d
+OS_OBJ_TYPE_TASK_RESUME	Source/os.h	248;"	d
+OS_OBJ_TYPE_TASK_SIGNAL	Source/os.h	249;"	d
+OS_OBJ_TYPE_TASK_SUSPEND	Source/os.h	250;"	d
+OS_OBJ_TYPE_TICK	Source/os.h	251;"	d
+OS_OBJ_TYPE_TMR	Source/os.h	252;"	d
+OS_OPT	Source/os_type.h	/^typedef   CPU_INT16U      OS_OPT;                      \/* Holds function options                              <16>\/32 *\/$/;"	t
+OS_OPT_DEL_ALWAYS	Source/os.h	269;"	d
+OS_OPT_DEL_NO_PEND	Source/os.h	268;"	d
+OS_OPT_LINK_DLY	Source/os_tmr.c	48;"	d	file:
+OS_OPT_LINK_PERIODIC	Source/os_tmr.c	49;"	d	file:
+OS_OPT_NONE	Source/os.h	260;"	d
+OS_OPT_PEND_ABORT_1	Source/os.h	302;"	d
+OS_OPT_PEND_ABORT_ALL	Source/os.h	303;"	d
+OS_OPT_PEND_BLOCKING	Source/os.h	293;"	d
+OS_OPT_PEND_FLAG_CLR_ALL	Source/os.h	278;"	d
+OS_OPT_PEND_FLAG_CLR_AND	Source/os.h	279;"	d
+OS_OPT_PEND_FLAG_CLR_ANY	Source/os.h	281;"	d
+OS_OPT_PEND_FLAG_CLR_OR	Source/os.h	282;"	d
+OS_OPT_PEND_FLAG_CONSUME	Source/os.h	290;"	d
+OS_OPT_PEND_FLAG_MASK	Source/os.h	277;"	d
+OS_OPT_PEND_FLAG_SET_ALL	Source/os.h	284;"	d
+OS_OPT_PEND_FLAG_SET_AND	Source/os.h	285;"	d
+OS_OPT_PEND_FLAG_SET_ANY	Source/os.h	287;"	d
+OS_OPT_PEND_FLAG_SET_OR	Source/os.h	288;"	d
+OS_OPT_PEND_NON_BLOCKING	Source/os.h	294;"	d
+OS_OPT_POST_1	Source/os.h	319;"	d
+OS_OPT_POST_ALL	Source/os.h	320;"	d
+OS_OPT_POST_FIFO	Source/os.h	317;"	d
+OS_OPT_POST_FLAG_CLR	Source/os.h	315;"	d
+OS_OPT_POST_FLAG_SET	Source/os.h	314;"	d
+OS_OPT_POST_LIFO	Source/os.h	318;"	d
+OS_OPT_POST_NONE	Source/os.h	312;"	d
+OS_OPT_POST_NO_SCHED	Source/os.h	322;"	d
+OS_OPT_TASK_NONE	Source/os.h	330;"	d
+OS_OPT_TASK_NO_TLS	Source/os.h	334;"	d
+OS_OPT_TASK_SAVE_FP	Source/os.h	333;"	d
+OS_OPT_TASK_STK_CHK	Source/os.h	331;"	d
+OS_OPT_TASK_STK_CLR	Source/os.h	332;"	d
+OS_OPT_TIME_DLY	Source/os.h	342;"	d
+OS_OPT_TIME_HMSM_NON_STRICT	Source/os.h	348;"	d
+OS_OPT_TIME_HMSM_STRICT	Source/os.h	347;"	d
+OS_OPT_TIME_MASK	Source/os.h	350;"	d
+OS_OPT_TIME_MATCH	Source/os.h	344;"	d
+OS_OPT_TIME_OPTS_MASK	Source/os.h	355;"	d
+OS_OPT_TIME_PERIODIC	Source/os.h	345;"	d
+OS_OPT_TIME_TIMEOUT	Source/os.h	343;"	d
+OS_OPT_TMR_CALLBACK	Source/os.h	372;"	d
+OS_OPT_TMR_CALLBACK_ARG	Source/os.h	373;"	d
+OS_OPT_TMR_NONE	Source/os.h	367;"	d
+OS_OPT_TMR_ONE_SHOT	Source/os.h	369;"	d
+OS_OPT_TMR_PERIODIC	Source/os.h	370;"	d
+OS_PEND_DATA	Source/os.h	/^typedef  struct  os_pend_data        OS_PEND_DATA;$/;"	t	typeref:struct:os_pend_data
+OS_PEND_LIST	Source/os.h	/^typedef  struct  os_pend_list        OS_PEND_LIST;$/;"	t	typeref:struct:os_pend_list
+OS_PEND_OBJ	Source/os.h	/^typedef  struct  os_pend_obj         OS_PEND_OBJ;$/;"	t	typeref:struct:os_pend_obj
+OS_PRIO	Source/os_type.h	/^typedef   CPU_INT08U      OS_PRIO;                     \/* Priority of a task,                               <8>\/16\/32 *\/$/;"	t
+OS_PRIO_INIT	Source/os.h	392;"	d
+OS_PRIO_TBL_SIZE	Source/os.h	164;"	d
+OS_Pend	Source/os_core.c	/^void  OS_Pend (OS_PEND_DATA  *p_pend_data,$/;"	f
+OS_PendAbort	Source/os_core.c	/^void  OS_PendAbort (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_PendAbort1	Source/os_core.c	/^void  OS_PendAbort1 (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_PendDataInit	Source/os_core.c	/^void  OS_PendDataInit (OS_TCB        *p_tcb,$/;"	f
+OS_PendDbgNameAdd	Source/os_core.c	/^void  OS_PendDbgNameAdd (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_PendDbgNameRemove	Source/os_core.c	/^void  OS_PendDbgNameRemove (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_PendListChangePrio	Source/os_core.c	/^void  OS_PendListChangePrio (OS_TCB   *p_tcb,$/;"	f
+OS_PendListInit	Source/os_core.c	/^void  OS_PendListInit (OS_PEND_LIST  *p_pend_list)$/;"	f
+OS_PendListInsertHead	Source/os_core.c	/^void  OS_PendListInsertHead (OS_PEND_LIST  *p_pend_list,$/;"	f
+OS_PendListInsertPrio	Source/os_core.c	/^void  OS_PendListInsertPrio (OS_PEND_LIST  *p_pend_list,$/;"	f
+OS_PendListRemove	Source/os_core.c	/^void  OS_PendListRemove (OS_TCB  *p_tcb)$/;"	f
+OS_PendListRemove1	Source/os_core.c	/^void  OS_PendListRemove1 (OS_PEND_LIST  *p_pend_list,$/;"	f
+OS_PendMultiGetRdy	Source/os_pend_multi.c	/^OS_OBJ_QTY  OS_PendMultiGetRdy (OS_PEND_DATA  *p_pend_data_tbl,$/;"	f
+OS_PendMultiValidate	Source/os_pend_multi.c	/^CPU_BOOLEAN  OS_PendMultiValidate (OS_PEND_DATA  *p_pend_data_tbl,$/;"	f
+OS_PendMultiWait	Source/os_pend_multi.c	/^void  OS_PendMultiWait (OS_PEND_DATA  *p_pend_data_tbl,$/;"	f
+OS_PendObjDel	Source/os_core.c	/^void  OS_PendObjDel (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_PendObjDel1	Source/os_core.c	/^void  OS_PendObjDel1 (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_Post	Source/os_core.c	/^void  OS_Post (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_Post1	Source/os_core.c	/^void  OS_Post1 (OS_PEND_OBJ  *p_obj,$/;"	f
+OS_PrioGetHighest	Source/os_prio.c	/^OS_PRIO  OS_PrioGetHighest (void)$/;"	f
+OS_PrioInit	Source/os_prio.c	/^void  OS_PrioInit (void)$/;"	f
+OS_PrioInsert	Source/os_prio.c	/^void  OS_PrioInsert (OS_PRIO  prio)$/;"	f
+OS_PrioRemove	Source/os_prio.c	/^void  OS_PrioRemove (OS_PRIO  prio)$/;"	f
+OS_Q	Source/os.h	/^typedef  struct  os_q                OS_Q;$/;"	t	typeref:struct:os_q
+OS_QClr	Source/os_q.c	/^void  OS_QClr (OS_Q  *p_q)$/;"	f
+OS_QDbgListAdd	Source/os_q.c	/^void  OS_QDbgListAdd (OS_Q  *p_q)$/;"	f
+OS_QDbgListRemove	Source/os_q.c	/^void  OS_QDbgListRemove (OS_Q  *p_q)$/;"	f
+OS_QInit	Source/os_q.c	/^void  OS_QInit (OS_ERR  *p_err)$/;"	f
+OS_QPost	Source/os_q.c	/^void  OS_QPost (OS_Q         *p_q,$/;"	f
+OS_QTY	Source/os_type.h	/^typedef   CPU_INT16U      OS_QTY;                      \/* Quantity                                            <16>\/32 *\/$/;"	t
+OS_RATE_HZ	Source/os_type.h	/^typedef   CPU_INT32U      OS_RATE_HZ;                  \/* Rate in Hertz                                            32 *\/$/;"	t
+OS_RDY_LIST	Source/os.h	/^typedef  struct  os_rdy_list         OS_RDY_LIST;$/;"	t	typeref:struct:os_rdy_list
+OS_REG	Source/os_type.h	/^typedef   CPU_INT32U      OS_REG;                      \/* Task register                                     8\/16\/<32> *\/$/;"	t
+OS_REG_ID	Source/os_type.h	/^typedef   CPU_INT08U      OS_REG_ID;                   \/* Index to task register                            <8>\/16\/32 *\/$/;"	t
+OS_RdyListInit	Source/os_core.c	/^void  OS_RdyListInit (void)$/;"	f
+OS_RdyListInsert	Source/os_core.c	/^void  OS_RdyListInsert (OS_TCB  *p_tcb)$/;"	f
+OS_RdyListInsertHead	Source/os_core.c	/^void  OS_RdyListInsertHead (OS_TCB  *p_tcb)$/;"	f
+OS_RdyListInsertTail	Source/os_core.c	/^void  OS_RdyListInsertTail (OS_TCB  *p_tcb)$/;"	f
+OS_RdyListMoveHeadToTail	Source/os_core.c	/^void  OS_RdyListMoveHeadToTail (OS_RDY_LIST  *p_rdy_list)$/;"	f
+OS_RdyListRemove	Source/os_core.c	/^void  OS_RdyListRemove (OS_TCB  *p_tcb)$/;"	f
+OS_SCHED_LOCK_TIME_MEAS_START	Source/os.h	75;"	d
+OS_SCHED_LOCK_TIME_MEAS_START	Source/os.h	77;"	d
+OS_SCHED_LOCK_TIME_MEAS_STOP	Source/os.h	82;"	d
+OS_SCHED_LOCK_TIME_MEAS_STOP	Source/os.h	84;"	d
+OS_SEM	Source/os.h	/^typedef  struct  os_sem              OS_SEM;$/;"	t	typeref:struct:os_sem
+OS_SEM_CTR	Source/os_type.h	/^typedef   CPU_INT32U      OS_SEM_CTR;                  \/* Semaphore value                                     16\/<32> *\/$/;"	t
+OS_STATE	Source/os_type.h	/^typedef   CPU_INT08U      OS_STATE;                    \/* State variable                                    <8>\/16\/32 *\/$/;"	t
+OS_STATE_NOT_RDY	Source/os.h	186;"	d
+OS_STATE_OS_RUNNING	Source/os.h	184;"	d
+OS_STATE_OS_STOPPED	Source/os.h	183;"	d
+OS_STATE_RDY	Source/os.h	187;"	d
+OS_STATUS	Source/os_type.h	/^typedef   CPU_INT08U      OS_STATUS;                   \/* Status                                            <8>\/16\/32 *\/$/;"	t
+OS_STATUS_PEND_ABORT	Source/os.h	227;"	d
+OS_STATUS_PEND_DEL	Source/os.h	228;"	d
+OS_STATUS_PEND_OK	Source/os.h	226;"	d
+OS_STATUS_PEND_TIMEOUT	Source/os.h	229;"	d
+OS_Sched0	Source/os_core.c	/^void  OS_Sched0 (void)$/;"	f
+OS_SchedLockTimeMeasStart	Source/os_core.c	/^void  OS_SchedLockTimeMeasStart (void)$/;"	f
+OS_SchedLockTimeMeasStop	Source/os_core.c	/^void  OS_SchedLockTimeMeasStop (void)$/;"	f
+OS_SchedRoundRobin	Source/os_core.c	/^void  OS_SchedRoundRobin (OS_RDY_LIST  *p_rdy_list)$/;"	f
+OS_SemClr	Source/os_sem.c	/^void  OS_SemClr (OS_SEM  *p_sem)$/;"	f
+OS_SemDbgListAdd	Source/os_sem.c	/^void  OS_SemDbgListAdd (OS_SEM  *p_sem)$/;"	f
+OS_SemDbgListRemove	Source/os_sem.c	/^void  OS_SemDbgListRemove (OS_SEM  *p_sem)$/;"	f
+OS_SemInit	Source/os_sem.c	/^void  OS_SemInit (OS_ERR  *p_err)$/;"	f
+OS_SemPost	Source/os_sem.c	/^OS_SEM_CTR  OS_SemPost (OS_SEM  *p_sem,$/;"	f
+OS_StatTask	Source/os_stat.c	/^void  OS_StatTask (void  *p_arg)$/;"	f
+OS_StatTaskInit	Source/os_stat.c	/^void  OS_StatTaskInit (OS_ERR  *p_err)$/;"	f
+OS_TASK_PEND_ON_FLAG	Source/os.h	211;"	d
+OS_TASK_PEND_ON_MULTI	Source/os.h	213;"	d
+OS_TASK_PEND_ON_MUTEX	Source/os.h	214;"	d
+OS_TASK_PEND_ON_NOTHING	Source/os.h	210;"	d
+OS_TASK_PEND_ON_Q	Source/os.h	215;"	d
+OS_TASK_PEND_ON_SEM	Source/os.h	216;"	d
+OS_TASK_PEND_ON_TASK_Q	Source/os.h	212;"	d
+OS_TASK_PEND_ON_TASK_SEM	Source/os.h	217;"	d
+OS_TASK_PTR	Source/os.h	/^typedef  void                      (*OS_TASK_PTR)(void *p_arg);$/;"	t
+OS_TASK_STATE_BIT_DLY	Source/os.h	191;"	d
+OS_TASK_STATE_BIT_PEND	Source/os.h	193;"	d
+OS_TASK_STATE_BIT_SUSPENDED	Source/os.h	195;"	d
+OS_TASK_STATE_DEL	Source/os.h	207;"	d
+OS_TASK_STATE_DLY	Source/os.h	200;"	d
+OS_TASK_STATE_DLY_SUSPENDED	Source/os.h	204;"	d
+OS_TASK_STATE_PEND	Source/os.h	201;"	d
+OS_TASK_STATE_PEND_SUSPENDED	Source/os.h	205;"	d
+OS_TASK_STATE_PEND_TIMEOUT	Source/os.h	202;"	d
+OS_TASK_STATE_PEND_TIMEOUT_SUSPENDED	Source/os.h	206;"	d
+OS_TASK_STATE_RDY	Source/os.h	199;"	d
+OS_TASK_STATE_SUSPENDED	Source/os.h	203;"	d
+OS_TCB	Source/os.h	/^typedef  struct  os_tcb              OS_TCB;$/;"	t	typeref:struct:os_tcb
+OS_TICK	Source/os_type.h	/^typedef   CPU_INT32U      OS_TICK;                     \/* Clock tick counter                                  <32>\/64 *\/$/;"	t
+OS_TICK_SPOKE	Source/os.h	/^typedef  struct  os_tick_spoke       OS_TICK_SPOKE;$/;"	t	typeref:struct:os_tick_spoke
+OS_TICK_SPOKE_IX	Source/os_type.h	/^typedef   CPU_INT16U      OS_TICK_SPOKE_IX;            \/* Tick wheel spoke position                         8\/<16>\/32 *\/$/;"	t
+OS_TICK_TH_INIT	Source/os.h	400;"	d
+OS_TICK_TH_RDY	Source/os.h	403;"	d
+OS_TLS	Source/os.h	/^typedef  void                       *OS_TLS;$/;"	t
+OS_TLS_DESTRUCT_PTR	Source/os.h	/^typedef  void                      (*OS_TLS_DESTRUCT_PTR)(OS_TCB    *p_tcb,$/;"	t
+OS_TLS_DestructPtrTbl	TLS/CCES/os_tls.c	/^static  OS_TLS_DESTRUCT_PTR  OS_TLS_DestructPtrTbl[OS_CFG_TLS_TBL_SIZE];$/;"	v	file:
+OS_TLS_GetID	TLS/CCES/os_tls.c	/^OS_TLS_ID  OS_TLS_GetID (OS_ERR  *p_err)$/;"	f
+OS_TLS_GetID	TLS/IAR/os_tls.c	/^OS_TLS_ID  OS_TLS_GetID (OS_ERR  *p_err)$/;"	f
+OS_TLS_GetValue	TLS/CCES/os_tls.c	/^OS_TLS  OS_TLS_GetValue (OS_TCB     *p_tcb,$/;"	f
+OS_TLS_GetValue	TLS/IAR/os_tls.c	/^OS_TLS  OS_TLS_GetValue (OS_TCB     *p_tcb,$/;"	f
+OS_TLS_ID	Source/os.h	/^typedef  CPU_DATA                    OS_TLS_ID;$/;"	t
+OS_TLS_Init	TLS/CCES/os_tls.c	/^void  OS_TLS_Init (OS_ERR *p_err)$/;"	f
+OS_TLS_Init	TLS/IAR/os_tls.c	/^void  OS_TLS_Init (OS_ERR *p_err)$/;"	f
+OS_TLS_LOCK	TLS/IAR/os_tls.c	/^typedef  struct  os_tls_lock   OS_TLS_LOCK;$/;"	t	typeref:struct:os_tls_lock	file:
+OS_TLS_LOCK_MAX	TLS/IAR/os_tls.c	53;"	d	file:
+OS_TLS_LOCK_MAX	TLS/IAR/os_tls.c	55;"	d	file:
+OS_TLS_LibID	TLS/IAR/os_tls.c	/^static  CPU_DATA            OS_TLS_LibID;                                 \/* ID used to store library space pointer   *\/$/;"	v	file:
+OS_TLS_LockAcquire	TLS/IAR/os_tls.c	/^void  OS_TLS_LockAcquire (void  *p_lock)$/;"	f
+OS_TLS_LockCreate	TLS/IAR/os_tls.c	/^void  OS_TLS_LockCreate (void  **p_lock)$/;"	f
+OS_TLS_LockDel	TLS/IAR/os_tls.c	/^void  OS_TLS_LockDel (void  *p_lock)$/;"	f
+OS_TLS_LockPoolListPtr	TLS/IAR/os_tls.c	/^static  OS_TLS_LOCK        *OS_TLS_LockPoolListPtr = (OS_TLS_LOCK *)0;    \/* Pointer to head of 'OS_TLS_LOCK' list    *\/$/;"	v	file:
+OS_TLS_LockPoolTbl	TLS/IAR/os_tls.c	/^static  OS_TLS_LOCK         OS_TLS_LockPoolTbl[OS_TLS_LOCK_MAX];$/;"	v	file:
+OS_TLS_LockRelease	TLS/IAR/os_tls.c	/^static  void  OS_TLS_LockRelease (void  *p_lock)$/;"	f	file:
+OS_TLS_NextAvailID	TLS/CCES/os_tls.c	/^static  CPU_DATA             OS_TLS_NextAvailID;                          \/* Next available TLS ID                    *\/$/;"	v	file:
+OS_TLS_NextAvailID	TLS/IAR/os_tls.c	/^static  CPU_DATA            OS_TLS_NextAvailID;                           \/* Next available TLS ID                    *\/$/;"	v	file:
+OS_TLS_SetDestruct	TLS/CCES/os_tls.c	/^void  OS_TLS_SetDestruct (OS_TLS_ID            id,$/;"	f
+OS_TLS_SetDestruct	TLS/IAR/os_tls.c	/^void  OS_TLS_SetDestruct (OS_TLS_ID            id,$/;"	f
+OS_TLS_SetValue	TLS/CCES/os_tls.c	/^void  OS_TLS_SetValue (OS_TCB     *p_tcb,$/;"	f
+OS_TLS_SetValue	TLS/IAR/os_tls.c	/^void  OS_TLS_SetValue (OS_TCB     *p_tcb,$/;"	f
+OS_TLS_TaskCreate	TLS/CCES/os_tls.c	/^void  OS_TLS_TaskCreate (OS_TCB  *p_tcb)$/;"	f
+OS_TLS_TaskCreate	TLS/IAR/os_tls.c	/^void  OS_TLS_TaskCreate (OS_TCB  *p_tcb)$/;"	f
+OS_TLS_TaskDel	TLS/CCES/os_tls.c	/^void  OS_TLS_TaskDel (OS_TCB  *p_tcb)$/;"	f
+OS_TLS_TaskDel	TLS/IAR/os_tls.c	/^void  OS_TLS_TaskDel (OS_TCB  *p_tcb)$/;"	f
+OS_TLS_TaskSw	TLS/CCES/os_tls.c	/^void  OS_TLS_TaskSw (void)$/;"	f
+OS_TLS_TaskSw	TLS/IAR/os_tls.c	/^void  OS_TLS_TaskSw (void)$/;"	f
+OS_TMR	Source/os.h	/^typedef  struct  os_tmr              OS_TMR;$/;"	t	typeref:struct:os_tmr
+OS_TMR_CALLBACK_PTR	Source/os.h	/^typedef  void                      (*OS_TMR_CALLBACK_PTR)(void *p_tmr, void *p_arg);$/;"	t
+OS_TMR_SPOKE	Source/os.h	/^typedef  struct  os_tmr_spoke        OS_TMR_SPOKE;$/;"	t	typeref:struct:os_tmr_spoke
+OS_TMR_SPOKE_IX	Source/os_type.h	/^typedef   CPU_INT16U      OS_TMR_SPOKE_IX;             \/* Timer wheel spoke position                        8\/<16>\/32 *\/$/;"	t
+OS_TMR_STATE_COMPLETED	Source/os.h	384;"	d
+OS_TMR_STATE_RUNNING	Source/os.h	383;"	d
+OS_TMR_STATE_STOPPED	Source/os.h	382;"	d
+OS_TMR_STATE_UNUSED	Source/os.h	381;"	d
+OS_TYPE_H	Source/os_type.h	32;"	d
+OS_TaskBlock	Source/os_core.c	/^void  OS_TaskBlock (OS_TCB   *p_tcb,$/;"	f
+OS_TaskDbgListAdd	Source/os_task.c	/^void  OS_TaskDbgListAdd (OS_TCB  *p_tcb)$/;"	f
+OS_TaskDbgListRemove	Source/os_task.c	/^void  OS_TaskDbgListRemove (OS_TCB  *p_tcb)$/;"	f
+OS_TaskInit	Source/os_task.c	/^void  OS_TaskInit (OS_ERR  *p_err)$/;"	f
+OS_TaskInitTCB	Source/os_task.c	/^void  OS_TaskInitTCB (OS_TCB  *p_tcb)$/;"	f
+OS_TaskQPost	Source/os_task.c	/^void  OS_TaskQPost (OS_TCB       *p_tcb,$/;"	f
+OS_TaskRdy	Source/os_core.c	/^void  OS_TaskRdy (OS_TCB  *p_tcb)$/;"	f
+OS_TaskResume	Source/os_task.c	/^void  OS_TaskResume (OS_TCB  *p_tcb,$/;"	f
+OS_TaskReturn	Source/os_task.c	/^void  OS_TaskReturn (void)$/;"	f
+OS_TaskSemPost	Source/os_task.c	/^OS_SEM_CTR  OS_TaskSemPost (OS_TCB  *p_tcb,$/;"	f
+OS_TaskSuspend	Source/os_task.c	/^void   OS_TaskSuspend (OS_TCB  *p_tcb,$/;"	f
+OS_TickListInit	Source/os_tick.c	/^void  OS_TickListInit (void)$/;"	f
+OS_TickListInsert	Source/os_tick.c	/^void  OS_TickListInsert (OS_TCB   *p_tcb,$/;"	f
+OS_TickListRemove	Source/os_tick.c	/^void  OS_TickListRemove (OS_TCB  *p_tcb)$/;"	f
+OS_TickListResetPeak	Source/os_tick.c	/^void  OS_TickListResetPeak (void)$/;"	f
+OS_TickListUpdate	Source/os_tick.c	/^void  OS_TickListUpdate (void)$/;"	f
+OS_TickTask	Source/os_tick.c	/^void  OS_TickTask (void  *p_arg)$/;"	f
+OS_TickTaskInit	Source/os_tick.c	/^void  OS_TickTaskInit (OS_ERR  *p_err)$/;"	f
+OS_TmrClr	Source/os_tmr.c	/^void  OS_TmrClr (OS_TMR  *p_tmr)$/;"	f
+OS_TmrDbgListAdd	Source/os_tmr.c	/^void  OS_TmrDbgListAdd (OS_TMR  *p_tmr)$/;"	f
+OS_TmrDbgListRemove	Source/os_tmr.c	/^void  OS_TmrDbgListRemove (OS_TMR  *p_tmr)$/;"	f
+OS_TmrInit	Source/os_tmr.c	/^void  OS_TmrInit (OS_ERR  *p_err)$/;"	f
+OS_TmrLink	Source/os_tmr.c	/^void  OS_TmrLink (OS_TMR  *p_tmr,$/;"	f
+OS_TmrResetPeak	Source/os_tmr.c	/^void  OS_TmrResetPeak (void)$/;"	f
+OS_TmrTask	Source/os_tmr.c	/^void  OS_TmrTask (void  *p_arg)$/;"	f
+OS_TmrUnlink	Source/os_tmr.c	/^void  OS_TmrUnlink (OS_TMR  *p_tmr)$/;"	f
+OS_VERSION	Source/os.h	45;"	d
+ObjPtr	Source/os.h	/^    void                *ObjPtr;                            \/* Pointer to object placed in the queue                  *\/$/;"	m	struct:os_int_q
+Opt	Source/os.h	/^    OS_OPT               Opt;                               \/* Options (see OS_OPT_TMR_xxx)                           *\/$/;"	m	struct:os_tmr
+Opt	Source/os.h	/^    OS_OPT               Opt;                               \/* Post Options                                           *\/$/;"	m	struct:os_int_q
+Opt	Source/os.h	/^    OS_OPT               Opt;                               \/* Task options as passed by OSTaskCreate()               *\/$/;"	m	struct:os_tcb
+OutPtr	Source/os.h	/^    OS_MSG              *OutPtr;                            \/* Pointer to next OS_MSG to be extracted from the queue  *\/$/;"	m	struct:os_msg_q
+OwnerNestingCtr	Source/os.h	/^    OS_NESTING_CTR       OwnerNestingCtr;                   \/* Mutex is available when the counter is 0               *\/$/;"	m	struct:os_mutex
+OwnerOriginalPrio	Source/os.h	/^    OS_PRIO              OwnerOriginalPrio;$/;"	m	struct:os_mutex
+OwnerTCBPtr	Source/os.h	/^    OS_TCB              *OwnerTCBPtr;$/;"	m	struct:os_mutex
+PendDataTblEntries	Source/os.h	/^    OS_OBJ_QTY           PendDataTblEntries;                \/* Size of array of objects to pend on                    *\/$/;"	m	struct:os_tcb
+PendDataTblPtr	Source/os.h	/^    OS_PEND_DATA        *PendDataTblPtr;                    \/* Pointer to list containing objects pended on           *\/$/;"	m	struct:os_tcb
+PendList	Source/os.h	/^    OS_PEND_LIST         PendList;                          \/* List of tasks pending on object                        *\/$/;"	m	struct:os_pend_obj
+PendList	Source/os.h	/^    OS_PEND_LIST         PendList;                          \/* List of tasks waiting on event flag group              *\/$/;"	m	struct:os_flag_grp
+PendList	Source/os.h	/^    OS_PEND_LIST         PendList;                          \/* List of tasks waiting on message queue                 *\/$/;"	m	struct:os_q
+PendList	Source/os.h	/^    OS_PEND_LIST         PendList;                          \/* List of tasks waiting on mutex                         *\/$/;"	m	struct:os_mutex
+PendList	Source/os.h	/^    OS_PEND_LIST         PendList;                          \/* List of tasks waiting on semaphore                     *\/$/;"	m	struct:os_sem
+PendObjPtr	Source/os.h	/^    OS_PEND_OBJ         *PendObjPtr;$/;"	m	struct:os_pend_data
+PendOn	Source/os.h	/^    OS_STATE             PendOn;                            \/* Indicates what task is pending on                      *\/$/;"	m	struct:os_tcb
+PendStatus	Source/os.h	/^    OS_STATUS            PendStatus;                        \/* Pend status                                            *\/$/;"	m	struct:os_tcb
+Period	Source/os.h	/^    OS_TICK              Period;                            \/* Period to repeat timer                                 *\/$/;"	m	struct:os_tmr
+PrevPtr	Source/os.h	/^    OS_PEND_DATA        *PrevPtr;$/;"	m	struct:os_pend_data
+PrevPtr	Source/os.h	/^    OS_TCB              *PrevPtr;                           \/* Pointer to previous TCB in the TCB list                *\/$/;"	m	struct:os_tcb
+PrevPtr	Source/os.h	/^    OS_TMR              *PrevPtr;$/;"	m	struct:os_tmr
+Prio	Source/os.h	/^    OS_PRIO              Prio;                              \/* Task priority (0 == highest)                           *\/$/;"	m	struct:os_tcb
+RdyMsgPtr	Source/os.h	/^    void                *RdyMsgPtr;$/;"	m	struct:os_pend_data
+RdyMsgSize	Source/os.h	/^    OS_MSG_SIZE          RdyMsgSize;$/;"	m	struct:os_pend_data
+RdyObjPtr	Source/os.h	/^    OS_PEND_OBJ         *RdyObjPtr;$/;"	m	struct:os_pend_data
+RdyTS	Source/os.h	/^    CPU_TS               RdyTS;$/;"	m	struct:os_pend_data
+RegTbl	Source/os.h	/^    OS_REG               RegTbl[OS_CFG_TASK_REG_TBL_SIZE];  \/* Task specific registers                                *\/$/;"	m	struct:os_tcb
+Remain	Source/os.h	/^    OS_TICK              Remain;                            \/* Amount of time remaining before timer expires          *\/$/;"	m	struct:os_tmr
+SchedLockTimeMax	Source/os.h	/^    CPU_TS               SchedLockTimeMax;                  \/* Maximum scheduler lock time                            *\/$/;"	m	struct:os_tcb
+SemCtr	Source/os.h	/^    OS_SEM_CTR           SemCtr;                            \/* Task specific semaphore counter                        *\/$/;"	m	struct:os_tcb
+SemPendTime	Source/os.h	/^    CPU_TS               SemPendTime;                       \/* Time it took for signal to be received                 *\/$/;"	m	struct:os_tcb
+SemPendTimeMax	Source/os.h	/^    CPU_TS               SemPendTimeMax;                    \/* Max amount of time it took for signal to be received   *\/$/;"	m	struct:os_tcb
+State	Source/os.h	/^    OS_STATE             State;$/;"	m	struct:os_tmr
+StkBasePtr	Source/os.h	/^    CPU_STK             *StkBasePtr;                        \/* Pointer to base address of stack                       *\/$/;"	m	struct:os_tcb
+StkFree	Source/os.h	/^    CPU_STK_SIZE         StkFree;                           \/* Number of stack elements free on   the stack           *\/$/;"	m	struct:os_tcb
+StkLimitPtr	Source/os.h	/^    CPU_STK             *StkLimitPtr;                       \/* Pointer used to set stack 'watermark' limit            *\/$/;"	m	struct:os_tcb
+StkPtr	Source/os.h	/^    CPU_STK             *StkPtr;                            \/* Pointer to current top of stack                        *\/$/;"	m	struct:os_tcb
+StkSize	Source/os.h	/^    CPU_STK_SIZE         StkSize;                           \/* Size of task stack (in number of stack elements)       *\/$/;"	m	struct:os_tcb
+StkUsed	Source/os.h	/^    CPU_STK_SIZE         StkUsed;                           \/* Number of stack elements used from the stack           *\/$/;"	m	struct:os_tcb
+SuspendCtr	Source/os.h	/^    OS_NESTING_CTR       SuspendCtr;                        \/* Nesting counter for OSTaskSuspend()                    *\/$/;"	m	struct:os_tcb
+TCBPtr	Source/os.h	/^    OS_TCB              *TCBPtr;$/;"	m	struct:os_pend_data
+TLS_Tbl	Source/os.h	/^    OS_TLS               TLS_Tbl[OS_CFG_TLS_TBL_SIZE];$/;"	m	struct:os_tcb
+TS	Source/os.h	/^    CPU_TS               TS;                                \/* Timestamp                                              *\/$/;"	m	struct:os_int_q
+TS	Source/os.h	/^    CPU_TS               TS;                                \/* Timestamp                                              *\/$/;"	m	struct:os_tcb
+TS	Source/os.h	/^    CPU_TS               TS;                                \/* Timestamp of when last post occurred                   *\/$/;"	m	struct:os_flag_grp
+TS	Source/os.h	/^    CPU_TS               TS;$/;"	m	struct:os_mutex
+TS	Source/os.h	/^    CPU_TS               TS;$/;"	m	struct:os_sem
+TailPtr	Source/os.h	/^    OS_PEND_DATA        *TailPtr;$/;"	m	struct:os_pend_list
+TailPtr	Source/os.h	/^    OS_TCB              *TailPtr;                           \/* Pointer to last task          at selected priority     *\/$/;"	m	struct:os_rdy_list
+TaskEntryAddr	Source/os.h	/^    OS_TASK_PTR          TaskEntryAddr;                     \/* Pointer to task entry point address                    *\/$/;"	m	struct:os_tcb
+TaskEntryArg	Source/os.h	/^    void                *TaskEntryArg;                      \/* Argument passed to task when it was created            *\/$/;"	m	struct:os_tcb
+TaskState	Source/os.h	/^    OS_STATE             TaskState;                         \/* See OS_TASK_STATE_xxx                                  *\/$/;"	m	struct:os_tcb
+TickCtrMatch	Source/os.h	/^    OS_TICK              TickCtrMatch;                      \/* Absolute time when task is going to be ready           *\/$/;"	m	struct:os_tcb
+TickCtrPrev	Source/os.h	/^    OS_TICK              TickCtrPrev;                       \/* Previous time when task was            ready           *\/$/;"	m	struct:os_tcb
+TickNextPtr	Source/os.h	/^    OS_TCB              *TickNextPtr;$/;"	m	struct:os_tcb
+TickPrevPtr	Source/os.h	/^    OS_TCB              *TickPrevPtr;$/;"	m	struct:os_tcb
+TickRemain	Source/os.h	/^    OS_TICK              TickRemain;                        \/* Number of ticks remaining for a match (updated at ...  *\/$/;"	m	struct:os_tcb
+TickSpokePtr	Source/os.h	/^    OS_TICK_SPOKE       *TickSpokePtr;                      \/* Pointer to tick spoke if task is in the tick list      *\/$/;"	m	struct:os_tcb
+TimeQuanta	Source/os.h	/^    OS_TICK              TimeQuanta;$/;"	m	struct:os_tcb
+TimeQuantaCtr	Source/os.h	/^    OS_TICK              TimeQuantaCtr;$/;"	m	struct:os_tcb
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;                              \/* Should be set to OS_OBJ_TYPE_FLAG                      *\/$/;"	m	struct:os_flag_grp
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;                              \/* Should be set to OS_OBJ_TYPE_MEM                       *\/$/;"	m	struct:os_mem
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;                              \/* Should be set to OS_OBJ_TYPE_MUTEX                     *\/$/;"	m	struct:os_mutex
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;                              \/* Should be set to OS_OBJ_TYPE_Q                         *\/$/;"	m	struct:os_q
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;                              \/* Should be set to OS_OBJ_TYPE_SEM                       *\/$/;"	m	struct:os_sem
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;                              \/* Type of object placed in the circular list             *\/$/;"	m	struct:os_int_q
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;$/;"	m	struct:os_pend_obj
+Type	Source/os.h	/^    OS_OBJ_TYPE          Type;$/;"	m	struct:os_tmr
+__iar_dlib_perthread_access	TLS/IAR/os_tls.c	/^void  _DLIB_TLS_MEMORY  *__iar_dlib_perthread_access (void  _DLIB_TLS_MEMORY  *symbp)$/;"	f
+__iar_file_Mtxdst	TLS/IAR/os_tls.c	/^void __iar_file_Mtxdst(__iar_Rmtx  *p_lock) $/;"	f
+__iar_file_Mtxinit	TLS/IAR/os_tls.c	/^void  __iar_file_Mtxinit (__iar_Rmtx  *p_lock) $/;"	f
+__iar_file_Mtxlock	TLS/IAR/os_tls.c	/^void __iar_file_Mtxlock(__iar_Rmtx  *p_lock) $/;"	f
+__iar_file_Mtxunlock	TLS/IAR/os_tls.c	/^void __iar_file_Mtxunlock(__iar_Rmtx  *p_lock) $/;"	f
+__iar_system_Mtxdst	TLS/IAR/os_tls.c	/^void __iar_system_Mtxdst(__iar_Rmtx  *p_lock) $/;"	f
+__iar_system_Mtxinit	TLS/IAR/os_tls.c	/^void  __iar_system_Mtxinit (__iar_Rmtx  *p_lock) $/;"	f
+__iar_system_Mtxlock	TLS/IAR/os_tls.c	/^void __iar_system_Mtxlock(__iar_Rmtx  *p_lock) $/;"	f
+__iar_system_Mtxunlock	TLS/IAR/os_tls.c	/^void __iar_system_Mtxunlock(__iar_Rmtx  *p_lock) $/;"	f
+os_cfg_app__c	Source/os_cfg_app.c	/^const  CPU_CHAR  *os_cfg_app__c = "$Id: $";$/;"	v
+os_core__c	Source/os_core.c	/^const  CPU_CHAR  *os_core__c = "$Id: $";$/;"	v
+os_dbg__c	Source/os_dbg.c	/^const  CPU_CHAR  *os_dbg__c = "$Id: $";$/;"	v
+os_err	Source/os.h	/^typedef  enum  os_err {$/;"	g
+os_flag__c	Source/os_flag.c	/^const  CPU_CHAR  *os_flag__c = "$Id: $";$/;"	v
+os_flag_grp	Source/os.h	/^struct  os_flag_grp {                                       \/* Event Flag Group                                       *\/$/;"	s
+os_int__c	Source/os_int.c	/^const  CPU_CHAR  *os_int__c = "$Id: $";$/;"	v
+os_int_q	Source/os.h	/^struct  os_int_q {$/;"	s
+os_mem	Source/os.h	/^struct os_mem {                                             \/* MEMORY CONTROL BLOCK                                   *\/$/;"	s
+os_mem__c	Source/os_mem.c	/^const  CPU_CHAR  *os_mem__c = "$Id: $";$/;"	v
+os_msg	Source/os.h	/^struct  os_msg {                                            \/* MESSAGE CONTROL BLOCK                                  *\/$/;"	s
+os_msg__c	Source/os_msg.c	/^const  CPU_CHAR  *os_msg__c = "$Id: $";$/;"	v
+os_msg_pool	Source/os.h	/^struct  os_msg_pool {                                       \/* OS_MSG POOL                                            *\/$/;"	s
+os_msg_q	Source/os.h	/^struct  os_msg_q {                                          \/* OS_MSG_Q                                               *\/$/;"	s
+os_mutex	Source/os.h	/^struct  os_mutex {                                          \/* Mutual Exclusion Semaphore                             *\/$/;"	s
+os_mutex__c	Source/os_mutex.c	/^const  CPU_CHAR  *os_mutex__c = "$Id: $";$/;"	v
+os_pend_data	Source/os.h	/^struct  os_pend_data {$/;"	s
+os_pend_list	Source/os.h	/^struct  os_pend_list {$/;"	s
+os_pend_multi__c	Source/os_pend_multi.c	/^const  CPU_CHAR  *os_pend_multi__c = "$Id: $";$/;"	v
+os_pend_obj	Source/os.h	/^struct  os_pend_obj {$/;"	s
+os_prio__c	Source/os_prio.c	/^const  CPU_CHAR  *os_prio__c = "$Id: $";$/;"	v
+os_q	Source/os.h	/^struct  os_q {                                              \/* Message Queue                                          *\/$/;"	s
+os_q__c	Source/os_q.c	/^const  CPU_CHAR  *os_q__c = "$Id: $";$/;"	v
+os_rdy_list	Source/os.h	/^struct  os_rdy_list {$/;"	s
+os_sem	Source/os.h	/^struct  os_sem {                                            \/* Semaphore                                              *\/$/;"	s
+os_sem__c	Source/os_sem.c	/^const  CPU_CHAR  *os_sem__c = "$Id: $";$/;"	v
+os_stat__c	Source/os_stat.c	/^const  CPU_CHAR  *os_stat__c = "$Id: $";$/;"	v
+os_task__c	Source/os_task.c	/^const  CPU_CHAR  *os_task__c = "$Id: $";$/;"	v
+os_tcb	Source/os.h	/^struct os_tcb {$/;"	s
+os_tick__c	Source/os_tick.c	/^const  CPU_CHAR  *os_tick__c = "$Id: $";$/;"	v
+os_tick_spoke	Source/os.h	/^struct  os_tick_spoke {$/;"	s
+os_time__c	Source/os_time.c	/^const  CPU_CHAR  *os_time__c = "$Id: $";$/;"	v
+os_tls__c	TLS/CCES/os_tls.c	/^const  CPU_CHAR  *os_tls__c = "$Id: $";$/;"	v
+os_tls__c	TLS/IAR/os_tls.c	/^const  CPU_CHAR  *os_tls__c = "$Id: $";$/;"	v
+os_tls_lock	TLS/IAR/os_tls.c	/^struct  os_tls_lock {                                           $/;"	s	file:
+os_tmr	Source/os.h	/^struct  os_tmr {$/;"	s
+os_tmr__c	Source/os_tmr.c	/^const  CPU_CHAR  *os_tmr__c = "$Id: $";$/;"	v
+os_tmr_spoke	Source/os.h	/^struct  os_tmr_spoke {$/;"	s
+os_type__h	Source/os_type.h	/^const     CPU_CHAR  *os_type__h = "$Id: $";$/;"	v
+os_var__c	Source/os_var.c	/^const  CPU_CHAR  *os_var__c = "$Id: $";$/;"	v
