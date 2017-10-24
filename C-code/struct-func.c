@@ -7,28 +7,26 @@
 
 #include<stdio.h>
 
-/*void func(void){
-    int a;
-    printf("%d\n", a);
-}*/
+int e;
+
+void func(void){
+    printf("%d\n", e); // 0
+}
 
 int main()
 {
-    struct {
+/ *    struct {
         int a, b;
     }t = {1};
     printf("%d\n", t.a / t.b); //
-    
-    int e;
-    printf("%d\n", e); //
+ */   
+    int b;
+    printf("%d\n", b); // 0
 
-  //  static int c;
-  //  printf("%d\n", c); //
+    static int c;
+    printf("%d\n", c); // 0
 
-    int d;
-    /*void func(void){
-        printf("%d\n", d);
-    }*/
-    
+    func();
+     
     return 0;
-}
+ }
