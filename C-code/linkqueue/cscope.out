@@ -1,0 +1,527 @@
+cscope 15 $HOME/Git/wgs/linkqueue               0000002445
+	@linkqueue-link.c
+
+1 
+	~"queue.h
+"
+
+3 
+	$maš
+(
+¬gc
+, cÚ¡ * 
+¬gv
+[])
+
+5 
+LškQueue
+ 
+queue
+;
+
+6 
+	`puts
+("åˆå§‹åŒ–é˜Ÿåˆ— queue");
+
+7 
+	`š™Queue
+(&
+queue
+);
+
+8 
+	`Œav”§l
+(
+queue
+);
+
+10 
+	`puts
+("é˜Ÿå°¾ä¾æ¬¡æ’å…¥0 1 2 3");
+
+11 
+	`š£¹Queue
+(&
+queue
+, 0);
+
+12 
+	`š£¹Queue
+(&
+queue
+, 1);
+
+13 
+	`š£¹Queue
+(&
+queue
+, 2);
+
+14 
+	`š£¹Queue
+(&
+queue
+, 3);
+
+15 
+	`Œav”§l
+(
+queue
+);
+
+17 
+	`puts
+("å…ˆè¿›å…ˆå‡ºï¼Œåˆ é™¤é˜Ÿåˆ—ä»å¤´å¼€å§‹ï¼Œ 0 ");
+
+18 
+	`d–‘eQueue
+(&
+queue
+);
+
+19 
+	`Œav”§l
+(
+queue
+);
+
+21 
+	`puts
+("å…ˆè¿›å…ˆå‡ºï¼Œåˆ é™¤é˜Ÿåˆ—ä»å¤´å¼€å§‹ï¼Œ 1 ");
+
+22 
+	`d–‘eQueue
+(&
+queue
+);
+
+23 
+	`Œav”§l
+(
+queue
+);
+
+25 
+	`puts
+("å…ˆè¿›å…ˆå‡ºï¼Œåˆ é™¤é˜Ÿåˆ—ä»å¤´å¼€å§‹ï¼Œ 2 ");
+
+26 
+	`d–‘eQueue
+(&
+queue
+);
+
+27 
+	`Œav”§l
+(
+queue
+);
+
+29 
+	`puts
+("å…ˆè¿›å…ˆå‡ºï¼Œåˆ é™¤é˜Ÿåˆ—ä»å¤´å¼€å§‹ï¼Œ 3");
+
+30 
+	`d–‘eQueue
+(&
+queue
+);
+
+31 
+	`Œav”§l
+(
+queue
+);
+
+33 
+	`de¡ÜyQueue
+(&
+queue
+);
+
+35 
+	}
+}
+
+	@queue.h
+
+1 #iâdeà
+queue_H—d”_h
+
+
+2 
+	#queue_H—d”_h
+
+
+	)
+
+3 
+	~<¡dio.h
+>
+
+4 
+	~<¡dlib.h
+>
+
+5 
+	~<¡dboŞ.h
+>
+
+8 
+	sNode
+{
+
+9 
+	md©a
+;
+
+10 
+Node
+ *
+	mÃxt
+;
+
+11 } 
+	tNode
+, *
+	tQueue
+;
+
+15 
+Queue
+ 
+	mäÚt
+;
+
+16 
+Queue
+ 
+	m»¬
+;
+
+17 } 
+	tLškQueue
+;
+
+21 
+	$š™Queue
+(
+LškQueue
+ *
+queue
+)
+
+24 
+queue
+->
+äÚt
+ = queue->
+»¬
+ = (
+Queue
+)
+	`m®loc
+((
+Node
+));
+
+26 ià(
+NULL
+ =ğ
+queue
+->
+äÚt
+) {
+
+27 
+	`ex™
+(0);
+
+30 
+queue
+->
+äÚt
+->
+Ãxt
+ = 
+NULL
+;
+
+31 
+	}
+}
+
+34 
+boŞ
+ 
+	$isEm±y
+(
+LškQueue
+ 
+queue
+)
+
+36  
+queue
+.
+»¬
+ =ğqueue.
+äÚt
+ ? 
+Œue
+ : 
+çl£
+;
+
+37 
+	}
+}
+
+40 
+	$š£¹Queue
+(
+LškQueue
+ *
+queue
+, 
+‹mp
+)
+
+42 
+Queue
+ 
+q
+ = (Queue)
+	`m®loc
+((
+Node
+));
+
+44 ià(
+NULL
+ =ğ
+q
+) {
+
+45 
+	`ex™
+(0);
+
+48 
+q
+->
+d©a
+ = 
+‹mp
+;
+
+49 
+q
+->
+Ãxt
+ = 
+NULL
+;
+
+51 
+queue
+->
+»¬
+->
+Ãxt
+ = 
+q
+;
+
+52 
+queue
+->
+»¬
+ = 
+q
+;
+
+53 
+	}
+}
+
+56 
+	$d–‘eQueue
+(
+LškQueue
+ *
+queue
+)
+
+58 
+Queue
+ 
+q
+ = 
+NULL
+;
+
+60 ià(!
+	`isEm±y
+(*
+queue
+)) {
+
+61 
+q
+ = 
+queue
+->
+äÚt
+->
+Ãxt
+;
+
+62 
+queue
+->
+äÚt
+->
+Ãxt
+ = 
+q
+->next;
+
+64 ià(
+queue
+->
+»¬
+ =ğ
+q
+) {
+
+65 
+queue
+->
+»¬
+ = queue->
+äÚt
+;
+
+68 
+	`ä“
+(
+q
+);
+
+70 
+	}
+}
+
+73 
+	$Œav”§l
+(
+LškQueue
+ 
+queue
+)
+
+75 
+i
+ = 1;
+
+76 
+Queue
+ 
+q
+ = 
+queue
+.
+äÚt
+->
+Ãxt
+;
+
+78 
+q
+ !ğ
+NULL
+) {
+
+79 
+	`´štf
+("é˜Ÿåˆ—ç¬¬%dä¸ªå…ƒç´ æ˜¯ï¼š%d\n", 
+i
+, 
+q
+->
+d©a
+);
+
+80 
+q
+ = q->
+Ãxt
+;
+
+81 
+i
+++;
+
+83 
+	}
+}
+
+86 
+	$de¡ÜyQueue
+(
+LškQueue
+ *
+queue
+)
+
+88 
+queue
+->
+äÚt
+ !ğ
+NULL
+) {
+
+89 
+queue
+->
+»¬
+ = queue->
+äÚt
+->
+Ãxt
+;
+
+90 
+	`ä“
+(
+queue
+->
+äÚt
+);
+
+91 
+queue
+->
+äÚt
+ = queue->
+»¬
+;
+
+94 
+	`puts
+("é”€æ¯æˆåŠŸï¼");
+
+95 
+	}
+}
+
+	@
+1
+.
+0
+2
+25
+linkqueue-link.c
+queue.h

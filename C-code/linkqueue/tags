@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+LinkQueue	queue.h	/^} LinkQueue;$/;"	t	typeref:struct:__anon1
+Node	queue.h	/^typedef struct Node{$/;"	s
+Node	queue.h	/^} Node, *Queue;$/;"	t	typeref:struct:Node
+Queue	queue.h	/^} Node, *Queue;$/;"	t	typeref:struct:Node
+data	queue.h	/^    int data;$/;"	m	struct:Node
+deleteQueue	queue.h	/^void deleteQueue(LinkQueue *queue)$/;"	f
+destoryQueue	queue.h	/^void destoryQueue(LinkQueue *queue)$/;"	f
+front	queue.h	/^    Queue front;$/;"	m	struct:__anon1
+initQueue	queue.h	/^void initQueue(LinkQueue *queue)$/;"	f
+insertQueue	queue.h	/^void insertQueue(LinkQueue *queue, int temp)$/;"	f
+isEmpty	queue.h	/^bool isEmpty(LinkQueue queue)$/;"	f
+main	linkqueue-link.c	/^int main(int argc, const char * argv[])$/;"	f
+next	queue.h	/^    struct Node *next;$/;"	m	struct:Node	typeref:struct:Node::Node
+queue_Header_h	queue.h	2;"	d
+rear	queue.h	/^    Queue rear;$/;"	m	struct:__anon1
+traversal	queue.h	/^void traversal(LinkQueue queue)$/;"	f
