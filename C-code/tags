@@ -1,0 +1,433 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	struct.c	/^	struct pp A;$/;"	m	struct:res	typeref:struct:res::pp	file:
+B	struct.c	/^	struct pp B;$/;"	m	struct:res	typeref:struct:res::pp	file:
+BLACK	C/红黑树.c	/^    BLACK = 1$/;"	e	enum:color_t	file:
+BubbleSort	C/huawei/paixu.c	/^void BubbleSort(int R[],int n)$/;"	f
+ClearList	C/Double-linklist/DList.c	/^void ClearList(DList *plist)$/;"	f
+CreatList	C/LinkList2.c	/^Status CreatList(linklist *L)$/;"	f
+CreateList	C/LinkList.c	/^Status CreateList(linklist * L)$/;"	f
+CreateList	C/huawei/LinkList.c	/^Status CreateList(linklist *L)$/;"	f
+DEATH	C/scheduler_test.c	6;"	d	file:
+DList	C/Double-linklist/DList.h	/^}DList;$/;"	t	typeref:struct:__anon1
+DList_H	C/Double-linklist/DList.h	2;"	d
+DelFirst	C/Double-linklist/DList.c	/^PNode DelFirst(DList *plist)$/;"	f
+DestroyList	C/Double-linklist/DList.c	/^void DestroyList(DList *plist)$/;"	f
+Doublelink	C/Double-linklist/doble-linklist.c	/^}Doublelink;$/;"	t	typeref:struct:doublelinklist	file:
+DuLinkList	dul-link.c	/^} DulNode, *DuLinkList;$/;"	t	typeref:struct:DulNode	file:
+DulNode	dul-link.c	/^typedef struct DulNode{$/;"	s	file:
+DulNode	dul-link.c	/^} DulNode, *DuLinkList;$/;"	t	typeref:struct:DulNode	file:
+ELemType	C/LinkList2.c	10;"	d	file:
+ERROR	C/LinkList.c	6;"	d	file:
+ERROR	C/LinkList2.c	13;"	d	file:
+ERROR	C/huawei/LinkList.c	6;"	d	file:
+ERROR	C/huawei/yueshefuhuan.c	6;"	d	file:
+ElemType	C/LinkList.c	3;"	d	file:
+ElemType	C/huawei/LinkList.c	3;"	d	file:
+ElemType	single-LinkList.c	10;"	d	file:
+FALSE	stack/link_stack.c	9;"	d	file:
+FindMax	C/172.2.c	/^*FindMax(int *p, int n)$/;"	f
+FindMax	C/172.c	/^int FindMax(int b[],int n)$/;"	f
+FreeNode	C/Double-linklist/DList.c	/^void FreeNode(PNode p)$/;"	f
+GetHead	C/Double-linklist/DList.c	/^Position GetHead(DList *plist)$/;"	f
+GetItem	C/Double-linklist/DList.c	/^Item GetItem(Position p)$/;"	f
+GetNext	C/Double-linklist/DList.c	/^Position GetNext(Position p)$/;"	f
+GetPrevious	C/Double-linklist/DList.c	/^Position GetPrevious(Position p)$/;"	f
+GetSize	C/Double-linklist/DList.c	/^int GetSize(DList *plist)$/;"	f
+GetTail	C/Double-linklist/DList.c	/^Position GetTail(DList *plist)$/;"	f
+InitList	C/Double-linklist/DList.c	/^DList * InitList()$/;"	f
+InsAfter	C/Double-linklist/DList.c	/^PNode InsAfter(DList *plist,Position p,PNode s)$/;"	f
+InsBefore	C/Double-linklist/DList.c	/^PNode InsBefore(DList *plist,Position p,PNode s)$/;"	f
+InsFirst	C/Double-linklist/DList.c	/^PNode InsFirst(DList *plist,PNode pnode)$/;"	f
+InsertList	C/shunxunbiaocharu.c	/^void InsertList(struct sqlist *l, int t, int i)$/;"	f
+InsertSort	C/huawei/paixu.c	/^void InsertSort(int R[],int n)$/;"	f
+IsEmpty	C/Double-linklist/DList.c	/^int IsEmpty(DList *plist)$/;"	f
+Item	C/Double-linklist/DList.h	/^typedef  int Item;$/;"	t
+Joseph	C/huawei/yueshefuhuan.c	/^void  Joseph(LinkList p, int m, int x)$/;"	f
+Joseph	C/yueshefuhuan.c	/^void Joseph(LinkList p, int m, int x)$/;"	f
+KERNELDIR	C/dev/Makefile	/^	KERNELDIR ?= \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KeyW	C/yueshefuhuan.c	/^int KeyW[N] = {4, 7, 5, 9, 3, 2, 6, 1, 8};$/;"	v
+LNode	C/huawei/yueshefuhuan.c	/^typedef struct LNode{$/;"	s	file:
+LNode	C/huawei/yueshefuhuan.c	/^} LNode;$/;"	t	typeref:struct:LNode	file:
+LNode	C/yueshefuhuan.c	/^typedef struct LNode{$/;"	s	file:
+LNode	C/yueshefuhuan.c	/^}LNode, *LinkList;$/;"	t	typeref:struct:LNode	file:
+LinkList	C/huawei/yueshefuhuan.c	/^typedef struct LNode *LinkList;$/;"	t	typeref:struct:LNode	file:
+LinkList	C/yueshefuhuan.c	/^}LNode, *LinkList;$/;"	t	typeref:struct:LNode	file:
+LinkQueue	linkqueue/queue.h	/^} LinkQueue;$/;"	t	typeref:struct:__anon3
+List	C/LinkList.c	/^typedef struct List {$/;"	s	file:
+List	C/LinkList2.c	/^typedef struct List$/;"	s	file:
+List	C/huawei/LinkList.c	/^typedef struct List$/;"	s	file:
+ListTraverse	C/Double-linklist/DList.c	/^void ListTraverse(DList *plist,void (*visit)())$/;"	f
+Listsize	C/shunxunbiaocharu.c	11;"	d	file:
+LocatePos	C/Double-linklist/DList.c	/^PNode LocatePos(DList *plist,int i)$/;"	f
+MAXN	C/huawei/paixu.c	34;"	d	file:
+MakeNode	C/Double-linklist/DList.c	/^Position MakeNode(Item i)$/;"	f
+Max	C/hashchazhao.c	10;"	d	file:
+Merge	C/huawei/paixu.c	/^void Merge(int l,int m,int r)$/;"	f
+MergeList	C/LinkList.c	/^linklist *MergeList(linklist * La, linklist * Lb)$/;"	f
+MergeList	C/huawei/LinkList.c	/^linklist *MergeList(linklist *La,linklist *Lb )$/;"	f
+MergeSort	C/huawei/paixu.c	/^void MergeSort(int l,int r)$/;"	f
+N	C/hashchazhao.c	11;"	d	file:
+N	C/huawei/paixu.c	190;"	d	file:
+N	C/huawei/yueshefuhuan.c	5;"	d	file:
+N	C/yueshefuhuan.c	10;"	d	file:
+Node	C/Double-linklist/DList.h	/^typedef struct Node$/;"	s
+Node	C/Double-linklist/DList.h	/^}Node;$/;"	t	typeref:struct:Node
+Node	linkqueue/queue.h	/^typedef struct Node{$/;"	s
+Node	linkqueue/queue.h	/^} Node, *Queue;$/;"	t	typeref:struct:Node
+Node	single-LinkList.c	/^typedef struct Node$/;"	s	file:
+OK	C/LinkList.c	5;"	d	file:
+OK	C/LinkList2.c	12;"	d	file:
+OK	C/huawei/LinkList.c	5;"	d	file:
+OK	C/huawei/yueshefuhuan.c	7;"	d	file:
+OK	C/yueshefuhuan.c	12;"	d	file:
+OVERFLOW	C/yueshefuhuan.c	11;"	d	file:
+PNode	C/Double-linklist/DList.h	/^typedef struct Node * PNode;$/;"	t	typeref:struct:Node
+PWD	C/dev/Makefile	/^	PWD := $(shell pwd)$/;"	m
+Position	C/Double-linklist/DList.h	/^typedef PNode Position;$/;"	t
+QUEUE_S	C/huawei/4.c	/^}QUEUE_S;$/;"	t	typeref:struct:queue	file:
+Queue	linkqueue/queue.h	/^} Node, *Queue;$/;"	t	typeref:struct:Node
+QuickSort	C/huawei/paixu.c	/^void QuickSort(int s[], int start, int end)$/;"	f
+R	C/huawei/paixu.c	/^int tmp[N],R[N];$/;"	v
+RED	C/红黑树.c	/^    RED = 0,$/;"	e	enum:color_t	file:
+Rec	C/huawei/8-2.c	/^}Rec;$/;"	t	typeref:struct:__anon2	file:
+Remove	C/Double-linklist/DList.c	/^PNode Remove(DList *plist)$/;"	f
+STACK_NODE	stack/link_stack.c	/^typedef struct STACK_NODE  $/;"	s	file:
+STACK_SIZE	stack/static_stack.c	10;"	d	file:
+STACK_TYPE	stack/stack.h	6;"	d
+SelectSort	C/huawei/paixu.c	/^void SelectSort(int R[],int n)$/;"	f
+SetItem	C/Double-linklist/DList.c	/^void SetItem(Position p,Item i)$/;"	f
+Shsort	C/huawei/paixu.c	/^void Shsort(int s[], int n)$/;"	f
+Sift	C/huawei/paixu.c	/^void Sift(int R[],int low,int high)$/;"	f
+StackNode	stack/link_stack.c	/^} StackNode;  $/;"	t	typeref:struct:STACK_NODE	file:
+Status	C/LinkList.c	4;"	d	file:
+Status	C/LinkList2.c	11;"	d	file:
+Status	C/huawei/LinkList.c	4;"	d	file:
+W	adi.c	/^typedef struct w_t *W;$/;"	t	typeref:struct:w_t	file:
+_ZN6myname3varE	C/test.cpp	/^extern "C" double _ZN6myname3varE;$/;"	v
+a	adi.c	/^    W a, b;$/;"	m	struct:w_t	file:
+a	struct.c	/^	int a;$/;"	m	struct:pp	file:
+age	C/167.c	/^	int age;$/;"	m	struct:student	file:
+ans	C/huawei/paixu.c	/^int ans=0;\/\/顺带求逆序数 $/;"	v
+b	adi.c	/^    W a, b;$/;"	m	struct:w_t	file:
+b	struct.c	/^	int b;$/;"	m	struct:pp	file:
+base	C/base64.c	/^const char base[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/="; $/;"	v
+base64_decode	C/base64.c	/^char *base64_decode(const char *data, int data_len) $/;"	f
+base64_encode	C/base64.c	/^char *base64_encode(const char* data, int data_len) $/;"	f
+binary_search	C/erfenchazhao.c	/^void binary_search(int key, int a[], int n)$/;"	f
+block_search	C/fenkuaichazhao.c	/^int block_search(int key, int a[])$/;"	f
+btn_cdev	C/dev/tq.c	/^struct cdev btn_cdev;$/;"	v	typeref:struct:cdev
+btn_cls	C/dev/tq.c	/^static struct class *btn_cls;$/;"	v	typeref:struct:class	file:
+btn_fops	C/dev/tq.c	/^static struct file_operations btn_fops = {$/;"	v	typeref:struct:file_operations	file:
+button_exit	C/dev/tq.c	/^module_exit(button_exit);$/;"	v
+button_exit	C/dev/tq.c	/^static void __exit button_exit(void){$/;"	f	file:
+button_init	C/dev/tq.c	/^module_init(button_init);$/;"	v
+button_init	C/dev/tq.c	/^static int __init button_init(void){$/;"	f	file:
+button_read	C/dev/tq.c	/^static ssize_t button_read(struct file *file, char __user *buf, size_t count, loff_t *offp)$/;"	f	file:
+c	adi.c	/^    int c;$/;"	m	struct:w_t	file:
+cmp	C/huawei/8-2.c	/^int cmp(const void *a, const void *b){$/;"	f
+cmp2	C/huawei/8-2.c	/^int cmp2(const void *a, const void *b){$/;"	f
+color	C/红黑树.c	/^    color_t color;$/;"	m	struct:rb_node_t	file:
+color_t	C/红黑树.c	/^typedef enum color_t$/;"	g	file:
+color_t	C/红黑树.c	/^}color_t;$/;"	t	typeref:enum:color_t	file:
+connection	C/173.c	/^connection(char *s, char *t, char *q)$/;"	f
+count	C/huawei/8-2.c	/^  int count;$/;"	m	struct:__anon2	file:
+create_stack	stack/dyn_static.c	/^void create_stack(size_t size)  $/;"	f
+create_stack	stack/link_stack.c	/^void create_stack(size_t size)  $/;"	f
+creathash	C/hashchazhao.c	/^void creathash(int key)$/;"	f
+creatlink	C/Double-linklist/doble-linklist.c	/^Doublelink *creatlink(Doublelink *L)$/;"	f
+cut	C/huawei/8-2.c	/^  char cut[20];$/;"	m	struct:__anon2	file:
+data	C/Double-linklist/DList.h	/^	Item data;		\/*数据域*\/$/;"	m	struct:Node
+data	C/Double-linklist/doble-linklist.c	/^	int data;$/;"	m	struct:doublelinklist	file:
+data	C/LinkList.c	/^    ElemType data;$/;"	m	struct:List	file:
+data	C/LinkList2.c	/^    ELemType data;$/;"	m	struct:List	file:
+data	C/huawei/4-2.c	/^	int data;$/;"	m	struct:link	file:
+data	C/huawei/LinkList.c	/^   ElemType data;$/;"	m	struct:List	file:
+data	C/huawei/yueshefuhuan.c	/^	int data;$/;"	m	struct:LNode	file:
+data	C/shunxunbiaocharu.c	/^    int data[Listsize];$/;"	m	struct:sqlist	file:
+data	C/红黑树.c	/^    data_t data;$/;"	m	struct:rb_node_t	file:
+data	dul-link.c	/^	ElemType data;$/;"	m	struct:DulNode	file:
+data	linkqueue/queue.h	/^    int data;$/;"	m	struct:Node
+data	single-LinkList.c	/^	ElemType data;$/;"	m	struct:Node	file:
+data_t	C/红黑树.c	/^typedef int data_t;$/;"	t	file:
+deleteQueue	linkqueue/queue.h	/^void deleteQueue(LinkQueue *queue)$/;"	f
+delsame	C/del-same.c	/^void delsame(char *string)$/;"	f
+destoryQueue	linkqueue/queue.h	/^void destoryQueue(LinkQueue *queue)$/;"	f
+destroy_stack	stack/dyn_static.c	/^void destroy_stack(void)  $/;"	f
+destroy_stack	stack/link_stack.c	/^void destroy_stack(void)  $/;"	f
+dfs	C/huawei/6.c	/^void dfs(int n)$/;"	f
+display	C/LinkList.c	/^Status display(linklist * L)$/;"	f
+display	C/LinkList2.c	/^Status display(linklist *L)$/;"	f
+display	C/huawei/LinkList.c	/^Status display(linklist *L)$/;"	f
+displaylink	C/Double-linklist/doble-linklist.c	/^void displaylink(Doublelink *L)$/;"	f
+doublelinklist	C/Double-linklist/doble-linklist.c	/^typedef struct doublelinklist{$/;"	s	file:
+e	struct-func.c	/^int e;$/;"	v
+end	C/fenkuaichazhao.c	/^    int end;$/;"	m	struct:index	file:
+exchange	C/166.c	/^exchange(int *x, int *y, int *z)$/;"	f
+exit	C/tryhelloworld.c	/^void exit()$/;"	f
+exp	C/huawei/paixu.c	33;"	d	file:
+expandAroundCenter	C/C++/biggest-huiwen.cpp	/^string expandAroundCenter(string s, int c1, int c2) {$/;"	f
+f1	adi.c	/^static W f1(w)$/;"	f	file:
+f2	adi.c	/^static void f2(r)$/;"	f	file:
+f3	adi.c	/^static void f3(x, y)$/;"	f	file:
+find_pos	C/base64.c	/^static char find_pos(char ch)   $/;"	f	file:
+flag	C/huawei/6.c	/^int num, flag, map[10][10];$/;"	v
+flag	jihe.c	/^	int flag;$/;"	m	struct:node	file:
+front	linkqueue/queue.h	/^    Node *front;$/;"	m	struct:__anon3
+func	C/hashchazhao.c	/^int func(int value)$/;"	f
+func	sizeof.c	/^void func(char a[]){$/;"	f
+func	struct-func.c	/^void func(void){$/;"	f
+get_split	C/huawei/8-2.c	/^int get_split(char *data){$/;"	f
+gg	C-Point/point.c	/^int gg(int n){$/;"	f
+hashtable	C/hashchazhao.c	/^int hashtable[Max];$/;"	v
+head	C/Double-linklist/DList.h	/^	PNode head;		\/*指向头节点*\/$/;"	m	struct:__anon1
+heapSort	C/huawei/paixu.c	/^void heapSort(int R[],int n)$/;"	f
+index	C/fenkuaichazhao.c	/^struct index$/;"	s	file:
+index_table	C/fenkuaichazhao.c	/^}index_table[4];$/;"	v	typeref:struct:index
+initQueue	linkqueue/queue.h	/^void initQueue(LinkQueue *queue)$/;"	f
+insertQueue	linkqueue/queue.h	/^void insertQueue(LinkQueue *queue, int temp)$/;"	f
+insort	C/zhiJieChaRu.c	/^void insort(int s[], int n)$/;"	f
+int	dul-link.c	9;"	d	file:
+isEmpty	linkqueue/queue.h	/^bool isEmpty(LinkQueue queue)$/;"	f
+is_empty	stack/dyn_static.c	/^int is_empty(void)  $/;"	f
+is_empty	stack/link_stack.c	/^int is_empty(void)  $/;"	f
+is_empty	stack/static_stack.c	/^int is_empty(void)  $/;"	f
+is_full	stack/dyn_static.c	/^int is_full(void)  $/;"	f
+is_full	stack/link_stack.c	/^int is_full(void)  $/;"	f
+is_full	stack/static_stack.c	/^int is_full(void)  $/;"	f
+judge	C/huawei/6.c	/^int judge(int n, int k)$/;"	f
+key	C/fenkuaichazhao.c	/^    int key;$/;"	m	struct:index	file:
+key	C/红黑树.c	/^    key_t key;$/;"	m	struct:rb_node_t	file:
+keyW	C/huawei/yueshefuhuan.c	/^int keyW[N] = {1, 2, 3, 4, 5, 6, 7, 8, 9};$/;"	v
+key_t	C/红黑树.c	/^typedef int key_t;$/;"	t	file:
+key_value	C/dev/tq.c	/^static unsigned char key_value;$/;"	v	file:
+keyword	C/yueshefuhuan.c	/^    int keyword;$/;"	m	struct:LNode	file:
+left	C/红黑树.c	/^    struct rb_node_t *left, *right, *parent;$/;"	m	struct:rb_node_t	typeref:struct:rb_node_t::rb_node_t	file:
+length	C/shunxunbiaocharu.c	/^    int length;$/;"	m	struct:sqlist	file:
+link	C/huawei/4-2.c	/^typedef struct link{$/;"	s	file:
+linklist	C/LinkList.c	/^} linklist;$/;"	t	typeref:struct:List	file:
+linklist	C/LinkList2.c	/^}linklist;$/;"	t	typeref:struct:List	file:
+linklist	C/huawei/LinkList.c	/^}linklist;$/;"	t	typeref:struct:List	file:
+listdel	C/LinkList.c	/^Status listdel(linklist * L, int i, ElemType * e)$/;"	f
+listdel	C/LinkList2.c	/^Status listdel(linklist *L, int i, ELemType *e)$/;"	f
+listdel	C/huawei/LinkList.c	/^Status listdel(linklist *L,int i,ElemType *e)$/;"	f
+listinsert	C/LinkList.c	/^Status listinsert(linklist * L, int i, ElemType e)$/;"	f
+listinsert	C/LinkList2.c	/^Status listinsert(linklist *L, int i, ELemType e)$/;"	f
+listinsert	C/huawei/LinkList.c	/^Status listinsert(linklist *L,int i,ElemType e)$/;"	f
+longestPalindromeSimple	C/C++/biggest-huiwen.cpp	/^string longestPalindromeSimple(string s) {$/;"	f
+main	ADI.c	/^int main()$/;"	f
+main	C-Point/point.c	/^int main()$/;"	f
+main	C/10.c	/^int main()$/;"	f
+main	C/1001.c	/^int main()$/;"	f
+main	C/13.c	/^int main()$/;"	f
+main	C/14.c	/^int main()$/;"	f
+main	C/15.c	/^int main()$/;"	f
+main	C/166.c	/^int main()$/;"	f
+main	C/167.c	/^void main()$/;"	f
+main	C/168.c	/^int main()$/;"	f
+main	C/169.c	/^int main()$/;"	f
+main	C/170.c	/^int main()$/;"	f
+main	C/171.c	/^int main()$/;"	f
+main	C/172.2.c	/^int main()$/;"	f
+main	C/172.c	/^int main()$/;"	f
+main	C/173.c	/^int main(void)$/;"	f
+main	C/18.c	/^int main()$/;"	f
+main	C/20.c	/^void main()$/;"	f
+main	C/9.c	/^int main()$/;"	f
+main	C/C++/biggest-huiwen.cpp	/^int main()$/;"	f
+main	C/C++/jinzhi.cpp	/^int main()$/;"	f
+main	C/C++/ten-to-any.cpp	/^int main()$/;"	f
+main	C/C++/ten-to-two.cpp	/^int main()$/;"	f
+main	C/Double-linklist/Test.c	/^main()$/;"	f
+main	C/Double-linklist/doble-linklist.c	/^int main()$/;"	f
+main	C/LinkList.c	/^int main(void)$/;"	f
+main	C/LinkList2.c	/^int main()$/;"	f
+main	C/a.c	/^int main()$/;"	f
+main	C/base64.c	/^int main(int argc, char* argv[]) $/;"	f
+main	C/data2.c	/^int main() $/;"	f
+main	C/del-same.c	/^int main()$/;"	f
+main	C/erfenchazhao.c	/^void main()$/;"	f
+main	C/example.c	/^int main()$/;"	f
+main	C/feibonaqieshulie.c	/^void main()$/;"	f
+main	C/feibonaqieshulie_2.c	/^int main()$/;"	f
+main	C/fenkuaichazhao.c	/^void main()$/;"	f
+main	C/gedebahe.c	/^void main()$/;"	f
+main	C/guibingpaixu.c	/^void main()$/;"	f
+main	C/hashchazhao.c	/^void main()$/;"	f
+main	C/huawei/1.c	/^int main()$/;"	f
+main	C/huawei/2-2.c	/^int main()$/;"	f
+main	C/huawei/2.c	/^int main()$/;"	f
+main	C/huawei/3.c	/^int main()$/;"	f
+main	C/huawei/4-2.c	/^int main()$/;"	f
+main	C/huawei/4.c	/^int main(void){$/;"	f
+main	C/huawei/5-2.c	/^int main()$/;"	f
+main	C/huawei/5.c	/^int main()$/;"	f
+main	C/huawei/6.c	/^int main()$/;"	f
+main	C/huawei/7.c	/^int  main()$/;"	f
+main	C/huawei/8-2.c	/^int main(){$/;"	f
+main	C/huawei/LinkList.c	/^int main(void)$/;"	f
+main	C/huawei/a-b.c	/^int main()$/;"	f
+main	C/huawei/bijiao-shuzu.c	/^int main()$/;"	f
+main	C/huawei/del-same.c	/^int main()$/;"	f
+main	C/huawei/huiwen.c	/^int main()$/;"	f
+main	C/huawei/paixu.c	/^int main()$/;"	f
+main	C/huawei/same.c	/^int main()$/;"	f
+main	C/huawei/strx.c	/^int main()$/;"	f
+main	C/huawei/yueshefuhuan.c	/^int main()$/;"	f
+main	C/kuaishupaixu.c	/^void main()$/;"	f
+main	C/light.c	/^int main()$/;"	f
+main	C/maopao.c	/^int main()$/;"	f
+main	C/movezones.c	/^void main()$/;"	f
+main	C/nikeqieshi.c	/^void main()$/;"	f
+main	C/pinduoduo/p1.c	/^int main()$/;"	f
+main	C/pinduoduo/p3.c	/^int main()$/;"	f
+main	C/scheduler_test.c	/^int main (int argc, char **argv)$/;"	f
+main	C/shunxunbiaocharu.c	/^void main()$/;"	f
+main	C/test.cpp	/^int main()$/;"	f
+main	C/testxier.c	/^int main()$/;"	f
+main	C/xierpaixu.c	/^void main()$/;"	f
+main	C/xuanzhepaixu.c	/^int main()$/;"	f
+main	C/yueshefuhuan.c	/^int main()$/;"	f
+main	C/zhiJieChaRu.c	/^void main()$/;"	f
+main	C/红黑树.c	/^int main()$/;"	f
+main	adi.c	/^extern int main(void)$/;"	f
+main	array.c	/^int main()$/;"	f
+main	big.c	/^int main()$/;"	f
+main	dul-link.c	/^int main()$/;"	f
+main	enum.c	/^int main()$/;"	f
+main	er-wei-array.c	/^int main()$/;"	f
+main	jihe.c	/^int main()$/;"	f
+main	linkqueue/linkqueue-link.c	/^int main(int argc, const char * argv[])$/;"	f
+main	signed-unsigned.c	/^int main()$/;"	f
+main	single-LinkList.c	/^int main()$/;"	f
+main	sizeof.c	/^int main()$/;"	f
+main	stack/dyn_static.c	/^int main(void)  $/;"	f
+main	stack/link_stack.c	/^int main(void)  $/;"	f
+main	stack/static_stack.c	/^int main(void)  $/;"	f
+main	struct-bit.c	/^int main(){$/;"	f
+main	struct-func.c	/^int main()$/;"	f
+main	struct.c	/^int main()$/;"	f
+main	union.c	/^int main()$/;"	f
+major	C/dev/tq.c	/^static int major;$/;"	v	file:
+map	C/huawei/6.c	/^int num, flag, map[10][10];$/;"	v
+merge	C/guibingpaixu.c	/^void merge(int r[], int s[], int x1, int x2, int x3)$/;"	f
+merge_sort	C/guibingpaixu.c	/^void merge_sort(int r[], int s[], int m, int n)$/;"	f
+myname	C/test.cpp	/^namespace myname$/;"	n	file:
+n3	union.c	/^		int n3;$/;"	m	struct:uni::__anon4	file:
+n4	union.c	/^		int n4;$/;"	m	struct:uni::__anon5	file:
+n5	union.c	/^		int n5;$/;"	m	struct:uni::__anon5	file:
+name	C/167.c	/^	char name[20];$/;"	m	struct:student	file:
+name	C/huawei/8-2.c	/^  char name[500];$/;"	m	struct:__anon2	file:
+next	C/Double-linklist/DList.h	/^	PNode next;		\/*指向后继*\/$/;"	m	struct:Node
+next	C/Double-linklist/doble-linklist.c	/^	struct doublelinklist *next;$/;"	m	struct:doublelinklist	typeref:struct:doublelinklist::doublelinklist	file:
+next	C/LinkList.c	/^    struct List *next;$/;"	m	struct:List	typeref:struct:List::List	file:
+next	C/LinkList2.c	/^    struct List *next;$/;"	m	struct:List	typeref:struct:List::List	file:
+next	C/huawei/4-2.c	/^	struct link *next;$/;"	m	struct:link	typeref:struct:link::link	file:
+next	C/huawei/4.c	/^    struct queue *next;$/;"	m	struct:queue	typeref:struct:queue::queue	file:
+next	C/huawei/LinkList.c	/^   struct List *next;$/;"	m	struct:List	typeref:struct:List::List	file:
+next	C/huawei/yueshefuhuan.c	/^	struct LNode  *next;	$/;"	m	struct:LNode	typeref:struct:LNode::LNode	file:
+next	C/yueshefuhuan.c	/^    struct LNode *next;$/;"	m	struct:LNode	typeref:struct:LNode::LNode	file:
+next	dul-link.c	/^	struct DulNode *next;$/;"	m	struct:DulNode	typeref:struct:DulNode::DulNode	file:
+next	linkqueue/queue.h	/^    struct Node *next;$/;"	m	struct:Node	typeref:struct:Node::Node
+next	single-LinkList.c	/^	int *next;$/;"	m	struct:Node	file:
+next	stack/link_stack.c	/^    struct STACK_NODE *next;  $/;"	m	struct:STACK_NODE	typeref:struct:STACK_NODE::STACK_NODE	file:
+node	C/huawei/4-2.c	/^}node;$/;"	t	typeref:struct:link	file:
+node	jihe.c	/^struct node{$/;"	s	file:
+nomain	C/tryhelloworld.c	/^void nomain()$/;"	f
+num	C/167.c	/^	int num;$/;"	m	struct:student	file:
+num	C/huawei/6.c	/^int num, flag, map[10][10];$/;"	v
+obj-m	C/dev/Makefile	/^	obj-m := tp.o$/;"	m
+p	C/huawei/6.c	/^} p[81];$/;"	v	typeref:struct:point
+paixu	C/18.c	/^int paixu(int a, int b, int c)$/;"	f
+parent	C/红黑树.c	/^    struct rb_node_t *left, *right, *parent;$/;"	m	struct:rb_node_t	typeref:struct:rb_node_t::	file:
+point	C/huawei/6.c	/^struct point$/;"	s	file:
+pop	stack/dyn_static.c	/^void pop(void)  $/;"	f
+pop	stack/link_stack.c	/^void pop(void)  $/;"	f
+pop	stack/static_stack.c	/^void pop(void)  $/;"	f
+pos	C/huawei/8-2.c	/^  int pos;$/;"	m	struct:__anon2	file:
+pp	struct.c	/^struct pp$/;"	s	file:
+previous	C/Double-linklist/DList.h	/^	PNode previous; \/*指向前驱*\/$/;"	m	struct:Node
+print	C/Double-linklist/Test.c	/^void print(Item i)$/;"	f
+print	C/tryhelloworld.c	/^void print()$/;"	f
+print	stack/dyn_static.c	/^void print(void)  $/;"	f
+print	stack/link_stack.c	/^void print(void)  $/;"	f
+print	stack/static_stack.c	/^void print(void)  $/;"	f
+printbinary	C/C++/ten-to-two.cpp	/^void printbinary(const unsigned int val)$/;"	f
+printpolicy	C/scheduler_test.c	/^void printpolicy (int policy)$/;"	f
+prior	C/Double-linklist/doble-linklist.c	/^	struct doublelinklist *prior;$/;"	m	struct:doublelinklist	typeref:struct:doublelinklist::doublelinklist	file:
+prior	dul-link.c	/^	struct DulNode *prior;$/;"	m	struct:DulNode	typeref:struct:DulNode::DulNode	file:
+push	stack/dyn_static.c	/^void push(STACK_TYPE value)  $/;"	f
+push	stack/link_stack.c	/^void push(STACK_TYPE value)  $/;"	f
+push	stack/static_stack.c	/^void push(STACK_TYPE value)  $/;"	f
+queue	C/huawei/4.c	/^typedef struct queue{$/;"	s	file:
+queue_Header_h	linkqueue/queue.h	2;"	d
+qusort	C/kuaishupaixu.c	/^void qusort(int s[], int start, int end)$/;"	f
+rb_erase	C/红黑树.c	/^rb_node_t* rb_erase(key_t key, rb_node_t *root)$/;"	f
+rb_erase_rebalance	C/红黑树.c	/^static rb_node_t* rb_erase_rebalance(rb_node_t *node, rb_node_t *parent, rb_node_t *root)$/;"	f	file:
+rb_insert	C/红黑树.c	/^rb_node_t* rb_insert(key_t key, data_t data, rb_node_t* root)$/;"	f
+rb_insert_rebalance	C/红黑树.c	/^static rb_node_t* rb_insert_rebalance(rb_node_t *node, rb_node_t *root)$/;"	f	file:
+rb_new_node	C/红黑树.c	/^static rb_node_t* rb_new_node(key_t key, data_t data)$/;"	f	file:
+rb_node_t	C/红黑树.c	/^typedef struct rb_node_t$/;"	s	file:
+rb_node_t	C/红黑树.c	/^}rb_node_t;$/;"	t	typeref:struct:rb_node_t	file:
+rb_rotate_left	C/红黑树.c	/^static rb_node_t* rb_rotate_left(rb_node_t* node, rb_node_t* root)$/;"	f	file:
+rb_rotate_right	C/红黑树.c	/^static rb_node_t* rb_rotate_right(rb_node_t* node, rb_node_t* root)$/;"	f	file:
+rb_search	C/红黑树.c	/^rb_node_t* rb_search(key_t key, rb_node_t* root)$/;"	f
+rb_search_auxiliary	C/红黑树.c	/^static rb_node_t* rb_search_auxiliary(key_t key, rb_node_t* root, rb_node_t** save)$/;"	f	file:
+rear	linkqueue/queue.h	/^    Queue rear;$/;"	m	struct:__anon3
+res	struct.c	/^struct res$/;"	s	file:
+reverse	C/LinkList.c	/^Status reverse(linklist * L)$/;"	f
+reverse	C/LinkList2.c	/^Status reverse(linklist *L)$/;"	f
+reverse	C/huawei/LinkList.c	/^Status reverse(linklist *L)$/;"	f
+right	C/红黑树.c	/^    struct rb_node_t *left, *right, *parent;$/;"	m	struct:rb_node_t	typeref:struct:rb_node_t::	file:
+row	C/huawei/8-2.c	/^  int row;$/;"	m	struct:__anon2	file:
+s1	union.c	/^	} s1;$/;"	m	union:uni	typeref:struct:uni::__anon4	file:
+s2	union.c	/^	} s2;$/;"	m	union:uni	typeref:struct:uni::__anon5	file:
+score	C/167.c	/^	float score;$/;"	m	struct:student	file:
+search	C/hashchazhao.c	/^int search(int key)$/;"	f
+sequence	C/maopao.c	/^void sequence(int b[], int n)$/;"	f
+sequence	C/testxier.c	/^void sequence(int b[], int n)$/;"	f
+sequence	C/xuanzhepaixu.c	/^void sequence(int a[], int n)$/;"	f
+sex	C/167.c	/^	char sex;$/;"	m	struct:student	file:
+shared	C/b.c	/^int shared = 1;$/;"	v
+shsort	C/20.c	/^void shsort(int s[], int n)$/;"	f
+shsort	C/xierpaixu.c	/^void shsort(int s[], int n)$/;"	f
+size	C/Double-linklist/DList.h	/^	int size;$/;"	m	struct:__anon1
+sort	C/171.c	/^sort (char *string[], int n)$/;"	f
+sort	C/huawei/7.c	/^int sort(int b[], int m, int l)$/;"	f
+sort	C/pinduoduo/p1.c	/^void sort(int s[], int n)$/;"	f
+sort	C/pinduoduo/p3.c	/^void sort(int s[], int n)$/;"	f
+sqlist	C/shunxunbiaocharu.c	/^struct sqlist$/;"	s	file:
+ss	C/gedebahe.c	/^int ss(int i)$/;"	f
+stack	stack/dyn_static.c	/^static STACK_TYPE *stack;  $/;"	v	file:
+stack	stack/link_stack.c	/^static StackNode *stack;  $/;"	v	file:
+stack	stack/static_stack.c	/^static STACK_TYPE stack[STACK_SIZE];  $/;"	v	file:
+stack_size	stack/dyn_static.c	/^static int        stack_size;  $/;"	v	file:
+start	C/fenkuaichazhao.c	/^    int start;$/;"	m	struct:index	file:
+str	C/pinduoduo/p2.py	/^str = a * b$/;"	v
+str	C/tryhelloworld.c	/^char *str = "hello world\\n";$/;"	v
+student	C/167.c	/^struct student {$/;"	s	file:
+swap	C/166.c	/^swap(int *p, int *q)$/;"	f
+swap	C/b.c	/^void swap( int *a, int *b)$/;"	f
+tail	C/Double-linklist/DList.h	/^	PNode tail;		\/*指向尾节点*\/$/;"	m	struct:__anon1
+tmp	C/huawei/paixu.c	/^int tmp[N],R[N];$/;"	v
+top	stack/dyn_static.c	/^STACK_TYPE top(void)  $/;"	f
+top	stack/link_stack.c	/^STACK_TYPE top(void)  $/;"	f
+top	stack/static_stack.c	/^STACK_TYPE top(void)  $/;"	f
+top_element	stack/dyn_static.c	/^static int        top_element = -1;  $/;"	v	file:
+top_element	stack/static_stack.c	/^static int top_element = -1;  $/;"	v	file:
+traversal	linkqueue/queue.h	/^void traversal(LinkQueue queue)$/;"	f
+uni	union.c	/^union uni {$/;"	u	file:
+val	C/huawei/4.c	/^    int val;$/;"	m	struct:queue	file:
+value	stack/link_stack.c	/^    STACK_TYPE value;  $/;"	m	struct:STACK_NODE	file:
+var	C/test.cpp	/^	int var = 42;$/;"	m	namespace:myname	file:
+w	adi.c	/^    char w[30];$/;"	m	struct:w_t	file:
+w_t	adi.c	/^struct w_t {$/;"	s	file:
+water	C/huawei/1.c	/^void  water(int n)$/;"	f
+x	C/huawei/6.c	/^    int x, y;$/;"	m	struct:point	file:
+x	jihe.c	/^	int x;$/;"	m	struct:node	file:
+y	C/huawei/6.c	/^    int x, y;$/;"	m	struct:point	file:
+y	jihe.c	/^	int y;$/;"	m	struct:node	file:
