@@ -15,7 +15,7 @@ void func(void){
 
 int main()
 {
-/ *    struct {
+/*    struct {
         int a, b;
     }t = {1};
     printf("%d\n", t.a / t.b); //
