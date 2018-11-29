@@ -6,6 +6,7 @@ if door == "1":
     print "1. Take the cake."
     print "2. Scream at the bear."
     bear = raw_input("> ")
+    
     if bear == "1":
         print "The bear eats your face off. Good job!"
         elif bear == "2":
