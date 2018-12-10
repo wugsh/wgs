@@ -6,13 +6,13 @@ int main()
 {
 	Stack stack;
 	stack.Print();
-/*
+	/*
 	stack.Push(1);
 	stack.Push(2);
 	stack.Push(3);
 	stack.Push(4);
 	*/
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 10240000; i++)
 	{
 		stack.Push(i);
 	}
