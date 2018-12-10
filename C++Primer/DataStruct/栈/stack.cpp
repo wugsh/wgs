@@ -2,7 +2,6 @@
 #include "stack.h"
 using namespace std;
 
-
 Stack::Stack()
 {
 	top = NULL;
@@ -14,12 +13,12 @@ Stack::Stack()
 void Stack::Push(int data)
 {
 	Node *temp;
-	temp = (Node *) new Node[1];
+	temp = (Node *)new Node;
 	temp->data = data;
 	temp->next = NULL;
 	if (size == 0)
 	{
-		top = (Node *) new Node[1];
+		top = (Node *)new Node;
 		buttom = temp;
 	}
 	top->next = temp;
@@ -74,7 +73,6 @@ void Stack::Print()
 	{
 		cout << temp->data << "，";
 		temp = temp->next;
-
 	}
 	cout << top->data << endl;
 }
