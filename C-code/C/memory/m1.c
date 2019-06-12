@@ -17,4 +17,20 @@ int main()
 		return -1;
 	}
 	
+	memset(c,0,10);
+	strcpy(c, "linux");
+	
+	printf("%s\n", a);
+	printf("%s\n", b);
+	printf("%s\n", c);
+	
+	printf("%p\n", a);
+	printf("%p\n", b);
+	printf("%p\n", c);
+	
+	//malloc释放内存
+	free(c);
+	c = NUll;
+	
+	return 0;
 }
