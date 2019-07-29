@@ -18,8 +18,7 @@ Doublelink *creatlink(Doublelink *L)
         return NULL;
     q = L;
 	while(1){
-		p = (Doublelink *)malloc(sizeof(Doublelink
-                                 ));
+		p = (Doublelink *)malloc(sizeof(Doublelink));
         scanf("%d", &num);
         if(num == 0)
             break;
