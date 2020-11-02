@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="My-20201102230215" tests="1" time="0.000">
+	<testcase classname="My" name="test1" time="0.000">
+		<error message="test1() missing 3 required positional arguments: 'a', 'b', and 'c'" type="TypeError">
+<![CDATA[TypeError: test1() missing 3 required positional arguments: 'a', 'b', and 'c'
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
