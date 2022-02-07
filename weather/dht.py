@@ -50,7 +50,6 @@ humidity_point = 0
 temperature = 0
 temperature_point = 0
 check = 0
-
 for i in range(8):
     humidity += humidity_bit[i] * 2 ** (7-i)
     humidity_point += humidity_point_bit[i] * 2 ** (7-i)

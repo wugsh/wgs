@@ -47,4 +47,5 @@ def check_string(string):
 if __name__ == '__main__':
      string = input("请输入一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串:")
      check_string(string)
+     
 
